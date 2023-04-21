@@ -27,17 +27,18 @@ export const Projects = () => {
             it said "I used to be indecisive, but now I'm not so sure"".
             Straight away you've got them by the jaffas.
           </h4>
+
+          <div className="button-container">
+            <div className="btn-b1">
+              <a href="#">left</a>
+            </div>
+          </div>
+
           <div className="Projects__div--button-container">
             <button className="btn-1">view live</button>
             <button className="btn-1">to the github repo!</button>
             <button className="btn-1">learn more</button>
           </div>
-
-          {/* <div className="button-container">
-            <div className="btn-b1">
-              <a href="#">left</a>
-            </div>
-          </div> */}
         </div>
         <img src={projectPlaceholder} alt="johnny"></img>
       </div>
