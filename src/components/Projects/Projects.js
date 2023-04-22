@@ -1,19 +1,19 @@
 import React from "react";
 import { Button } from "../Button/Button";
-import "./Projects.css"
+import "./Projects.css";
 
 const projectPlaceholder = require("../../images/project-placeholder-laptop.png");
 const fanfinderImage = require("../../images/fanfinder_ipad_horizontal.png");
 
 export const Projects = () => {
   return (
-    <section className="Projects">
+    <section id="projects" className="Projects">
       <h1>Projects</h1>
 
       <div className="Projects__div--project-image-left">
         <div className="Projects__div--text-content">
-          <h2>northcoders news</h2>
-          <h3>reddit-style news aggregation</h3>
+          <h2>Northcoders News</h2>
+          <h3>reddit-style news aggregation web app </h3>
 
           <div className="Projects__div--icons">
             <i className="devicon-javascript-plain"></i>
@@ -25,11 +25,11 @@ export const Projects = () => {
             <i className="devicon-jest-plain"></i>
           </div>
           <h4>
-            Quick tip for yourself: if you're ever doing an after-dinner speech,
-            you say "My Lords, Ladies and Gentlemen, sorry I'm late, I just
-            popped to the toilet. And while I was there, I saw some graffiti and
-            it said "I used to be indecisive, but now I'm not so sure"".
-            Straight away you've got them by the jaffas.
+            Northcoders is a news aggregation React app in the style of Reddit,
+            allowing users to view, vote and comment on articles hosted on my
+            own backend and psql database. This was built as part of the amazing
+            Northcoders Full-Stack Software Developer Bootcamp, with the aim of
+            bringing together my front and back end skills under one project!
           </h4>
 
           {/* <div className="button-container">
@@ -52,23 +52,31 @@ export const Projects = () => {
 
       <div className="Projects__div--project-image-right">
         <div className="Projects__div--text-content">
-          <h2>fan finder</h2>
-          <h3>location based social media app</h3>
-          <div className="Projects__div--icons">
-            <i className="devicon-javascript-plain"></i>
-            <i className="devicon-react-original"></i>
-            <i className="devicon-nodejs-plain"></i>
-            <i className="devicon-express-original"></i>
-            <i className="fas fa-cogs" aria-hidden="true"></i>
-            <i className="devicon-postgresql-plain"></i>
-            <i className="devicon-jest-plain"></i>
+          <h2>FanFinder</h2>
+          <h3>location-based social networking mobile app </h3>
+          <div className="Projects__div--tech-container">
+            <div className="Projects__div--single-skills-box">
+              <i className="devicon-react-original"></i>
+              <p>React Native</p>
+            </div>
+
+            <div className="Projects__div--single-skills-box">
+              <i className="devicon-express-original"></i>
+              <p>express.js</p>
+            </div>
+
+            <div className="Projects__div--single-skills-box">
+              <i className="devicon-express-original"></i>
+              <p>express.js</p>
+            </div>
           </div>
           <h4>
-            Quick tip for yourself: if you're ever doing an after-dinner speech,
-            you say "My Lords, Ladies and Gentlemen, sorry I'm late, I just
-            popped to the toilet. And while I was there, I saw some graffiti and
-            it said "I used to be indecisive, but now I'm not so sure"".
-            Straight away you've got them by the jaffas.
+            FanFinder is a mobile app built in React Native and allows music
+            fans to discover upcoming gigs in their area, and connect with other
+            music fans via gig-specific forums or a chat facility. This project
+            was built by a team of 4 as part of the final Northcoders Bootcamp
+            where we had to pitch, plan, build and deploy a project, all in just
+            under 2 weeks!
           </h4>
           <div className="Projects__div--button-container">
             <button className="btn-1">view live</button>
@@ -81,8 +89,8 @@ export const Projects = () => {
 
       <div className="Projects__div--project-image-left">
         <div className="Projects__div--text-content">
-          <h2>100 push ups (WIP)</h2>
-          <h3>web and mobile fitness app</h3>
+          <h2>One Hundred Press-ups (WIP)</h2>
+          <h3>fitness tracking web & mobile app</h3>
           <div className="Projects__div--icons">
             <i class="devicon-firebase-plain"></i>
             <i className="devicon-javascript-plain"></i>
@@ -94,11 +102,12 @@ export const Projects = () => {
             <i className="devicon-jest-plain"></i>
           </div>
           <h4>
-            Quick tip for yourself: if you're ever doing an after-dinner speech,
-            you say "My Lords, Ladies and Gentlemen, sorry I'm late, I just
-            popped to the toilet. And while I was there, I saw some graffiti and
-            it said "I used to be indecisive, but now I'm not so sure"".
-            Straight away you've got them by the jaffas.
+            One Hundred Press-ups is a web & mobile app designed to guide, track
+            and motivate fitness enthusiasts on their path to achieving... well,
+            100 pressups! My first project after graduating the Northcoders
+            Bootcamp, I wanted to explore Google Firebase and hone my knowledge
+            of React and React Native... also, I need some help to beat my
+            ultra-competitive nephew at his own game!
           </h4>
           <div className="Projects__div--button-container">
             <button className="btn-1">view live</button>

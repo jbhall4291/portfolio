@@ -1,14 +1,12 @@
-
-
 /* Button Styles */
 
 .Button__div {
   display: inline-flex;
   /* height: 40px; */
-  width: 150px; 
-  border: 2px solid #121e27;
+  width: 150px;
+  border: 2px solid var(--main-color);
   margin: 20px 20px 20px 20px;
-  color: #121e27;
+  color: var(--main-color);
   text-transform: uppercase;
   text-decoration: none;
   /* font-size: .8em; */
@@ -21,13 +19,12 @@
 }
 
 .Button__a {
-  color: #121e27;
+  color: var(--main-color);
   text-decoration: none;
   font-size: 1rem;
   padding: 5px;
   /* letter-spacing: 1px; */
 }
-
 
 /* First Button */
 
@@ -37,8 +34,8 @@
   position: absolute;
   transform: translateX(60px);
   opacity: 0;
-  -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
-  transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
+  -webkit-transition: all 0.25s cubic-bezier(0.14, 0.59, 1, 1.01);
+  transition: all 0.15s cubic-bezier(0.14, 0.59, 1, 1.01);
   margin: 0;
   padding: 0 5px;
 }
@@ -48,7 +45,6 @@ a#button-1:hover img {
   opacity: 1;
   transform: translateX(50px);
 }
-
 
 /* Second Button */
 
@@ -60,16 +56,16 @@ a#button-1:hover img {
 
 #button-2 a {
   position: relative;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
 }
 
 #slide {
   width: 100%;
   height: 100%;
   left: -200px;
-  background: #BFC0C0;
+  background: #bfc0c0;
   position: absolute;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
   bottom: 0;
 }
 
@@ -78,9 +74,8 @@ a#button-1:hover img {
 }
 
 #button-2:hover a {
-  color: #2D3142;
+  color: #2d3142;
 }
-
 
 /* Third Button */
 
@@ -92,7 +87,7 @@ a#button-1:hover img {
 
 #button-3 a {
   position: relative;
-  transition: all .45s ease-Out;
+  transition: all 0.45s ease-Out;
 }
 
 #circle {
@@ -101,9 +96,9 @@ a#button-1:hover img {
   opacity: 0;
   line-height: 40px;
   border-radius: 50%;
-  background: #BFC0C0;
+  background: #bfc0c0;
   position: absolute;
-  transition: all .5s ease-Out;
+  transition: all 0.5s ease-Out;
   top: 20px;
   left: 70px;
 }
@@ -117,9 +112,8 @@ a#button-1:hover img {
 }
 
 #button-3:hover a {
-  color: #2D3142;
+  color: #2d3142;
 }
-
 
 /* Fourth Button */
 
@@ -131,7 +125,7 @@ a#button-1:hover img {
 
 #button-4 a {
   position: relative;
-  transition: all .45s ease-Out;
+  transition: all 0.45s ease-Out;
 }
 
 #underline {
@@ -140,16 +134,16 @@ a#button-1:hover img {
   margin-top: 15px;
   align-self: flex-end;
   left: -200px;
-  background: #fe003a;
+  background: var(--highlight-color);
+
   position: absolute;
-  transition: all .3s ease-Out;
+  transition: all 0.3s ease-Out;
   bottom: 0;
 }
 
 #button-4:hover #underline {
   left: 0;
 }
-
 
 /* Fifth Button */
 
@@ -161,7 +155,7 @@ a#button-1:hover img {
 
 #button-5 a {
   position: relative;
-  transition: all .45s ease-Out;
+  transition: all 0.45s ease-Out;
 }
 
 #translate {
@@ -170,9 +164,9 @@ a#button-1:hover img {
   height: 250%;
   left: -200px;
   top: -30px;
-  background: #BFC0C0;
+  background: #bfc0c0;
   position: absolute;
-  transition: all .3s ease-Out;
+  transition: all 0.3s ease-Out;
 }
 
 #button-5:hover #translate {
@@ -180,9 +174,8 @@ a#button-1:hover img {
 }
 
 #button-5:hover a {
-  color: #2D3142;
+  color: #2d3142;
 }
-
 
 /* Sixth Button */
 
@@ -194,7 +187,7 @@ a#button-1:hover img {
 
 #button-6 a {
   position: relative;
-  transition: all .45s ease-Out;
+  transition: all 0.45s ease-Out;
 }
 
 #spin {
@@ -206,7 +199,7 @@ a#button-1:hover img {
   transform: rotate(0deg);
   background: none;
   position: absolute;
-  transition: all .5s ease-Out;
+  transition: all 0.5s ease-Out;
 }
 
 #button-6:hover #spin {
@@ -215,14 +208,13 @@ a#button-1:hover img {
   opacity: 1;
   left: -70px;
   top: -70px;
-  background: #BFC0C0;
+  background: #bfc0c0;
   transform: rotate(80deg);
 }
 
 #button-6:hover a {
-  color: #2D3142;
+  color: #2d3142;
 }
-
 
 /* Seventh Button */
 
@@ -235,20 +227,20 @@ a#button-1:hover img {
 #button-7 a {
   position: relative;
   left: 0;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
 }
 
 #dub-arrow {
   width: 100%;
   height: 100%;
-  background: #BFC0C0;
+  background: #bfc0c0;
   left: -200px;
   position: absolute;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
   bottom: 0;
 }
 
