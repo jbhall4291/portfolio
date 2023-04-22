@@ -1,0 +1,10 @@
+.Navbar {
+  color: white;
+  background-color: #121e27;
+}
+
+.Navbar__ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}

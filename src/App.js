@@ -1,11 +1,12 @@
 import "./App.css";
-import { Navbar } from "./components/Navbar.js";
-import { About } from "./components/About.js";
-import { Skills } from "./components/Skills.js";
-import { Projects } from "./components/Projects.js";
-import { Hero } from "./components/Hero";
-import { Contact } from "./components/Contact";
+import { Navbar } from "./components/Navbar/Navbar.js";
+import { About } from "./components/About/About.js";
+import { Skills } from "./components/Skills/Skills.js";
+import { Projects } from "./components/Projects/Projects.js";
+import { Hero } from "./components/Hero/Hero";
+import { Contact } from "./components/Contact/Contact";
 import { ButtonTest } from "./components/ButtonTest";
+import { Button } from "./components/Button/Button";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <ButtonTest />
+      {/* <ButtonTest /> */}
       <Contact />
+      <Button text="hooray" href="https://www.google.com" />
     </>
   );
 }

@@ -1,8 +1,9 @@
 import React from "react";
+import "./Skills.css";
 
 export const Skills = () => {
   return (
-    <section className="Skills">
+    <section id="skills" className="Skills">
       <h1>My Skills</h1>
       <section className="Skills--my-skills">
         <div className="single-skills-box">
@@ -34,8 +35,6 @@ export const Skills = () => {
           <i className="devicon-github-original"></i>
           <p>GitHub</p>
         </div>
-
-        
 
         <div className="single-skills-box">
           <i className="devicon-nodejs-plain"></i>

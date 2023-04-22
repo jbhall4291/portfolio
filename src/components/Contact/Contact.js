@@ -8,6 +8,8 @@ export const Contact = () => {
       <p>
         Get in touch here!
       </p>
+      
+
     </section>
   );
 };

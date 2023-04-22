@@ -1,5 +1,9 @@
 import React from "react";
-const projectPlaceholder = require("../images/project-placeholder-laptop.png");
+import { Button } from "../Button/Button";
+import "./Projects.css"
+
+const projectPlaceholder = require("../../images/project-placeholder-laptop.png");
+const fanfinderImage = require("../../images/fanfinder_ipad_horizontal.png");
 
 export const Projects = () => {
   return (
@@ -28,16 +32,19 @@ export const Projects = () => {
             Straight away you've got them by the jaffas.
           </h4>
 
-          <div className="button-container">
+          {/* <div className="button-container">
             <div className="btn-b1">
               <a href="#">left</a>
             </div>
-          </div>
+          </div> */}
 
           <div className="Projects__div--button-container">
-            <button className="btn-1">view live</button>
+            <Button text="live demo" href="https://www.google.com" />
+            <Button text="gitub repo" href="https://www.bing.com" />
+            <Button text="learn more" href="https://www.bing.com" />
+            {/* <button className="btn-1">view live</button>
             <button className="btn-1">to the github repo!</button>
-            <button className="btn-1">learn more</button>
+            <button className="btn-1">learn more</button> */}
           </div>
         </div>
         <img src={projectPlaceholder} alt="johnny"></img>
@@ -69,7 +76,7 @@ export const Projects = () => {
             <button className="btn-1">learn more</button>
           </div>
         </div>
-        <img src={projectPlaceholder} alt="johnny"></img>
+        <img src={fanfinderImage} alt="johnny"></img>
       </div>
 
       <div className="Projects__div--project-image-left">

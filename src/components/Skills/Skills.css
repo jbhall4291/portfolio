@@ -1,0 +1,35 @@
+.Skills--my-skills,
+.Skills--working-on {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.Skills--my-skills div,
+.Skills--working-on div {
+  background-color: #121e27;
+  width: 90px;
+
+  height: 90px;
+  /* margin: 3%; */
+  margin: 20px 30px;
+  padding: 10px;
+  /* border-radius: 15px; */
+  border-radius: 0.2em;
+  color: white;
+}
+
+.Skills--my-skills i,
+.Skills--working-on i {
+  font-size: 4rem;
+}
+
+.single-skills-box p {
+  margin-top: 3px;
+}
