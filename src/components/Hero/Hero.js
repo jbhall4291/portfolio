@@ -32,25 +32,27 @@ export const Hero = () => {
           </h2>
 
           <h2 className="Hero__h2">
-            Get in touch & let's make something amazing!
+            I'm currently looking for an opportunity to contribute to a
+            company's success, so if you're looking for a junior developer then
+            get in touch & let's make something amazing!
           </h2>
-          <a
-            href="https://www.linkedin.com/in/johnny-hall-dev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-          <a
-            href="https://www.github.com/jbhall4291"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fa fa-github-square"></i>
-          </a>
-          <a href="mailto:jbhall4291@gmail.com">
-            <i className="fa-solid fa-square-envelope"></i>
-          </a>
+          <i className="fa-brands fa-linkedin">
+            <a
+              href="https://www.linkedin.com/in/johnny-hall-dev"
+              target="_blank"
+              rel="noreferrer"
+            ></a>
+          </i>
+          <i className="fa fa-github-square">
+            <a
+              href="https://www.github.com/jbhall4291"
+              target="_blank"
+              rel="noreferrer"
+            ></a>
+          </i>
+          <i className="fa-solid fa-square-envelope">
+            <a href="mailto:jbhall4291@gmail.com"></a>
+          </i>
         </div>
       </section>
       <div className="Hero__div--angled"></div>

@@ -1,3 +1,54 @@
 form {
-    background-color: green;
+  background-color: green;
+  width: 90%;
+  border-radius: 0.2em;
 }
+
+input {
+  /* background-color: red; */
+}
+
+textarea {
+    height: 100px
+}
+input,
+textarea {
+  width: 100%;
+}
+
+.submit {
+  margin: 0 20px;
+
+  cursor: pointer;
+
+  background-color: white;
+  box-shadow: inset 0 0 0 0 var(--highlight-color);
+  transition: ease-out 0.3s;
+  outline: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0.2em;
+  width: 135px;
+  padding: 6px;
+  border-color: var(--main-color);
+  color: var(--main-color);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.submit:hover {
+  /* color: var((--main-color)); */
+  color:white;
+  box-shadow: inset 200px 0 0 0 var(--highlight-color);
+}
+
+/* .submit a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+} */

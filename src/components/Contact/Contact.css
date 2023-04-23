@@ -1,3 +1,26 @@
-.form {
-    background-color: green;
+.Contact__div--container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Contact__div--container i {
+  cursor: pointer;
+  font-size: 8.5rem;
+  margin: 10px 0 10px 0;
+  transition: color 0.7s ease;
+  color: var(--main-color);
+}
+
+.Contact__div--container i:hover {
+  color: var(--highlight-color);
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+}
+
+.contact-right {
+  text-align: center;
 }

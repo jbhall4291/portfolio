@@ -13,13 +13,13 @@
   width: 135px;
   padding: 6px;
   border-color: var(--main-color);
-  color: var(--main-color);
+  /* color: var(--main-color); */
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .Button__button--fill:hover {
-  color: white;
+  /* color: white; */
   box-shadow: inset 200px 0 0 0 var(--highlight-color);
 }
 

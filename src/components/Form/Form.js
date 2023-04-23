@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./Form.css";
 
 export const Form = () => {
@@ -18,7 +19,8 @@ export const Form = () => {
         <textarea id="message" name="message" required></textarea>
       </p>
       <p>
-        <input type="submit" value="Submit message" />
+      
+        <input className="submit" type="submit" value="Submit message" />
       </p>
     </form>
   );

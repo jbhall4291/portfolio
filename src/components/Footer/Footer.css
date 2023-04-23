@@ -13,5 +13,13 @@ footer {
 
 .main {
   background-color: var(--main-color);
-  height: 80px
+  height: 80px;
+  color: white;
+  text-align: right;
+}
+
+.Footer__p {
+  margin-right: 70px;
+  font-size: 1.3rem;
+
 }
