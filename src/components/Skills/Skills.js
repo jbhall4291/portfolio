@@ -67,7 +67,7 @@ export const Skills = () => {
         </div>
       </section>
 
-      <h1>Currently working on</h1>
+      {/* <h2>Currently working on</h2>
       <section className="Skills--working-on">
         <div className="single-skills-box">
           <i className="devicon-python-plain"></i>
@@ -78,7 +78,9 @@ export const Skills = () => {
           <i className="devicon-threejs-original"></i>
           <p>three.js</p>
         </div>
-      </section>
+      </section> */}
+
+
     </section>
   );
 };

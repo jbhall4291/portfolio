@@ -11,7 +11,8 @@
 
 .About,
 .Skills,
-.Projects {
+.Projects,
+.Contact {
   color: var(--main-color);
   margin: auto;
   width: 60%;
@@ -22,7 +23,12 @@
 
 .About h1,
 .Skills h1,
-.Projects h1 {
+.Projects h1,
+.Contact h1 {
+  margin-bottom: 50px;
   font-size: 3rem;
   text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-color);
+  text-decoration-thickness: 10px;
 }

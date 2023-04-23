@@ -5,7 +5,7 @@ const profilePic = require("../../images/profile_3_square.jpg");
 export const Hero = () => {
   return (
     <>
-      <section className="Hero">
+      <section id ="hero" className="Hero">
         <div className="Hero--image">
           <img src={profilePic} alt="johnny"></img>
         </div>
@@ -34,10 +34,18 @@ export const Hero = () => {
           <h2 className="Hero__h2">
             Get in touch & let's make something amazing!
           </h2>
-          <a href="https://www.linkedin.com/in/johnny-hall-dev" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/johnny-hall-dev"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a href="https://www.github.com/jbhall4291" target="_blank">
+          <a
+            href="https://www.github.com/jbhall4291"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fa fa-github-square"></i>
           </a>
           <a href="mailto:jbhall4291@gmail.com">

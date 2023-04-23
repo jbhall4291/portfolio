@@ -5,8 +5,7 @@ import { Skills } from "./components/Skills/Skills.js";
 import { Projects } from "./components/Projects/Projects.js";
 import { Hero } from "./components/Hero/Hero";
 import { Contact } from "./components/Contact/Contact";
-import { ButtonTest } from "./components/ButtonTest";
-import { Button } from "./components/Button/Button";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,9 +15,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      {/* <ButtonTest /> */}
       <Contact />
-      <Button text="hooray" href="https://www.google.com" />
+      <Footer />
     </>
   );
 }

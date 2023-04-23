@@ -1,0 +1,17 @@
+footer {
+  /* background-color: var(--main-color); */
+}
+
+.Footer__div--angled {
+  background-color: var(--main-color);
+
+  height: 80px;
+  /* clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%); */
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.main {
+  background-color: var(--main-color);
+  height: 80px
+}
