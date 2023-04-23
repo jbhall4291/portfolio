@@ -136,7 +136,7 @@ export const Projects = () => {
             </div>
 
             <div className="Projects__div--single-skills-box">
-              <i class="devicon-firebase-plain"></i>
+              <i className="devicon-firebase-plain"></i>
               <p>Firebase</p>
             </div>
           </div>

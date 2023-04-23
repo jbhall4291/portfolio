@@ -92,6 +92,7 @@
 .Hero__div--angled {
   height: 80px;
   background-color: var(--main-color);
+  
   clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 

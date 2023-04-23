@@ -5,7 +5,7 @@ const profilePic = require("../../images/profile_3_square.jpg");
 export const Hero = () => {
   return (
     <>
-      <section id ="hero" className="Hero">
+      <section id="hero" className="Hero">
         <div className="Hero--image">
           <img src={profilePic} alt="johnny"></img>
         </div>
