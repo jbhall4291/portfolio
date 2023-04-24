@@ -9,14 +9,14 @@ const fanfinderImage = require("../../images/fanfinder_ipad_horizontal.png");
 export const Projects = () => {
   return (
     <section id="projects" className="Projects">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
 
-      <div className="Projects__div--project-image-left">
+      <div className="Projects__div--project-container-image-left">
         <div className="Projects__div--text-content">
-          <h2>Northcoders News</h2>
-          <h3>reddit-style news aggregation web app</h3>
+          <h3>Northcoders News</h3>
+          <h4>reddit-style news aggregation web app</h4>
 
-          <p>
+          <p className="Projects__p--description">
             Northcoders is a news aggregation React app in the style of Reddit,
             allowing users to view, vote and comment on articles hosted on my
             own backend and psql database. This was built as part of the amazing
@@ -48,18 +48,22 @@ export const Projects = () => {
 
           <div className="Projects__div--button-container">
             <ButtonFill text="live app" href="https://www.google.com" />
-            <ButtonFill text="github repo" href="https://www.google.com" />
+            <ButtonFill
+              text="github repo"
+              href="https://github.com/jbhall4291/nc-news-frontend"
+              
+            />
             <ButtonFill text="video demo" href="https://www.google.com" />
           </div>
         </div>
         <img src={projectPlaceholder} alt="johnny"></img>
       </div>
 
-      <div className="Projects__div--project-image-right">
+      <div className="Projects__div--project-container-image-right">
         <div className="Projects__div--text-content">
-          <h2>FanFinder</h2>
-          <h3>location-based social networking mobile app </h3>
-          <p>
+          <h3>FanFinder</h3>
+          <h4>location-based social networking mobile app </h4>
+          <p className="Projects__p--description">
             FanFinder is a mobile app built in React Native and allows music
             fans to discover upcoming gigs in their area, and connect with other
             music fans via gig-specific forums or a chat facility. This project
@@ -99,11 +103,12 @@ export const Projects = () => {
         <img src={projectPlaceholder} alt="johnny"></img>
       </div>
 
-      <div className="Projects__div--project-image-left">
+      <div className="Projects__div--project-container-image-left">
         <div className="Projects__div--text-content">
-          <h2>One Hundred Press-ups (WIP)</h2>
-          <h3>fitness tracking web & mobile app</h3>
-          <p>
+          <h3>One Hundred Press-ups</h3>
+          <h4><em>~ under development ~</em></h4>
+          <h4>fitness tracking web & mobile app</h4>
+          <p className="Projects__p--description">
             One Hundred Press-ups is a web & mobile app designed to guide, track
             and motivate fitness enthusiasts on their path to achieving... well,
             100 pressups! My first project after graduating the Northcoders
@@ -113,17 +118,17 @@ export const Projects = () => {
           </p>
 
           <div className="Projects__div--tech-container">
-            <div className="Projects__div--single-skills-box">
+            <div>
               <i className="devicon-react-original"></i>
               <p>React</p>
             </div>
 
-            <div className="Projects__div--single-skills-box">
+            <div>
               <i className="devicon-react-original"></i>
               <p>React Native</p>
             </div>
 
-            <div className="Projects__div--single-skills-box">
+            <div>
               <i className="devicon-firebase-plain"></i>
               <p>Firebase</p>
             </div>
@@ -133,7 +138,6 @@ export const Projects = () => {
             <ButtonFill text="live app" href="https://www.google.com" />
             <ButtonFill text="github repo" href="https://www.google.com" />
             <ButtonFill text="video demo" href="https://www.google.com" />
-            
           </div>
         </div>
         <img src={projectPlaceholder} alt="johnny"></img>

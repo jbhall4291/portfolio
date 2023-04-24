@@ -5,17 +5,16 @@ import { Form } from "../Form/Form";
 export const Contact = () => {
   return (
     <section id="contact" className="Contact">
-      <h1>Contact</h1>
+      <h2>Contact</h2>
       <div className="Contact__div--container">
         <div className="contact-left">
           <Form />
         </div>
         <div className="contact-right">
           <p>
-            If you have any questions, would like a copy of my resume, or are
+            If you have any questions, would like a copy of my CV, or are
             interested in collaborating on a project I’d love to hear from you!
-            Fill in the form, or get in touch via LinkedIn, GitHub or good old
-            fashioned email.
+            Fill in the form, or get in touch via LinkedIn, GitHub or email.
           </p>
 
           <div className="Contact__div--socials-container">

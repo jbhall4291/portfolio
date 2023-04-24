@@ -4,7 +4,7 @@ import "./About.css";
 export const About = () => {
   return (
     <section id="about" className="About">
-      <h1>About</h1>
+      <h2>About</h2>
       <p>
         As a keen learner and outgoing individual, I am thrilled to bring my
         skills to the industry following my recent graduation from the

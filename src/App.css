@@ -18,15 +18,15 @@
   width: 60%;
   /* border: 3px solid green; */
   /* padding: 10px; */
-  padding-bottom: 150px;
+  
 }
 
-.About h1,
-.Skills h1,
-.Projects h1,
-.Contact h1 {
-  margin-bottom: 50px;
-  font-size: 3rem;
+.About h2,
+.Skills h2,
+.Projects h2,
+.Contact h2 {
+  margin-bottom: 35px;
+  font-size: 2.5rem;
   text-align: center;
   text-decoration: underline;
   text-decoration-color: var(--highlight-color);

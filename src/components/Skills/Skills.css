@@ -1,5 +1,8 @@
-.Skills--my-skills,
-.Skills--working-on {
+.Skills {
+  padding-bottom: 100px;
+}
+
+.Skills section {
   background-color: white;
   text-align: center;
   display: flex;
@@ -11,32 +14,25 @@
   justify-content: center;
 }
 
-.Skills h2 {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.Skills--my-skills div,
-.Skills--working-on div {
-  /* background-color: var(--main-color); */
+.Skills section div {
   width: 120px;
   height: 120px;
-  /* margin: 3%; */
   margin: 0px 25px 20px 25px;
   padding: 10px;
-  /* border-radius: 15px; */
-  border-radius: 0.2em;
-  color: white;
 }
 
-.Skills--my-skills i,
-.Skills--working-on i {
+.Skills section div i {
   font-size: 5rem;
-  color: var(--main-color)
+  color: var(--main-color);
 }
 
-.single-skills-box p {
+.Skills section div p {
   margin-top: 3px;
   color: var(--main-color);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.Skills p {
+  text-align: center;
+  font-size: 1.2rem;
 }

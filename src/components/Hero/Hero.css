@@ -30,7 +30,7 @@
 .Hero h1 {
   font-size: 4rem;
   color: var(--highlight-color);
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .Hero p {
