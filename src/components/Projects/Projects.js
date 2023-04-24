@@ -44,9 +44,6 @@ export const Projects = () => {
               <i className="devicon-jest-plain"></i>
               <p>Jest</p>
             </div>
-
-          
-
           </div>
 
           <div className="Projects__div--button-container">
@@ -54,9 +51,6 @@ export const Projects = () => {
             <ButtonFill text="github repo" href="https://www.google.com" />
             <ButtonFill text="video demo" href="https://www.google.com" />
           </div>
-
-
-
         </div>
         <img src={projectPlaceholder} alt="johnny"></img>
       </div>
@@ -90,16 +84,10 @@ export const Projects = () => {
               <p>MongoDB</p>
             </div>
 
-
-
-
             <div className="Projects__div--single-skills-box">
-            
-            <i className="fas fa-cogs" aria-hidden="true"></i>
+              <i className="fas fa-cogs" aria-hidden="true"></i>
               <p>RESTful APIs</p>
             </div>
-
-
           </div>
 
           <div className="Projects__div--button-container">
@@ -145,6 +133,7 @@ export const Projects = () => {
             <ButtonFill text="live app" href="https://www.google.com" />
             <ButtonFill text="github repo" href="https://www.google.com" />
             <ButtonFill text="video demo" href="https://www.google.com" />
+            
           </div>
         </div>
         <img src={projectPlaceholder} alt="johnny"></img>

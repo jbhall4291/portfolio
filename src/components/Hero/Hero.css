@@ -21,7 +21,7 @@
 .Hero img {
   height: 500px;
   /* border-radius: 5px; */
-  border-radius: 0.2em;
+  border-radius: 6px;
   margin-right: 25px;
 }
 
@@ -47,9 +47,7 @@
   line-height: 2rem;
 }
 
-.Hero a {
-  color: white;
-}
+
 
 .Hero__span {
   text-decoration: none;
@@ -78,11 +76,26 @@
   }
 }
 
+
+.Hero__div--socials-container {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.Hero a {
+  
+  color: white;
+  /* background-color: green; */
+  /* display: inline-block; */
+}
+
 .Hero i {
+  
   cursor: pointer;
   font-size: 5.5rem;
-  margin: 10px 30px 10px 0;
-  transition: color 0.7s ease;
+  /* margin: 10px 30px 10px 0; */
+  transition: color 0.3s ease;
 }
 
 .Hero i:hover {

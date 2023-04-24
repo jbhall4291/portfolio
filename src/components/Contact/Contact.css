@@ -1,26 +1,32 @@
 .Contact__div--container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-}
-
-.Contact__div--container i {
-  cursor: pointer;
-  font-size: 8.5rem;
-  margin: 10px 0 10px 0;
-  transition: color 0.7s ease;
-  color: var(--main-color);
-}
-
-.Contact__div--container i:hover {
-  color: var(--highlight-color);
 }
 
 .contact-left,
 .contact-right {
   width: 50%;
+  margin: auto;
 }
 
 .contact-right {
   text-align: center;
+}
+
+.Contact__div--socials-container {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Contact__div--socials-container a i {
+  cursor: pointer;
+  font-size: 8.5rem;
+  transition: color 0.3s ease;
+  color: var(--main-color);
+}
+
+.Contact__div--socials-container a i:hover {
+  color: var(--highlight-color);
 }

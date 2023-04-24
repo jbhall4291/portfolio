@@ -17,24 +17,28 @@ export const Contact = () => {
             Fill in the form, or get in touch via LinkedIn, GitHub or good old
             fashioned email.
           </p>
-          <i className="fa-brands fa-linkedin">
+
+          <div className="Contact__div--socials-container">
             <a
               href="https://www.linkedin.com/in/johnny-hall-dev"
               target="_blank"
               rel="noreferrer"
-            ></a>
-          </i>
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
 
-          <i className="fa fa-github-square">
             <a
               href="https://www.github.com/jbhall4291"
               target="_blank"
               rel="noreferrer"
-            ></a>
-          </i>
-          <i className="fa-solid fa-square-envelope">
-            <a href="mailto:jbhall4291@gmail.com"></a>
-          </i>
+            >
+              <i className="fa fa-github-square"></i>
+            </a>
+
+            <a href="mailto:jbhall4291@gmail.com">
+              <i className="fa-solid fa-square-envelope"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
