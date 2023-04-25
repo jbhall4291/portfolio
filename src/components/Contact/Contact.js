@@ -7,13 +7,14 @@ export const Contact = () => {
     <section id="contact" className="Contact">
       <h2>Contact</h2>
       <div className="Contact__div--container">
-        <div className="contact-left">
+        <div className="Contact__div--contact-form-container">
           <Form />
         </div>
-        <div className="contact-right">
+        <div className="Contact__div--contact-text-and-socials-container">
           <p>
             If you have any questions, would like a copy of my CV, or are
-            interested in collaborating on a project I’d love to hear from you!
+            interested in collaborating on a project I’d love to hear from you!<br></br>
+            <br></br>
             Fill in the form, or get in touch via LinkedIn, GitHub or email.
           </p>
 

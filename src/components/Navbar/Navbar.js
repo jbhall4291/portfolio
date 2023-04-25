@@ -18,10 +18,13 @@ export const Navbar = () => {
 
   return (
     <nav className="Navbar">
+      <li>
+        <a href="#hero" onClick={(event) => handleLinkClick(event, "#hero")}>
+          <b>Johnny Hall</b>
+        </a>
+      </li>
+
       <ul className="Navbar__ul">
-
-     
-
         <li>
           <a
             href="#about"
@@ -42,16 +45,6 @@ export const Navbar = () => {
 
         <li>
           <a
-            href="#hero"
-            onClick={(event) => handleLinkClick(event, "#hero")}
-          >
-            <b>Johnny Hall</b>
-          </a>
-        </li>
-
-        
-        <li>
-          <a
             href="#projects"
             onClick={(event) => handleLinkClick(event, "#projects")}
           >
@@ -68,6 +61,9 @@ export const Navbar = () => {
           </a>
         </li>
       </ul>
+      <button className="burger-menu" id="burger-menu">
+        <i className="fa-solid fa-bars bars" name="menu-outline"></i>
+      </button>
     </nav>
   );
 };

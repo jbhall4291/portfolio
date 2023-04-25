@@ -7,21 +7,22 @@
   /* align-items: center; */
 }
 
-.contact-left,
-.contact-right {
+.Contact__div--contact-form-container,
+.Contact__div--contact-text-and-socials-container {
   width: 50%;
   
 }
 
-.contact-right {
+.Contact__div--contact-text-and-socials-container {
+  margin: auto auto;
   text-align: center;
   font-size: 1.2rem;
 }
 
 .Contact__div--socials-container {
-  /* margin: 50px auto 0 auto; */
+  margin: auto;
   margin-top: 30px;
-  width: 75%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
 }

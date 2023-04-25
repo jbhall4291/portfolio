@@ -16,24 +16,21 @@
 
 .Hero__div--image-container {
   flex: 1;
-  
+
   margin-right: 15px;
   align-self: flex-end;
-justify-self: flex-end;
-justify-content: flex-end;
+  justify-self: flex-end;
+  justify-content: flex-end;
   /* width: 50%; */
 }
 
 .Hero img {
-  
   width: 100%;
   border-radius: 6px;
 }
 
 .Hero__div--text-container {
   flex: 1;
-  grid-area: text;
-
   font-size: 1.2rem;
   margin: auto 0 auto 15px;
 }
@@ -42,7 +39,7 @@ justify-content: flex-end;
   font-size: 4rem;
   color: var(--highlight-color);
   margin-bottom: 15px;
-  display: inline-block;
+  width: 105%;
 }
 
 .Hero p {
