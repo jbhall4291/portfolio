@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 export const Navbar = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   const handleLinkClick = (event, target) => {
     event.preventDefault();
     const navbarHeight = document.querySelector(".Navbar").offsetHeight;
@@ -21,45 +23,56 @@ export const Navbar = () => {
       <a href="#hero" onClick={(event) => handleLinkClick(event, "#hero")}>
         Johnny Hall
       </a>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li>
+            <a
+              href="#about"
+              onClick={(event) => handleLinkClick(event, "#about")}
+            >
+              About
+            </a>
+          </li>
 
-      <ul>
-        <li>
-          <a
-            href="#about"
-            onClick={(event) => handleLinkClick(event, "#about")}
-          >
-            About
-          </a>
-        </li>
+          <li>
+            <a
+              href="#skills"
+              onClick={(event) => handleLinkClick(event, "#skills")}
+            >
+              Skills
+            </a>
+          </li>
 
-        <li>
-          <a
-            href="#skills"
-            onClick={(event) => handleLinkClick(event, "#skills")}
-          >
-            Skills
-          </a>
-        </li>
+          <li>
+            <a
+              href="#projects"
+              onClick={(event) => handleLinkClick(event, "#projects")}
+            >
+              Projects
+            </a>
+          </li>
 
-        <li>
-          <a
-            href="#projects"
-            onClick={(event) => handleLinkClick(event, "#projects")}
-          >
-            Projects
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="#contact"
-            onClick={(event) => handleLinkClick(event, "#contact")}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-      <button className="burger-menu" id="burger-menu">
+          <li>
+            <a
+              href="#contact"
+              onClick={(event) => handleLinkClick(event, "#contact")}
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button
+        className="hamburger"
+        id="burger-menu"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
         <i className="fa-solid fa-bars bars" name="menu-outline"></i>
       </button>
     </nav>
