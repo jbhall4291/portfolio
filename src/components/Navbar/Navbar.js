@@ -18,13 +18,11 @@ export const Navbar = () => {
 
   return (
     <nav className="Navbar">
-      <li>
-        <a href="#hero" onClick={(event) => handleLinkClick(event, "#hero")}>
-          <b>Johnny Hall</b>
-        </a>
-      </li>
+      <a href="#hero" onClick={(event) => handleLinkClick(event, "#hero")}>
+        Johnny Hall
+      </a>
 
-      <ul className="Navbar__ul">
+      <ul>
         <li>
           <a
             href="#about"
