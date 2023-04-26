@@ -12,10 +12,8 @@ nav {
 }
 
 nav ul {
-  display: flex;
   gap: 1.9rem;
   list-style-type: none;
-  /* margin-left: auto; */
 }
 
 nav a {
@@ -28,6 +26,7 @@ nav a:hover {
 }
 
 .hamburger {
+  font-size: 1.2rem;
   color: white;
   background-color: var(--main-color);
   border: 0;
@@ -35,7 +34,7 @@ nav a:hover {
   width: 40px;
   padding: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  /* transition: background-color 1.2s ease-in-out; */
   position: absolute;
   top: 50%;
   right: 25px;
@@ -46,22 +45,20 @@ nav a:hover {
   color: var(--highlight-color);
 }
 
-.navigation-menu {
+/* .navigation-menu {
   margin-left: auto;
-}
+} */
 
 .navigation-menu ul {
   display: flex;
   padding: 0;
 }
 .navigation-menu li {
-  /* // removes default disc bullet for li tags and applies margin to left & right side */
-  list-style-type: none;
   margin: 0 1rem;
 }
 .navigation-menu li a {
   /* // increases the surface area of the anchor tag to span more than just the anchor text */
-  text-decoration: none;
+
   display: block;
   width: 100%;
 }
@@ -74,7 +71,7 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
   .navigation-menu ul {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -82,15 +79,19 @@ nav a:hover {
   .navigation-menu ul {
     /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
     position: absolute;
-    top: 60px;
+
+    /* top: 50px; */
+    top: var(--navbar-height);
+
     left: 0;
     /* // stacks the li tags vertically  */
     flex-direction: column;
     /* // makes menu span full height and width */
     width: 100%;
     /* height: calc(100vh - 77px); */
-    color: white;
+    /* color: white; */
     background-color: var(--main-color);
+    opacity: 95%;
     border-top: 1px solid white;
   }
   .navigation-menu li {

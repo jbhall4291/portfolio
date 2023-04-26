@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 export const Navbar = () => {
@@ -17,6 +17,15 @@ export const Navbar = () => {
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    const navbar = document.querySelector(".Navbar");
+    const navbarHeight = navbar.offsetHeight;
+    document.documentElement.style.setProperty(
+      "--navbar-height",
+      `${navbarHeight}px`
+    );
+  }, []);
 
   return (
     <nav className="Navbar">

@@ -5,6 +5,13 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .Hero {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .Hero__div--container {
   display: flex;
   flex-direction: row;
@@ -12,6 +19,13 @@
   flex-wrap: wrap;
   margin: auto;
   width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .Hero__div--container {
+    flex-direction: column;
+    width: 90%;
+  }
 }
 
 .Hero__div--image-container {
@@ -24,15 +38,36 @@
   /* width: 50%; */
 }
 
+@media screen and (max-width: 768px) {
+  .Hero__div--image-container {
+    margin: auto;
+  }
+}
+
 .Hero img {
   width: 100%;
   border-radius: 6px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .Hero img {
+    
+    width: 65%;
+    border-radius: 6px;
+  }
 }
 
 .Hero__div--text-container {
   flex: 1;
   font-size: 1.2rem;
   margin: auto 0 auto 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .Hero__div--text-container {
+    margin: auto;
+  }
 }
 
 .Hero h1 {
@@ -42,11 +77,23 @@
   width: 105%;
 }
 
+@media screen and (max-width: 768px) {
+  .Hero h1 {
+    width: 100%;
+  }
+}
+
 .Hero p {
   width: 105%;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .Hero p {
+    width: 100%;
+  }
 }
 
 .Hero span {
