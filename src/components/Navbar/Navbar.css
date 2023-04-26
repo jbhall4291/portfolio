@@ -99,13 +99,13 @@ nav a:hover {
     margin: 0;
   }
   .navigation-menu li a {
-    color: white;
+    /* color: white; */
     /* // increases the surface area of the anchor tag to span the full width of the menu */
     width: 100%;
     padding: 1.5rem 0;
   }
   .navigation-menu li:hover {
-    background-color: var(--highlight-color);
+    /* background-color: var(--highlight-color); */
   }
 }
 

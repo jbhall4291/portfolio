@@ -32,7 +32,10 @@ export const Navbar = () => {
           <li>
             <a
               href="#about"
-              onClick={(event) => handleLinkClick(event, "#about")}
+              onClick={(event) => {
+                handleLinkClick(event, "#about");
+                setIsNavExpanded(!isNavExpanded);
+              }}
             >
               About
             </a>
@@ -41,7 +44,10 @@ export const Navbar = () => {
           <li>
             <a
               href="#skills"
-              onClick={(event) => handleLinkClick(event, "#skills")}
+              onClick={(event) => {
+                handleLinkClick(event, "#skills");
+                setIsNavExpanded(!isNavExpanded);
+              }}
             >
               Skills
             </a>
@@ -50,7 +56,10 @@ export const Navbar = () => {
           <li>
             <a
               href="#projects"
-              onClick={(event) => handleLinkClick(event, "#projects")}
+              onClick={(event) => {
+                handleLinkClick(event, "#projects");
+                setIsNavExpanded(!isNavExpanded);
+              }}
             >
               Projects
             </a>
@@ -59,7 +68,10 @@ export const Navbar = () => {
           <li>
             <a
               href="#contact"
-              onClick={(event) => handleLinkClick(event, "#contact")}
+              onClick={(event) => {
+                handleLinkClick(event, "#contact");
+                setIsNavExpanded(!isNavExpanded);
+              }}
             >
               Contact
             </a>
