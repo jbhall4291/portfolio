@@ -28,7 +28,7 @@
     /* flex-direction: column; */
     /* background-color: red; */
     width: 95%;
-    gap: 0;
+    
   }
 }
 
@@ -36,6 +36,7 @@
   .Hero__div--container {
     flex-direction: column;
     text-align: center;
+    gap: 0;
     /* background-color: red; */
   }
 }
