@@ -8,7 +8,7 @@
 @media screen and (max-width: 968px) {
   .Hero {
     padding-top: 20px;
-  padding-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -58,14 +58,19 @@
   border-radius: 6px;
 }
 
-@media screen and (max-width: 968px) {
-  
-}
-
 .Hero__div--text-container {
   flex: 1;
   font-size: 1.2rem;
   margin: auto 0;
+}
+
+@media screen and (max-width: 968px) {
+  .Hero__div--text-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
 }
 
 .Hero h1 {
@@ -97,7 +102,7 @@
 
 @media screen and (max-width: 968px) {
   .Hero p {
-    width: 100%;
+    width: 85%;
   }
 }
 
@@ -142,7 +147,6 @@
 
 .Hero a {
   color: white;
-  
 }
 
 .Hero i {
