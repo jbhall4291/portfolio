@@ -8,20 +8,18 @@ export const Hero = () => {
       <section id="hero" className="Hero">
         <div className="Hero__div--container">
           <div className="Hero__div--image-container">
-          
             <img src={profilePic} alt="johnny"></img>
-            
           </div>
 
           <div className="Hero__div--text-container">
             <h1>Hi, I'm Johnny</h1>
 
             <p>
-              <span>Full-stack software developer</span> by day, pizza
-              enthusiast by night 🍕<br></br>I love
-              <span> building cool stuff</span> and
+              <span>Full-stack software developer</span> by day, and pizza
+              enthusiast by night 🍕 I love <span> building cool stuff</span>{" "}
+              and
               <span> learning new technologies </span>
-              🎓<br></br> Whether it's front-end or back-end, I'm always
+              🎓 Whether it's front-end or back-end, I'm always
               <span> up for a challenge</span> 🚀
             </p>
 
