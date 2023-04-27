@@ -64,6 +64,12 @@
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 968px) {
+  .Hero h1 {
+    font-size: 3rem;
+  }
+}
+
 .Hero p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -112,7 +118,7 @@
 
 .Hero__div--socials-container {
   display: flex;
-  gap: 10px;
+  gap: 3rem;
   /* display: inline-block; */
 }
 
@@ -125,7 +131,7 @@
 
 .Hero a {
   color: white;
-  margin-right: 30px;
+  
 }
 
 .Hero i {
@@ -133,6 +139,12 @@
   /* font-size: 4rem; */
   font-size: 5vw;
   transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 968px) {
+  .Hero i {
+    font-size: 4rem;
+  }
 }
 
 .Hero i:hover {
