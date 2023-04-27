@@ -9,6 +9,7 @@ export const Hero = () => {
         <div className="Hero__div--container">
           <div className="Hero__div--image-container">
             <img src={profilePic} alt="johnny"></img>
+            
           </div>
 
           <div className="Hero__div--text-container">
