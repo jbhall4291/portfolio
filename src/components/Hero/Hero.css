@@ -28,6 +28,7 @@
     /* flex-direction: column; */
     /* background-color: red; */
     width: 95%;
+    gap: 0;
   }
 }
 
@@ -102,7 +103,7 @@
 
 @media screen and (max-width: 968px) {
   .Hero p {
-    width: 85%;
+    width: 95%;
   }
 }
 
