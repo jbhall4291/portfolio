@@ -5,6 +5,13 @@
   color: white;
 }
 
+@media screen and (max-width: 968px) {
+  .Hero {
+    padding-top: 20px;
+  padding-bottom: 20px;
+  }
+}
+
 .Hero__div--container {
   display: flex;
   flex-direction: row;
@@ -49,6 +56,10 @@
   /* width: 30vw; */
   width: 90%;
   border-radius: 6px;
+}
+
+@media screen and (max-width: 968px) {
+  
 }
 
 .Hero__div--text-container {
