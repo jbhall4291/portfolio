@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 1024px) {
   .Hero h1 {
-    width: 100%;
+    font-size: 2.5rem;
   }
 }
 
