@@ -4,19 +4,16 @@
   height: var(--angled-div-height);
   /* clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%); */
   clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
-  margin-bottom: -1px;
-}
-
-.main {
-  background-color: var(--main-color);
-  height: 40px;
-  color: var(--background-color);
-  text-align: right;
+  margin-bottom: -0.5px;
 }
 
 .Footer__p {
-  margin-right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  margin: 0;
+
   font-size: 1.1rem;
+  color: var(--background-color);
   background-color: var(--main-color);
 }
 
@@ -24,7 +21,6 @@
   .Footer__p {
     text-align: center;
     font-size: 0.8rem;
-    margin-right: 0;
   }
 
   .main {

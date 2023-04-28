@@ -6,13 +6,9 @@ export const Footer = () => {
   return (
     <>
       <div className="Footer__div--angled"></div>
-      <section>
-        <div className="main">
-          <p className="Footer__p">
-            Designed & built with 🍕 by Johnny Hall © {currentYear}
-          </p>
-        </div>
-      </section>
+      <p className="Footer__p">
+        Designed & built with 🍕 by Johnny Hall © {currentYear}
+      </p>
     </>
   );
 };
