@@ -2,7 +2,17 @@
   --main-color: #13253d;
   --background-color: #ffffff;
   --highlight-color: #fe003a;
+  --angled-div-height: 60px;
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    --angled-div-height: 40px;
+  }
+  
+}
+
+
 
 body {
   background-color: var(--background-color);
