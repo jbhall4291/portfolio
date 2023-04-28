@@ -11,7 +11,7 @@ export const ProjectsNew = () => {
     <section id="projects" className="Projects">
       <h2>Projects</h2>
 
-      <div class="container">
+      <article class="Projects__article">
         <div class="Projects__div--image-area">
           <img src={projectPlaceholder} alt="johnny"></img>
         </div>
@@ -60,25 +60,17 @@ export const ProjectsNew = () => {
             <ButtonFill text="video demo" href="https://www.google.com" />
           </div>
         </div>
+      </article>
 
-        
-      </div>
-
-      {/* 
-      <div className="Projects__div--project-container-image-left">
-        <div className="Projects__div--text-content">
-          
-
-          
-
-          
-        <img src={projectPlaceholder} alt="johnny"></img>
-      </div>
-
-      <div className="Projects__div--project-container-image-right">
-        <div className="Projects__div--text-content">
+      <article class="Projects__article--image-right">
+        <div class="Projects__div--image-area">
+          <img src={projectPlaceholder} alt="johnny"></img>
+        </div>
+        <div class="Projects__div--title-area">
           <h3>FanFinder</h3>
           <h4>location-based social networking mobile app </h4>
+        </div>
+        <div class="Projects__div--desc-area">
           <p className="Projects__p--description">
             FanFinder is a mobile app built in React Native and allows music
             fans to discover upcoming gigs in their area, and connect with other
@@ -110,20 +102,31 @@ export const ProjectsNew = () => {
             </div>
           </div>
 
+          {/* these button are making shrinking down troublesome! */}
+
           <div className="Projects__div--button-container">
             <ButtonFill text="live app" href="https://www.google.com" />
-            <ButtonFill text="github repo" href="https://www.google.com" />
+            <ButtonFill
+              text="github repo"
+              href="https://github.com/jbhall4291/nc-news-frontend"
+            />
             <ButtonFill text="video demo" href="https://www.google.com" />
           </div>
         </div>
-        <img src={projectPlaceholder} alt="johnny"></img>
-      </div>
+      </article>
 
-      <div className="Projects__div--project-container-image-left">
-        <div className="Projects__div--text-content">
+      <article class="Projects__article">
+        <div class="Projects__div--image-area">
+          <img src={projectPlaceholder} alt="johnny"></img>
+        </div>
+        <div class="Projects__div--title-area">
           <h3>One Hundred Press-ups</h3>
-          <h4><em>~ under development ~</em></h4>
           <h4>fitness tracking web & mobile app</h4>
+          <h4>
+            <em>~ under development ~</em>
+          </h4>
+        </div>
+        <div class="Projects__div--desc-area">
           <p className="Projects__p--description">
             One Hundred Press-ups is a web & mobile app designed to guide, track
             and motivate fitness enthusiasts on their path to achieving... well,
@@ -132,7 +135,6 @@ export const ProjectsNew = () => {
             of React and React Native... also, I need some help to beat my
             ultra-competitive nephew at his own game!
           </p>
-
           <div className="Projects__div--tech-container">
             <div>
               <i className="devicon-react-original"></i>
@@ -152,12 +154,14 @@ export const ProjectsNew = () => {
 
           <div className="Projects__div--button-container">
             <ButtonFill text="live app" href="https://www.google.com" />
-            <ButtonFill text="github repo" href="https://www.google.com" />
+            <ButtonFill
+              text="github repo"
+              href="https://github.com/jbhall4291/nc-news-frontend"
+            />
             <ButtonFill text="video demo" href="https://www.google.com" />
           </div>
         </div>
-        <img src={projectPlaceholder} alt="johnny"></img>
-      </div> */}
+      </article>
     </section>
   );
 };

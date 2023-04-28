@@ -1,16 +1,18 @@
-.container {
+.Projects__article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 0px 0px;
   grid-auto-flow: row;
+  margin-bottom: 60px;
   grid-template-areas:
     "Projects__div--image-area Projects__div--title-area"
     "Projects__div--image-area Projects__div--desc-area";
 }
 
 @media screen and (max-width: 850px) {
-  .container {
+  .Projects__article {
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: 1fr 0;
     grid-template-rows: auto auto;
@@ -22,6 +24,38 @@
       "Projects__div--desc-area";
   }
 }
+
+.Projects__article--image-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  margin-bottom: 60px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Projects__div--title-area Projects__div--image-area"
+    "Projects__div--desc-area Projects__div--image-area";
+}
+
+@media screen and (max-width: 850px) {
+  .Projects__article--image-right {
+    display: grid;
+    grid-template-columns: 1fr 0;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    margin-bottom: 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Projects__div--title-area"
+      "Projects__div--image-area"
+      "Projects__div--desc-area";
+  }
+}
+
+
+
+
+
 
 .Projects__div--image-area {
   grid-area: Projects__div--image-area;
@@ -66,16 +100,28 @@
 }
 
 .Projects__div--title-area h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .Projects__div--title-area h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .Projects__p--description {
+  font-size: 1.1rem;
   width: 100%;
   margin: 10px auto 0 auto;
+}
+
+@media screen and (max-width: 468px) {
+  .Projects__p--description {
+    font-size: 1rem;
+    
+  }
+  
+
+
+
 }
 
 @media screen and (max-width: 1450px) {
