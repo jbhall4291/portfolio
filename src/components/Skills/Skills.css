@@ -10,13 +10,16 @@
   text-align: center;
   flex-direction: row;
   justify-content: center;
-  gap: 6%;
+  
+  
 }
 
 .Skills section div {
   width: 120px;
-   height: 120px;
-  /* margin: 0px 25px 20px 25px; */
+  height: 120px;
+  /* margin: 15px 25px 15px 25px; */
+  margin: 1rem 1rem;
+
   /* padding: 10px; */
 }
 
@@ -31,11 +34,28 @@
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 464px) {
+  .Skills section div i {
+  font-size: 3.5rem;
+  
+}
+  
+.Skills section div {
+  width: 80px;
+  height: 80px;
+  /* margin: 0px 25px 20px 25px; */
+  /* padding: 10px; */
+}
+  
+  .Skills section div p {
+    font-size: 1rem;
+  }
+}
+
 .Skills p {
   text-align: center;
   font-size: 1.2rem;
 }
-
 
 .Skills p em {
   margin-top: 1.5rem;

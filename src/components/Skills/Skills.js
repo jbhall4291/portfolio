@@ -21,7 +21,6 @@ export const Skills = () => {
           <p>node.js</p>
         </div>
 
-
         <div>
           <i className="devicon-express-original colored"></i>
           <p>express.js</p>
@@ -42,18 +41,19 @@ export const Skills = () => {
           <p>MongoDB</p>
         </div>
 
-
-
-
-
-
         <div>
-          <i className="devicon devicon-html5-plain colored" aria-hidden="true"></i>
+          <i
+            className="devicon devicon-html5-plain colored"
+            aria-hidden="true"
+          ></i>
           <p>HTML5</p>
         </div>
 
         <div>
-          <i className="devicon devicon-css3-plain colored" aria-hidden="true"></i>
+          <i
+            className="devicon devicon-css3-plain colored"
+            aria-hidden="true"
+          ></i>
           <p>CSS3</p>
         </div>
 
@@ -66,10 +66,6 @@ export const Skills = () => {
           <i className="devicon-github-original colored"></i>
           <p>GitHub</p>
         </div>
-
-        
-
-       
 
         <div>
           <i className="devicon-jest-plain colored"></i>
