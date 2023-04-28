@@ -8,6 +8,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
+  padding-left: 5%;
   font-size: 1.2rem;
 }
 
@@ -37,7 +38,8 @@ nav a:hover {
   /* transition: background-color 1.2s ease-in-out; */
   position: absolute;
   top: 50%;
-  right: 45px;
+  /* right: 45px; */
+  right: 5%;
   transform: translateY(-50%);
   display: none;
 }
@@ -63,19 +65,31 @@ nav a:hover {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 425px) {
+.Navbar__a--home {
+  font-size: 1rem;}
+
+  .hamburger {
+    font-size: 1rem;
+  }
+}
+
+
+
+@media screen and (max-width: 940px) {
   .hamburger {
     display: block;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .navigation-menu ul {
     /* display: none; */
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .navigation-menu ul {
     /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
     position: absolute;
@@ -110,15 +124,20 @@ nav a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .navigation-menu ul {
     /* previous styles */
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .navigation-menu.expanded ul {
     display: block;
   }
+}
+
+
+.separator {
+color: var(--highlight-color)
 }

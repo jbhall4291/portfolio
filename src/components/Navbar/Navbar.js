@@ -29,8 +29,8 @@ export const Navbar = () => {
 
   return (
     <nav className="Navbar">
-      <a href="#hero" onClick={(event) => handleLinkClick(event, "#hero")}>
-        Johnny Hall
+      <a className="Navbar__a--home" href="#hero" onClick={(event) => handleLinkClick(event, "#hero")}>
+        Johnny Hall <span className="separator">|</span> Software Developer
       </a>
       <div
         className={
