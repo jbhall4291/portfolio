@@ -14,7 +14,7 @@ footer {
 .main {
   background-color: var(--main-color);
   height: 80px;
-  color: white;
+  color: var(--background-color);
   text-align: right;
 }
 

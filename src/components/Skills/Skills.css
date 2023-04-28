@@ -3,7 +3,7 @@
 }
 
 .Skills section {
-  background-color: white;
+  background-color: var(--background-color);
   text-align: center;
   display: flex;
   flex-wrap: wrap;
