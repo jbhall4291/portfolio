@@ -68,6 +68,7 @@
   width: 100%;
   max-height: 100%; /* Set the max-height to 100% to allow the image to scale down */
   object-fit: cover; /* or contain */
+  margin: 15px 0 10px 0;
 }
 
 @media screen and (max-width: 850px) {
@@ -110,7 +111,7 @@
 .Projects__p--description {
   font-size: 1.1rem;
   width: 100%;
-  margin: 10px auto 0 auto;
+  margin: auto;
 }
 
 @media screen and (max-width: 468px) {
