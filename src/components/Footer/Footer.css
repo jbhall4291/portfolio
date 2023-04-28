@@ -17,6 +17,7 @@
 .Footer__p {
   margin-right: 1rem;
   font-size: 1.1rem;
+  background-color: var(--main-color);
 }
 
 @media screen and (max-width: 425px) {
