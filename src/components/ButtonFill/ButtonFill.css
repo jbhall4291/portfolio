@@ -1,44 +1,9 @@
-.Button__button--fill {
-  margin: 0 20px;
 
-  cursor: pointer;
-
-  background-color: var(--background-color);
-  box-shadow: inset 0 0 0 0 var(--highlight-color);
-  transition: ease-out 0.3s;
-  outline: none;
-  border-style: solid;
-  border-width: 2px;
-  /* border-radius: 0.2em; */
-  border-radius: 6px;
-  width: 135px;
-  padding: 6px;
-  border-color: var(--main-color);
-  /* color: var(--main-color); */
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.Button__button--fill:hover {
-  /* color: white; */
-  box-shadow: inset 200px 0 0 0 var(--highlight-color);
-}
-
-.Button__button--fill a {
-  color: var(--main-color);
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 1px;
-  /* letter-spacing: 1px; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-}
 
 .ButtonFill__a {
   font-size: 1rem;
-  margin: 0 20px;
-
+  /* margin: 0 20px; */
+/* margin: auto; */
   cursor: pointer;
 
   background-color: var(--background-color);
@@ -48,13 +13,21 @@
   border-style: solid;
   border-width: 2px;
   border-radius: 6px;
-  width: 135px;
+  width: 25%;
   padding: 6px;
   border-color: var(--main-color);
   color: var(--main-color);
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media screen and (max-width: 415px) {
+  .ButtonFill__a {
+    font-size: 0.7rem;
+  }
+
+}
+
 
 .ButtonFill__a:hover {
   /* color: var((--main-color)); */

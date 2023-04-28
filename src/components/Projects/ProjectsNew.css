@@ -9,7 +9,7 @@
     "Projects__div--image-area Projects__div--desc-area";
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 850px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 0;
@@ -25,6 +25,8 @@
 
 .Projects__div--image-area {
   grid-area: Projects__div--image-area;
+  margin: auto;
+
   /* background-color: yellow; */
 }
 
@@ -32,6 +34,23 @@
   width: 100%;
   max-height: 100%; /* Set the max-height to 100% to allow the image to scale down */
   object-fit: cover; /* or contain */
+}
+
+@media screen and (max-width: 850px) {
+  .Projects__div--image-area {
+    grid-area: Projects__div--image-area;
+    margin: auto;
+
+    text-align: center;
+    /* background-color: yellow; */
+  }
+
+  .Projects__div--image-area img {
+    /* margin-top: 10px; */
+    width: 60%;
+    max-height: 100%; /* Set the max-height to 100% to allow the image to scale down */
+    object-fit: cover; /* or contain */
+  }
 }
 
 .Projects__div--title-area {
@@ -55,8 +74,14 @@
 }
 
 .Projects__p--description {
-  width: 90%;
+  width: 100%;
   margin: 10px auto 0 auto;
+}
+
+@media screen and (max-width: 1450px) {
+  .Projects__p--description {
+    width: 100%;
+  }
 }
 
 .Projects__div--tech-container {
@@ -88,6 +113,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 3%;
 }
 
 /* .Projects {

@@ -51,15 +51,17 @@ export const ProjectsNew = () => {
 
           {/* these button are making shrinking down troublesome! */}
 
-          {/* <div className="Projects__div--button-container">
+          <div className="Projects__div--button-container">
             <ButtonFill text="live app" href="https://www.google.com" />
             <ButtonFill
               text="github repo"
               href="https://github.com/jbhall4291/nc-news-frontend"
             />
             <ButtonFill text="video demo" href="https://www.google.com" />
-          </div> */}
+          </div>
         </div>
+
+        
       </div>
 
       {/* 
