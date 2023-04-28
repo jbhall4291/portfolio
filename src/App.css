@@ -5,7 +5,7 @@
 }
 
 body {
-  /* background-color: red; */
+  background-color: green;
 }
 
 * {
@@ -22,6 +22,7 @@ body {
   width: 60%;
   /* border: 3px solid green; */
   /* padding: 10px; */
+  background-color: white;
 }
 
 .Skills {
