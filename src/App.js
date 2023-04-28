@@ -2,7 +2,7 @@ import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar.js";
 import { About } from "./components/About/About.js";
 import { Skills } from "./components/Skills/Skills.js";
-import { Projects } from "./components/Projects/Projects.js";
+import { Projects } from "./components/Projects/Projects";
 import { Hero } from "./components/Hero/Hero";
 import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
@@ -14,7 +14,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
 
       <Footer />

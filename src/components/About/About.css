@@ -11,6 +11,6 @@
 .About p {
   margin: auto;
   font-size: 1.2rem;
-  width: 80%;
+  /* width: 80%; */
   text-align: center;
 }
