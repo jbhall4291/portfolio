@@ -3,6 +3,21 @@ import "./Hero.css";
 const profilePic = require("../../images/profile_3_square.jpg");
 
 export const Hero = () => {
+
+  const handleLinkClick = (event, target) => {
+    event.preventDefault();
+    const navbarHeight = document.querySelector(".Navbar").offsetHeight;
+    const element = document.querySelector(target);
+    const elementPosition =
+      element.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - navbarHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <section id="hero" className="Hero">
@@ -27,7 +42,13 @@ export const Hero = () => {
             <p>
               I'm currently looking for an opportunity to contribute to a
               company's success, so if you're looking for a junior developer
-              then get in touch & let's make something amazing!
+              then <a
+              href="#contact"
+              onClick={(event) => {
+                handleLinkClick(event, "#contact");
+                
+              }}
+            >get in touch</a> & let's make something amazing!
             </p>
 
             <div className="Hero__div--socials-container">
