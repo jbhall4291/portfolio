@@ -60,6 +60,13 @@
   border-radius: 6px;
 }
 
+@media screen and (max-width: 968px) {
+  .Hero img {
+    text-align: center;
+    width: 50%;
+  }
+}
+
 .Hero__div--text-container {
   flex: 1;
   font-size: 1.2rem;
@@ -85,6 +92,7 @@
 @media screen and (max-width: 968px) {
   .Hero h1 {
     font-size: 3rem;
+    margin-bottom: 0;
   }
 }
 

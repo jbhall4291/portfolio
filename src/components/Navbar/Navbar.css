@@ -37,7 +37,7 @@ nav a:hover {
   /* transition: background-color 1.2s ease-in-out; */
   position: absolute;
   top: 50%;
-  right: 25px;
+  right: 45px;
   transform: translateY(-50%);
   display: none;
 }

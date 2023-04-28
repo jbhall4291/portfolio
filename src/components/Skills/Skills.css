@@ -8,17 +8,16 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-
   flex-direction: row;
-  justify-content: space-between;
   justify-content: center;
+  gap: 5%;
 }
 
 .Skills section div {
   width: 120px;
-  height: 120px;
-  margin: 0px 25px 20px 25px;
-  padding: 10px;
+   height: 120px;
+  /* margin: 0px 25px 20px 25px; */
+  /* padding: 10px; */
 }
 
 .Skills section div i {
@@ -35,4 +34,11 @@
 .Skills p {
   text-align: center;
   font-size: 1.2rem;
+}
+
+
+.Skills p em {
+  margin-top: 1.5rem;
+  /* background-color: firebrick; */
+  display: block;
 }

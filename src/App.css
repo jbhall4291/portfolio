@@ -14,7 +14,7 @@ body {
 }
 
 .About,
-.Skills,
+
 .Projects,
 .Contact {
   color: var(--main-color);
@@ -23,6 +23,13 @@ body {
   /* border: 3px solid green; */
   /* padding: 10px; */
 }
+
+.Skills {
+  color: var(--main-color);
+  margin: auto;
+  width: 60%;
+}
+
 
 @media screen and (max-width: 768px) {
   .About,
