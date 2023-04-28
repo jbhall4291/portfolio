@@ -5,13 +5,20 @@
   --angled-div-height: 60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   :root {
     --angled-div-height: 40px;
   }
   
 }
 
+
+@media screen and (max-width: 425px) {
+  :root {
+    --angled-div-height: 20px;
+  }
+  
+}
 
 
 body {

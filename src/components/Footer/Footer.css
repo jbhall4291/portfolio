@@ -25,16 +25,12 @@ footer {
 
 @media screen and (max-width: 425px) {
   .Footer__p {
-    /* text-align: center; */
-    font-size: 1rem;
-    /* margin-right: 0; */
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .Footer__p {
     text-align: center;
     font-size: 0.9rem;
     margin-right: 0;
+  }
+
+  .main {
+    height: 30px;
   }
 }
