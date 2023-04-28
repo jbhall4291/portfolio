@@ -19,7 +19,22 @@ footer {
 }
 
 .Footer__p {
-  margin-right: 3%;
+  margin-right: 1rem;
   font-size: 1.1rem;
+}
 
+@media screen and (max-width: 425px) {
+  .Footer__p {
+    /* text-align: center; */
+    font-size: 1rem;
+    /* margin-right: 0; */
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .Footer__p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-right: 0;
+  }
 }
