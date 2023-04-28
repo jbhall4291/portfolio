@@ -106,7 +106,8 @@ nav a:hover {
     /* color: white; */
     background-color: var(--main-color);
     opacity: 95%;
-    border-top: 1px solid var(--main-color);
+    /* border-top: 1px solid var(--main-color); */
+    margin-top: -1px
   }
   .navigation-menu li {
     /* // centers link text and strips off margin */
