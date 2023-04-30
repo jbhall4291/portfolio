@@ -87,6 +87,18 @@ textarea {
     -moz-appearance: none;
     appearance: none; */
 
+    
+      appearance: none;
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: none;
+      font-size: inherit;
+      margin: 0;
+      
+      text-align: center;
+    
+
+
   font-size: 1rem;
   /* margin: 0 5px; */
 
