@@ -5,6 +5,8 @@
   --angled-div-height: 60px;
 }
 
+
+
 @media screen and (max-width: 968px) {
   :root {
     --angled-div-height: 40px;
@@ -20,6 +22,26 @@
   
 }
 
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  /* height: 8px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--main-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--highlight-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--highlight-color);
+}
 
 body {
   background-color: var(--background-color);
