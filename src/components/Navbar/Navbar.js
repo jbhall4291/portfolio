@@ -94,7 +94,7 @@ export const Navbar = () => {
           setIsNavExpanded(!isNavExpanded);
         }}
       >
-        <i className="fa-solid fa-bars bars" name="menu-outline"></i>
+        <i className="fa-solid fa-bars bars here" name="menu-outline"></i>
       </button>
     </nav>
   );

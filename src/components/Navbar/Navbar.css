@@ -75,6 +75,14 @@ nav a:hover {
   }
 }
 
+.here {
+  position: absolute; /* Set child to absolute position */
+  
+  transform: translate(-50%, -50%); /* Center child using transform property */
+  
+  
+  
+}
 
 
 @media screen and (max-width: 940px) {
