@@ -32,11 +32,10 @@ export const Hero = () => {
 
             <p>
               <span>Full-stack software developer</span> by day, and pizza
-              enthusiast by night 🍕 I love <span> building cool stuff</span>{" "}
+              enthusiast by night🍕 I love <span> building cool stuff</span>{" "}
               and
-              <span> learning new technologies </span>
-              🎓 Whether it's front-end or back-end, I'm always
-              <span> up for a challenge</span> 🚀
+              <span> learning new technologies</span>🎓 Whether it's front-end or back-end, I'm always
+              <span> up for a challenge</span>🚀
             </p>
 
             <p>
