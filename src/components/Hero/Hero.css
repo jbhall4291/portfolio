@@ -27,7 +27,7 @@
   .Hero__div--container {
     /* flex-direction: column; */
     /* background-color: red; */
-    width: 90%;
+    width: 95%;
     
   }
 }
@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 968px) {
   .Hero p {
-    width: 95%;
+    width: 100%;
   }
 }
 
