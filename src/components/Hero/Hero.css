@@ -112,7 +112,6 @@
   position: relative;
 }
 
-/* Create a pseudo-element that will be the underline */
 .Hero span::before {
   content: "";
   position: absolute;
@@ -126,7 +125,6 @@
   animation: fade-in-underline 0.5s ease-out 2s forwards;
 }
 
-/* Define the fade-in animation */
 @keyframes fade-in-underline {
   to {
     transform: scaleX(1);

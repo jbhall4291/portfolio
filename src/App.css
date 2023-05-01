@@ -5,53 +5,42 @@
   --angled-div-height: 60px;
 }
 
-
-
 @media screen and (max-width: 968px) {
   :root {
     --angled-div-height: 40px;
   }
-  
 }
-
 
 @media screen and (max-width: 425px) {
   :root {
     --angled-div-height: 20px;
   }
-  
 }
 
-/* Set the width and height of the scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
-  /* height: 8px; */
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: var(--main-color);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--highlight-color);
   border-radius: 0.2rem;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--highlight-color);
-}
-
-body {
-  background-color: var(--background-color);
-  
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 .About,
@@ -60,8 +49,6 @@ body {
   color: var(--main-color);
   margin: auto;
   width: 60%;
-  /* border: 3px solid green; */
-  /* padding: 10px; */
   background-color: var(--background-color);
 }
 
@@ -71,7 +58,6 @@ body {
   width: 60%;
 }
 
-
 @media screen and (max-width: 1240px) {
   .About,
   .Skills,
@@ -80,8 +66,6 @@ body {
     color: var(--main-color);
     margin: auto;
     width: 95%;
-    /* border: 3px solid green; */
-    /* padding: 10px; */
   }
 }
 
