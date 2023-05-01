@@ -42,8 +42,8 @@ export const Contact = () => {
         <input type="email" id="email" name="email" required />
         <label htmlFor="message">Message</label> <br />
         <textarea id="message" name="message" rows="6" required></textarea>
-        <div className="Form__form--input">
-          <input className="submit" type="submit" value="Submit message" />
+        <div className="Form__div--input">
+          <input type="submit" value="Submit message" />
         </div>
       </form>
     </section>
