@@ -3,8 +3,7 @@ import React from "react";
 import { ButtonFill } from "../ButtonFill/ButtonFill";
 import "./Projects.css";
 
-const projectPlaceholder = require("../../images/project-placeholder-laptop.png");
-const fanfinderImage = require("../../images/fanfinder_ipad_horizontal.png");
+import projectPlaceholder from "../../images/project-placeholder-laptop.png";
 
 export const Projects = () => {
   return (
@@ -48,8 +47,6 @@ export const Projects = () => {
               <p>Jest</p>
             </div>
           </div>
-
-          {/* these button are making shrinking down troublesome! */}
 
           <div className="Projects__div--button-container">
             <ButtonFill text="live app" href="https://www.google.com" />
@@ -101,8 +98,6 @@ export const Projects = () => {
               <p>RESTful APIs</p>
             </div>
           </div>
-
-          {/* these button are making shrinking down troublesome! */}
 
           <div className="Projects__div--button-container">
             <ButtonFill text="live app" href="https://www.google.com" />
