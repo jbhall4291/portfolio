@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
 
-import profilePic from "../../images/profile_3_square.jpg";
+import profilePic from "../../images/profile.jpg";
 
 export const Hero = () => {
   const handleLinkClick = (event, target) => {

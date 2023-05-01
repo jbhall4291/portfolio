@@ -15,8 +15,8 @@
 }
 
 .About p a {
-  text-decoration: none;
-  color: var(--highlight-color);
+  text-decoration: underline;
+  color: var(--main-color);
 }
 
 .About img {
