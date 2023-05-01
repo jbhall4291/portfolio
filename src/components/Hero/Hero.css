@@ -20,15 +20,11 @@
   margin: auto;
   width: 80%;
   gap: 35px;
-  /* background-color: green; */
 }
 
 @media screen and (max-width: 1240px) {
   .Hero__div--container {
-    /* flex-direction: column; */
-    /* background-color: red; */
     width: 95%;
-    
   }
 }
 
@@ -37,25 +33,22 @@
     flex-direction: column;
     text-align: center;
     gap: 0;
-    /* background-color: red; */
   }
 }
 
-.Hero__div--image-container {
+.Hero__div--image-area {
   flex: 1;
   text-align: right;
 }
 
 @media screen and (max-width: 968px) {
-  .Hero__div--image-container {
+  .Hero__div--image-area {
     text-align: center;
     width: 100%;
   }
 }
 
 .Hero img {
-  /* width: 600px; */
-  /* width: 30vw; */
   width: 90%;
   border-radius: 6px;
 }
@@ -67,14 +60,14 @@
   }
 }
 
-.Hero__div--text-container {
+.Hero__div--text-area {
   flex: 1;
   font-size: 1.2rem;
   margin: auto 0;
 }
 
 @media screen and (max-width: 968px) {
-  .Hero__div--text-container {
+  .Hero__div--text-area {
     display: flex;
     flex-direction: column;
 
@@ -83,7 +76,6 @@
 }
 
 .Hero h1 {
-  /* font-size: 4rem; */
   font-size: 5vw;
   color: var(--highlight-color);
   margin-bottom: 15px;
@@ -100,7 +92,6 @@
   font-size: 1.2rem;
   margin-bottom: 1rem;
   margin-bottom: 30px;
-  /* width: 90%; */
   width: 37vw;
 }
 
@@ -145,7 +136,6 @@
 .Hero__div--socials-container {
   display: flex;
   gap: 3rem;
-  /* display: inline-block; */
 }
 
 @media screen and (max-width: 968px) {
@@ -161,7 +151,6 @@
 
 .Hero i {
   cursor: pointer;
-  /* font-size: 4rem; */
   font-size: 5vw;
   transition: color 0.3s ease;
 }
@@ -180,5 +169,4 @@
   height: var(--angled-div-height);
   background-color: var(--main-color);
   clip-path: polygon(0 0, 100% 0, 0 100%);
-  /* margin-top: -1px; */
 }

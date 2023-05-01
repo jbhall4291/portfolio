@@ -29,8 +29,13 @@ export const Navbar = () => {
 
   return (
     <nav className="Navbar">
-      <a className="Navbar__a--home" href="#hero" onClick={(event) => handleLinkClick(event, "#hero")}>
-        Johnny Hall <span className="separator">|</span> Software Developer
+      <a
+        className="Navbar__a--home"
+        href="#hero"
+        onClick={(event) => handleLinkClick(event, "#hero")}
+      >
+        Johnny Hall <span className="Navbar__span--separator">|</span> Software
+        Developer
       </a>
       <div
         className={
@@ -88,13 +93,13 @@ export const Navbar = () => {
         </ul>
       </div>
       <button
-        className="hamburger"
+        className="Navbar__button--burger"
         id="burger-menu"
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}
       >
-        <i className="fa-solid fa-bars bars here" name="menu-outline"></i>
+        <i className="fa-solid fa-bars bars Navbar__i" name="menu-outline"></i>
       </button>
     </nav>
   );

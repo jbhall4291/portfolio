@@ -22,11 +22,11 @@ export const Hero = () => {
     <>
       <section id="hero" className="Hero">
         <div className="Hero__div--container">
-          <div className="Hero__div--image-container">
+          <div className="Hero__div--image-area">
             <img src={profilePic} alt="johnny"></img>
           </div>
 
-          <div className="Hero__div--text-container">
+          <div className="Hero__div--text-area">
             <h1>Hi, I'm Johnny</h1>
 
             <p>
