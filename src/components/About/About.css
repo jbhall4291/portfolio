@@ -19,9 +19,17 @@
   color: var(--highlight-color);
 }
 
-.pizza-image {
-  width: 130px;
-  height: 130px;
-  background-color: aqua;
-  padding: 2px;;
+.About img {
+  border-radius: 0.2rem;
+  width: 180px;
+}
+
+.About__img--right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.About__img--left {
+  float: left;
+  margin-right: 1rem;
 }

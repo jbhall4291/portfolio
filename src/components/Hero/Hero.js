@@ -1,9 +1,9 @@
 import React from "react";
 import "./Hero.css";
-const profilePic = require("../../images/profile_3_square.jpg");
+
+import profilePic from "../../images/profile_3_square.jpg";
 
 export const Hero = () => {
-
   const handleLinkClick = (event, target) => {
     event.preventDefault();
     const navbarHeight = document.querySelector(".Navbar").offsetHeight;
@@ -24,7 +24,6 @@ export const Hero = () => {
         <div className="Hero__div--container">
           <div className="Hero__div--image-container">
             <img src={profilePic} alt="johnny"></img>
-            
           </div>
 
           <div className="Hero__div--text-container">
@@ -32,22 +31,24 @@ export const Hero = () => {
 
             <p>
               <span>Full-stack software developer</span> by day, and pizza
-              enthusiast by night🍕 I love <span> building cool stuff</span>{" "}
-              and
-              <span> learning new technologies</span>🎓 Whether it's front-end or back-end, I'm always
-              <span> up for a challenge</span>🚀
+              enthusiast by night🍕 I love <span> building cool stuff</span> and{" "}
+              <span>learning new technologies</span>🎓 Whether it's front-end or
+              back-end, I'm always <span>up for a challenge</span>🚀
             </p>
 
             <p>
               I'm currently looking for an opportunity to contribute to a
               company's success, so if you're looking for a junior developer
-              then <a
-              href="#contact"
-              onClick={(event) => {
-                handleLinkClick(event, "#contact");
-                
-              }}
-            >get in touch</a> & let's make something amazing!
+              then{" "}
+              <a
+                href="#contact"
+                onClick={(event) => {
+                  handleLinkClick(event, "#contact");
+                }}
+              >
+                get in touch
+              </a>{" "}
+              & let's make something amazing!
             </p>
 
             <div className="Hero__div--socials-container">
