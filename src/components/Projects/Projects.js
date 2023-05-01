@@ -10,7 +10,7 @@ export const Projects = () => {
     <section id="projects" className="Projects">
       <h2>Projects</h2>
 
-      <article className="Projects__article">
+      <article className="Projects__article--align-left">
         <div className="Projects__div--image-area">
           <img src={projectPlaceholder} alt="johnny"></img>
         </div>
@@ -20,11 +20,12 @@ export const Projects = () => {
         </div>
         <div className="Projects__div--desc-area">
           <p className="Projects__p--description">
-            Northcoders is a news aggregation React app in the style of Reddit,
-            allowing users to view, vote and comment on articles hosted on my
-            own backend and psql database. This was built as part of the amazing
-            Northcoders Full-Stack Software Developer Bootcamp, with the aim of
-            bringing together my front and back end skills under one project!
+            Northcoders News aka Buzzboard aka AggreGator 🐊 is a news aggregation React app in the style of
+            Reddit, allowing users to view, vote and comment on articles hosted
+            on my own backend and psql database. This was built as part of the
+            amazing Northcoders Full-Stack Software Developer Bootcamp, with the
+            aim of bringing together my front and back end skills under one
+            project!
           </p>
           <div className="Projects__div--tech-container">
             <div className="Projects__div--single-skills-box">
@@ -59,7 +60,7 @@ export const Projects = () => {
         </div>
       </article>
 
-      <article className="Projects__article--image-right">
+      <article className="Projects__article--align-right">
         <div className="Projects__div--image-area">
           <img src={projectPlaceholder} alt="johnny"></img>
         </div>
@@ -110,7 +111,7 @@ export const Projects = () => {
         </div>
       </article>
 
-      <article className="Projects__article">
+      <article className="Projects__article--align-left">
         <div className="Projects__div--image-area">
           <img src={projectPlaceholder} alt="johnny"></img>
         </div>

@@ -1,55 +1,33 @@
-.Projects__article {
+.Projects article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 0px 0px;
   grid-auto-flow: row;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 850px) {
+  .Projects article {
+    grid-template-columns: 1fr 0;
+    margin-bottom: 40px;
+    grid-template-areas:
+      "Projects__div--title-area"
+      "Projects__div--image-area"
+      "Projects__div--desc-area";
+  }
+}
+
+.Projects__article--align-left {
   grid-template-areas:
     "Projects__div--image-area Projects__div--title-area"
     "Projects__div--image-area Projects__div--desc-area";
 }
 
-@media screen and (max-width: 850px) {
-  .Projects__article {
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 1fr 0;
-    grid-template-rows: auto auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Projects__div--title-area"
-      "Projects__div--image-area"
-      "Projects__div--desc-area";
-  }
-}
-
-.Projects__article--image-right {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 0px 0px;
-  margin-bottom: 60px;
-  grid-auto-flow: row;
+.Projects__article--align-right {
   grid-template-areas:
     "Projects__div--title-area Projects__div--image-area"
     "Projects__div--desc-area Projects__div--image-area";
-}
-
-@media screen and (max-width: 850px) {
-  .Projects__article--image-right {
-    display: grid;
-    grid-template-columns: 1fr 0;
-    grid-template-rows: auto auto;
-    gap: 0px 0px;
-    margin-bottom: 40px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Projects__div--title-area"
-      "Projects__div--image-area"
-      "Projects__div--desc-area";
-  }
 }
 
 .Projects__div--image-area {
