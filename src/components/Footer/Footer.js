@@ -6,9 +6,7 @@ export const Footer = () => {
   return (
     <footer>
       <div className="Footer__div--angled"></div>
-      <p className="Footer__p">
-        Designed & built with 🍕 by Johnny Hall © {currentYear}
-      </p>
+      <p>Designed & built with 🍕 by Johnny Hall © {currentYear}</p>
     </footer>
   );
 };
