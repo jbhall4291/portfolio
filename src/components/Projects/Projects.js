@@ -4,6 +4,7 @@ import { ButtonFill } from "../ButtonFill/ButtonFill";
 import "./Projects.css";
 
 import projectPlaceholder from "../../images/project-placeholder-laptop.png";
+import fanfinderIpad from "../../images/fanfinder.png";
 
 export const Projects = () => {
   return (
@@ -62,7 +63,7 @@ export const Projects = () => {
 
       <article className="Projects__article--align-right">
         <div className="Projects__div--image-area">
-          <img src={projectPlaceholder} alt="johnny"></img>
+          <img src={fanfinderIpad} alt="johnny"></img>
         </div>
         <div className="Projects__div--title-area">
           <h3>FanFinder</h3>
