@@ -21,12 +21,12 @@ export const Projects = () => {
         </div>
         <div className="Projects__div--desc-area">
           <p className="Projects__p--description">
-            Northcoders News aka Buzzboard aka AggreGator 🐊 is a news aggregation React app in the style of
-            Reddit, allowing users to view, vote and comment on articles hosted
-            on my own backend and psql database. This was built as part of the
-            amazing Northcoders Full-Stack Software Developer Bootcamp, with the
-            aim of bringing together my front and back end skills under one
-            project!
+            Northcoders News aka Buzzboard aka AggreGator 🐊 is a news
+            aggregation React app in the style of Reddit, allowing users to
+            view, vote and comment on articles hosted on my own backend and psql
+            database. This was built as part of the amazing Northcoders
+            Full-Stack Software Developer Bootcamp, with the aim of bringing
+            together my front and back end skills under one project!
           </p>
           <div className="Projects__div--tech-container">
             <div className="Projects__div--single-skills-box">
@@ -102,12 +102,18 @@ export const Projects = () => {
           </div>
 
           <div className="Projects__div--button-container">
-            <ButtonFill text="live app" href="https://expo.dev/@jbhall4291/fan-finder?serviceType=classic&distribution=expo-go" />
+            <ButtonFill
+              text="live app"
+              href="https://expo.dev/@jbhall4291/fan-finder?serviceType=classic&distribution=expo-go"
+            />
             <ButtonFill
               text="github repo"
               href="https://github.com/jbhall4291/fan-finder-fe"
             />
-            <ButtonFill text="video demo" href="https://www.google.com" />
+            <ButtonFill
+              text="video demo"
+              href="https://www.youtube.com/watch?v=kQ7weiOZzHM"
+            />
           </div>
         </div>
       </article>
