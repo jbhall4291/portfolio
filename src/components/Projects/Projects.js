@@ -103,16 +103,16 @@ export const Projects = () => {
 
           <div className="Projects__div--button-container">
             <ButtonFill
-              text="live app"
-              href="https://expo.dev/@jbhall4291/fan-finder?serviceType=classic&distribution=expo-go"
+              text="video demo"
+              href="https://www.youtube.com/watch?v=kQ7weiOZzHM"
             />
             <ButtonFill
               text="github repo"
               href="https://github.com/jbhall4291/fan-finder-fe"
             />
             <ButtonFill
-              text="video demo"
-              href="https://www.youtube.com/watch?v=kQ7weiOZzHM"
+              text="live app"
+              href="https://expo.dev/@jbhall4291/fan-finder?serviceType=classic&distribution=expo-go"
             />
           </div>
         </div>
