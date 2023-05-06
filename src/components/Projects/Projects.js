@@ -102,10 +102,10 @@ export const Projects = () => {
           </div>
 
           <div className="Projects__div--button-container">
-            <ButtonFill text="live app" href="https://www.google.com" />
+            <ButtonFill text="live app" href="https://expo.dev/@jbhall4291/fan-finder?serviceType=classic&distribution=expo-go" />
             <ButtonFill
               text="github repo"
-              href="https://github.com/jbhall4291/nc-news-frontend"
+              href="https://github.com/jbhall4291/fan-finder-fe"
             />
             <ButtonFill text="video demo" href="https://www.google.com" />
           </div>
