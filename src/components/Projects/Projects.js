@@ -123,7 +123,7 @@ export const Projects = () => {
 
       <article className="Projects__article--align-left">
         <div className="Projects__div--image-area">
-          <img src={projectPlaceholder} alt="johnny"></img>
+          <img  style={{ filter: 'blur(10px)' }} src={projectPlaceholder} alt="johnny"></img>
         </div>
         <div className="Projects__div--title-area">
           <h3>One Hundred Press-ups</h3>
@@ -136,7 +136,7 @@ export const Projects = () => {
           <p className="Projects__p--description">
             One Hundred Press-ups is a web & mobile app designed to guide, track
             and motivate fitness enthusiasts on their path to achieving... well,
-            100 pressups! My first project after graduating the Northcoders
+            100 press-ups! My first project after graduating the Northcoders
             Bootcamp, I wanted to explore Google Firebase and hone my knowledge
             of React and React Native... also, I need some help to beat my
             ultra-competitive nephew at his own game!
@@ -162,7 +162,7 @@ export const Projects = () => {
             <ButtonFill text="live app" href="https://www.google.com" />
             <ButtonFill
               text="github repo"
-              href="https://github.com/jbhall4291/nc-news-frontend"
+              href="https://www.google.com"
             />
             <ButtonFill text="video demo" href="https://www.google.com" />
           </div>
