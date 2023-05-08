@@ -108,7 +108,7 @@ export const Projects = () => {
             />
             <ButtonFill
               text="github repo"
-              href="https://github.com/jbhall4291/fan-finder-fe"
+              href="https://github.com/jbhall4291/fan-finder"
             />
             <ButtonFill
               text="live app"
