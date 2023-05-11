@@ -123,7 +123,7 @@ export const Projects = () => {
 
       <article className="Projects__article--align-left">
         <div className="Projects__div--image-area">
-          <img  style={{ filter: 'blur(10px)' }} src={projectPlaceholder} alt="johnny"></img>
+          <img src={projectPlaceholder} alt="johnny"></img>
         </div>
         <div className="Projects__div--title-area">
           <h3>One Hundred Press-ups</h3>
@@ -158,14 +158,14 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="Projects__div--button-container">
+          {/* <div className="Projects__div--button-container">
             <ButtonFill text="live app" href="https://www.google.com" />
             <ButtonFill
               text="github repo"
               href="https://www.google.com"
             />
             <ButtonFill text="video demo" href="https://www.google.com" />
-          </div>
+          </div> */}
         </div>
       </article>
     </section>
