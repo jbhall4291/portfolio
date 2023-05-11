@@ -51,15 +51,15 @@ export const Projects = () => {
           </div>
 
           <div className="Projects__div--button-container">
-            <ButtonFill
-              text="live app"
-              href="https://newsbuzz-jbhall4291.netlify.app/"
-            />
+            <ButtonFill text="video demo" href="https://youtu.be/CnuN6rD8j8w" />
             <ButtonFill
               text="github repo"
               href="https://github.com/jbhall4291/newsbuzz"
             />
-            <ButtonFill text="video demo" href="https://youtu.be/CnuN6rD8j8w" />
+            <ButtonFill
+              text="live app"
+              href="https://newsbuzz-jbhall4291.netlify.app/"
+            />
           </div>
         </div>
       </article>
@@ -109,6 +109,12 @@ export const Projects = () => {
               text="video demo"
               href="https://www.youtube.com/watch?v=kQ7weiOZzHM"
             />
+
+            <ButtonFill
+              text="bootcamp presentation"
+              href="https://northcoders.com/projects/apr-2023/fanfinder"
+            />
+
             <ButtonFill
               text="github repo"
               href="https://github.com/jbhall4291/fan-finder"
