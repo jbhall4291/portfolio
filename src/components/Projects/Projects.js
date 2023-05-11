@@ -59,7 +59,7 @@ export const Projects = () => {
               text="github repo"
               href="https://github.com/jbhall4291/newsbuzz"
             />
-            <ButtonFill text="video demo" href="https://www.google.com" />
+            <ButtonFill text="video demo" href="https://youtu.be/CnuN6rD8j8w" />
           </div>
         </div>
       </article>
