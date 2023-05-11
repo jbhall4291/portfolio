@@ -59,11 +59,13 @@
 .Projects__div--title-area {
   grid-area: Projects__div--title-area;
   text-align: center;
+  align-self: flex-end;
 }
 
 .Projects__div--desc-area {
   grid-area: Projects__div--desc-area;
-  text-align: center;
+  text-align: justify;
+  padding: 0 10px;
 }
 
 .Projects__div--title-area h3 {
