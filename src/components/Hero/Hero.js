@@ -1,5 +1,4 @@
 import React from "react";
-import "./Hero.css";
 
 import profilePic from "../../images/profile.jpg";
 
@@ -26,8 +25,11 @@ export const Hero = () => {
             <img src={profilePic} alt="johnny"></img>
           </div>
 
-          <div className="Hero__div--text-area">
-            <h1>Hi, I'm Johnny</h1>
+          <div className="Hero__div--text-area ">
+            <h1 className="text-2xl font-bold text-blue-300 underline md:text-5xl md:text-red-300">
+              Hi, I'm Johnny
+            </h1>
+            <button className="bg-blue-500 text-white font-medium px-4 py-2 rounded hover:bg-blue-600">this is a button!</button>
 
             <p>
               <span>Full-stack software developer</span> by day, and pizza

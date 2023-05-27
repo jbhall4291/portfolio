@@ -1,4 +1,4 @@
-.Projects article {
+/* .Projects article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -124,4 +124,4 @@
   flex-direction: row;
   justify-content: center;
   gap: 3%;
-}
+} */
