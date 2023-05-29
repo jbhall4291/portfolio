@@ -2,7 +2,7 @@ import "./App.css";
 
 // import { About } from "./components/About/About.js";
 // import { Skills } from "./components/Skills/Skills.js";
-import { Projects } from "./components/Projects/Projects";
+
 // import { Hero } from "./components/Hero/Hero";
 import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
@@ -11,6 +11,7 @@ import Hero from "./components/Hero";
 import Testing from "./components/Testing";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -21,8 +22,8 @@ function App() {
       <About />
       {/* <About /> */}
       <Skills />
-      {/* <Projects />
-      <Contact />
+       <Projects />
+      {/* <Contact />
       <Footer /> */}
     </>
   );

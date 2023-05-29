@@ -16,7 +16,7 @@ const handleLinkClick = (event, target) => {
 
 function Hero() {
   return (
-    <section id="about" className="text-black">
+    <section id="hero" className="text-black">
       <div className="container mx-auto flex flex-col items-center px-5 py-5 md:px-10 md:py-20 lg:flex-row lg:gap-x-10 ">
         <div
           className="order-2 mb-16 flex flex-col items-center text-center

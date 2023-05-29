@@ -6,7 +6,7 @@ function Skills() {
     <section id="skills" className="container mx-auto px-5 lg:px-10">
       <h1 className="text-center text-3xl font-extrabold">Skills</h1>
 
-      <div className="flex flex-wrap justify-center gap-1.5 md:m-auto md:w-5/6 md:gap-x-9">
+      <div className="flex flex-wrap justify-center gap-1.5 md:m-auto md:w-5/6 md:gap-9">
         <SkillCard label="JavaScript" icon="devicon-javascript-plain colored" />
         <SkillCard label="React" icon="devicon-react-original colored" />
         <SkillCard label="node.js" icon="devicon-nodejs-plain colored" />

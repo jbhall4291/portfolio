@@ -70,7 +70,7 @@ export const Projects = () => {
         </div>
         <div className="Projects__div--title-area">
           <h3>Fan Finder</h3>
-          <h4>a location-based social networking mobile app </h4>
+          <h4>a location-based social networking mobile app</h4>
         </div>
         <div className="Projects__div--desc-area">
           <p className="Projects__p--description">

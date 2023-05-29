@@ -5,7 +5,7 @@ function About() {
     <div className="container mx-auto px-5 lg:px-10">
     
 
-    <h1 className="text-center text-3xl font-extrabold">About</h1>
+    <h1 className="text-center text-3xl font-extrabold"  id="about">About</h1>
 
    
 
