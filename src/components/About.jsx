@@ -3,15 +3,11 @@ import { Cab, Ivy, Sydney } from "../images";
 function About() {
   return (
     <div className="container mx-auto px-5 lg:px-10">
-    
+      <h1 className="text-center text-3xl font-extrabold" id="about">
+        About
+      </h1>
 
-    <h1 className="text-center text-3xl font-extrabold"  id="about">About</h1>
-
-   
-
-
-
-      <div className="grid md:grid-cols-4 grid-rows-3 gap-0">
+      <div className="grid grid-rows-3 gap-0 md:grid-cols-4">
         <div className="col-span-3 ">
           As a lifelong learner and outgoing individual with a diverse range of
           experiences, I spent several years working in the IT industry before
@@ -21,10 +17,10 @@ function About() {
           Australia, I decided it was probably time to start heading back!
         </div>
         <div className="col-span-1 ">
-          <img src={Sydney} />
+          <img src={Sydney} alt="me by sydney opera house" />
         </div>
         <div className="col-span-1 ">
-          <img src={Cab} />
+          <img src={Cab} alt="me by my old taxi" />
         </div>
         <div className="col-span-3 ">
           Upon returning to the UK, I wanted to challenge myself in new ways and
@@ -52,7 +48,7 @@ function About() {
         </div>
         <div className="col-span-1 ">
           <div className="col-span-1 ">
-            <img src={Ivy} />
+            <img src={Ivy} alt="my pug, ivy" />
           </div>
         </div>
       </div>

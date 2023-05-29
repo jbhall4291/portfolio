@@ -18,20 +18,15 @@ function Hero() {
   return (
     <section id="hero" className="text-black">
       <div className="container mx-auto flex flex-col items-center px-5 py-5 md:px-10 md:py-20 lg:flex-row lg:gap-x-10 ">
-        <div
-          className="order-2 mb-16 flex flex-col items-center text-center
-         lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-start
-        lg:items-center lg:justify-center lg:pr-0 lg:pr-24  lg:text-left	
-        
-        "
-        >
+        <div className="order-2 mb-16 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pr-0   lg:text-left">
           <h1 className="title-font mb-4 text-3xl font-medium text-highlight md:text-4xl ">
             Hi, I'm Johnny.
           </h1>
           <p className="mb-8 text-center leading-relaxed md:text-lg lg:text-xl">
             Full-stack software developer by day, and pizza enthusiast by night
             🍕
-            <br />I love building cool stuff and learning new technologies 🎓
+            <br />
+            I love building cool stuff and learning new technologies 🎓
             <br />
             Whether it's front-end or back-end, I'm always up for a challenge 🚀
             <br />
@@ -41,8 +36,7 @@ function Hero() {
             get in touch & let's make something amazing!
           </p>
           <div className="m-auto flex items-center justify-center gap-5">
-
-          <a
+            <a
               href="#projects"
               onClick={(event) => {
                 handleLinkClick(event, "#projects");
@@ -61,7 +55,6 @@ function Hero() {
             >
               Get In Touch
             </a>
-            
           </div>
         </div>
         <div className="order-1 w-4/6 md:w-1/2 lg:order-2 lg:w-full lg:max-w-lg">

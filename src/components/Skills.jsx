@@ -1,4 +1,3 @@
-import { Cab, Ivy, Sydney } from "../images";
 import SkillCard from "./SkillsCard";
 
 function Skills() {

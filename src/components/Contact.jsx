@@ -1,4 +1,3 @@
-import React from "react";
 import ContactCard from "./ContactCard";
 
 function Contact() {
@@ -38,10 +37,7 @@ function Contact() {
         className="mx-auto flex w-80 flex-col text-left"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <label htmlFor="name" className="">
-          Name
-        </label>{" "}
-        <br />
+        <label htmlFor="name">Name</label>
         <input
           type="text"
           id="name"
@@ -49,7 +45,7 @@ function Contact() {
           required
           className="mb-4  box-border w-full rounded-md border-2 border-solid border-black p-1 text-lg"
         />
-        <label htmlFor="email">Email</label> <br />
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
@@ -57,7 +53,7 @@ function Contact() {
           required
           className="mb-4   box-border w-full rounded-md border-2 border-solid border-black p-1 text-lg"
         />
-        <label htmlFor="message">Message</label> <br />
+        <label htmlFor="message">Message</label>
         <textarea
           id="message"
           name="message"
