@@ -1,16 +1,15 @@
-import "./App.css";
-import { Navbar } from "./components/Navbar/Navbar.js";
-import { About } from "./components/About/About.js";
-import { Skills } from "./components/Skills/Skills.js";
-import { Projects } from "./components/Projects/Projects";
-import { Hero } from "./components/Hero/Hero";
-import { Contact } from "./components/Contact/Contact";
-import { Footer } from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
       <Hero />
       <About />
       <Skills />
