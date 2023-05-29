@@ -40,7 +40,18 @@ function Hero() {
             company's success, so if you're looking for a junior developer then
             get in touch & let's make something amazing!
           </p>
-          <div className="m-auto flex items-center justify-center ">
+          <div className="m-auto flex items-center justify-center gap-5">
+
+          <a
+              href="#projects"
+              onClick={(event) => {
+                handleLinkClick(event, "#projects");
+              }}
+              className="inline-flex rounded border-0 bg-gray-800 px-6 py-2 text-lg text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none md:text-center"
+            >
+              See My Projects
+            </a>
+
             <a
               href="#contact"
               onClick={(event) => {
@@ -50,15 +61,7 @@ function Hero() {
             >
               Get In Touch
             </a>
-            <a
-              href="#projects"
-              onClick={(event) => {
-                handleLinkClick(event, "#projects");
-              }}
-              className="ml-4 inline-flex rounded border-0 bg-gray-800 px-6 py-2 text-lg text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none md:text-center"
-            >
-              See My Projects
-            </a>
+            
           </div>
         </div>
         <div className="order-1 w-4/6 md:w-1/2 lg:order-2 lg:w-full lg:max-w-lg">

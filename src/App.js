@@ -1,17 +1,13 @@
 import "./App.css";
 
-// import { About } from "./components/About/About.js";
-// import { Skills } from "./components/Skills/Skills.js";
-
-// import { Hero } from "./components/Hero/Hero";
-import { Contact } from "./components/Contact/Contact";
-import { Footer } from "./components/Footer/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Testing from "./components/Testing";
+
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,9 +18,9 @@ function App() {
       <About />
       {/* <About /> */}
       <Skills />
-       <Projects />
-      {/* <Contact />
-      <Footer /> */}
+      <Projects />
+      <Contact />
+      <Footer /> 
     </>
   );
 }
