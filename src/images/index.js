@@ -1,9 +1,9 @@
-import Cab from "./cab.jpeg";
-import Profile from "./profile.jpg";
-import Ivy from './ivy.jpeg'
-import Sydney from './sydney.jpeg';
-import Fanfinder from './fanfinder.png'
-import newsbuzz from './newsbuzz.png'
-import hundredPushups from './hundredPushups.png'
+import profile from "./profile.jpg";
+import cab from "./cab.jpeg";
+import ivy from "./ivy.jpeg";
+import sydney from "./sydney.jpeg";
+import fanfinder from "./fanfinder.png";
+import newsbuzz from "./newsbuzz.png";
+import hundredPushups from "./hundredPushups.png";
 
-export { Cab, Profile, Ivy, Sydney, Fanfinder, newsbuzz, hundredPushups };
+export { cab, profile, ivy, sydney, fanfinder, newsbuzz, hundredPushups };

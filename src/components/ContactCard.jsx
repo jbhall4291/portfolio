@@ -1,3 +1,5 @@
+import React from "react";
+
 function ContactCard({ label, icon, href }) {
   return (
     <div className="flex h-28 w-28 flex-col justify-center rounded-lg bg-white text-center shadow-xl md:h-36 md:w-36">

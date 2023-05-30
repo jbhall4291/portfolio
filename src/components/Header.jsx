@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Header() {
   const handleLinkClick = (event, target) => {
     event.preventDefault();
@@ -16,62 +19,68 @@ function Header() {
 
   return (
     <header
-      className="sticky top-0 grid grid-cols-1 bg-myTheme text-white md:grid-cols-[auto_1fr]"
+      className="sticky top-0 grid grid-cols-1 bg-myTheme text-white  md:grid-cols-[auto_1fr]"
       id="header"
     >
-      <div className="flex justify-center bg-myTheme p-4 py-1 text-lg text-white hover:text-highlight md:py-2">
-        <a
+      <div className="flex justify-center bg-myTheme p-4 py-1 text-lg text-white hover:text-highlight md:py-2 ">
+        {/* <a
           className="Navbar__a--home"
           href="#hero"
           onClick={(event) => handleLinkClick(event, "#hero")}
         >
           Johnny Hall | Software Developer
-        </a>
+        </a> */}
+        <Link to="/">Johnny Hall | Software Developer</Link>
       </div>
 
       <nav className="col-span-2 flex justify-center bg-myTheme  text-white md:col-start-2 md:col-end-3 md:row-start-1 md:justify-end ">
         <ul className="md:gap-18 flex gap-10  p-4 py-1.5 pt-0 text-lg text-white md:py-2">
           <li className="hover:text-highlight">
-            <a
+            {/* <a
               href="#about"
               onClick={(event) => {
                 handleLinkClick(event, "#about");
               }}
             >
               About
-            </a>
+            </a> */}
+            <Link to="/about">About</Link>
           </li>
 
           <li className="hover:text-highlight">
-            <a
+            {/* <a
               href="#skills"
               onClick={(event) => {
                 handleLinkClick(event, "#skills");
               }}
             >
               Skills
-            </a>
+            </a> */}
+            <Link to="/skills">Skills</Link>
           </li>
 
           <li className="hover:text-highlight">
-            <a
+            {/* <a
               href="#projects"
               onClick={(event) => {
                 handleLinkClick(event, "#projects");
               }}
             >
               Projects
-            </a>
+            </a> */}
+            <Link to="/projects">Projects</Link>
           </li>
           <li className="hover:text-highlight">
-            <a
+            {/* <a
               href="#contact"
               onClick={(event) => {
                 handleLinkClick(event, "#contact");
               }}
             >
               Contact
-            </a>
+            </a> */}
+
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

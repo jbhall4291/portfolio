@@ -1,4 +1,5 @@
-import { Cab, Ivy, Sydney } from "../images";
+import React from 'react'
+import { cab, ivy, sydney } from "../images";
 
 function About() {
   return (
@@ -17,10 +18,10 @@ function About() {
           Australia, I decided it was probably time to start heading back!
         </div>
         <div className="col-span-1 ">
-          <img src={Sydney} alt="me by sydney opera house" />
+          <img src={sydney} alt="me by sydney opera house" />
         </div>
         <div className="col-span-1 ">
-          <img src={Cab} alt="me by my old taxi" />
+          <img src={cab} alt="me by my old taxi" />
         </div>
         <div className="col-span-3 ">
           Upon returning to the UK, I wanted to challenge myself in new ways and
@@ -48,7 +49,7 @@ function About() {
         </div>
         <div className="col-span-1 ">
           <div className="col-span-1 ">
-            <img src={Ivy} alt="my pug, ivy" />
+            <img src={ivy} alt="my pug, ivy" />
           </div>
         </div>
       </div>

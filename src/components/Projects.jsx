@@ -1,6 +1,6 @@
+import React from "react";
 import ProjectCard from "./ProjectCard";
-import { Fanfinder, newsbuzz } from "../images";
-import { hundredPushups } from "../images";
+import { fanfinder, newsbuzz, hundredPushups } from "../images";
 
 function Projects() {
   return (
@@ -12,16 +12,19 @@ function Projects() {
           title="NewsBuzz"
           description="a reddit-style social news aggregation web app"
           image={newsbuzz}
+          page="/projects/newsbuzz"
         />
         <ProjectCard
           title="Fan Finder"
           description="a location-based social networking mobile app"
-          image={Fanfinder}
+          image={fanfinder}
+          page="/projects/fanfinder"
         />
         <ProjectCard
           title="100 pushups"
           description="a fitness tracking web & mobile app"
           image={hundredPushups}
+          page="/projects/hundredpushups"
         />
       </div>
     </section>
