@@ -2,6 +2,8 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { fanfinder, newsbuzz, hundredPushups } from "../images";
 
+
+
 function Projects() {
   return (
     <section id="projects" className="container mx-auto px-5 lg:px-10">
