@@ -6,10 +6,12 @@ import ExternalLink from "./ExternalLink";
 function Newsbuzz() {
   return (
     <div className="container mx-auto px-5 py-5 md:px-10 md:py-16 ">
-      <div className="flex flex-col items-center lg:flex-row lg:gap-x-10 ">
-        <div className=" order-2 mb-6 flex max-w-full flex-col items-center  text-center md:mb-8 lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pb-12   lg:pr-0 lg:text-left">
-          <h1 className="text-7xl">NewsBuzz</h1>
-          <h2 className="text-lg">
+      <div className="flex flex-col items-center lg:flex-row  ">
+        <div className="order-2 mb-6 flex max-w-full flex-col items-center  text-center md:mb-8 lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pb-12   lg:pr-0 lg:text-left">
+          <h1 className="headline-font text-5xl text-highlight md:text-7xl">
+            NEWSBUZZ
+          </h1>
+          <h2 className="text-lg font-bold">
             a reddit-style social news aggregation web app, built with:
           </h2>
           <div className="flex max-w-lg flex-row flex-wrap justify-center gap-1.5 md:gap-2 ">
@@ -44,7 +46,7 @@ function Newsbuzz() {
             />
           </div>
         </div>
-        <div className="order-1 w-full md:w-full lg:order-2 lg:max-w-2xl">
+        <div className="order-2 w-full  md:w-full lg:order-2 lg:max-w-2xl">
           <img
             className="rounded object-cover object-center "
             alt="hero"

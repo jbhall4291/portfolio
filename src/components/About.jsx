@@ -4,8 +4,8 @@ import { cab, ivy, sydney } from "../images";
 function About() {
   return (
     <div className="container mx-auto px-5 lg:px-10">
-      <h1 className="text-center text-3xl font-extrabold" id="about">
-        About
+      <h1 className="headline-font text-center text-7xl text-highlight" id="about">
+        ABOUT
       </h1>
 
       <div className="grid grid-rows-3 gap-0 md:grid-cols-4">

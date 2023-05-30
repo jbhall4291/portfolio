@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import ContactCard from "./ContactCard";
 
 function Contact() {
@@ -7,7 +7,12 @@ function Contact() {
       id="contact"
       className="container mx-auto px-5 text-center lg:px-10"
     >
-      <h1 className="text-center text-3xl font-extrabold">Contact</h1>
+      <h1
+        className="headline-font text-center text-7xl text-highlight"
+        id="about"
+      >
+        CONTACT
+      </h1>
 
       <p className="">
         If you would like a copy of my CV or are interested in collaborating on

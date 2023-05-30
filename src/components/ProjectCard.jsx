@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function ProjectCard({ title, image, description, page }) {
   return (
     <div className="flex flex-col justify-center rounded-lg bg-white p-6 text-center shadow-xl lg:w-2/5">
-      <p>{title}</p>
-      <p>{description}</p>
+      <h1 className="text-6xl headline-font ">{title}</h1>
+      <p className="font-bold">{description}</p>
       <img className="my-2" src={image} alt="screenshot of {title}" />
       <div className="flex items-center justify-center gap-4">
         <Link
@@ -20,7 +20,7 @@ function ProjectCard({ title, image, description, page }) {
           to="/project-details#test"
         >
           Video Demo
-          {/* do a modal with an embedded video */}
+          {/* do a modal with an embedded video? or stright to youtube */}
         </Link>
       </div>
     </div>

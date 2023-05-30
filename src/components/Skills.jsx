@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react";
 import SkillCard from "./SkillsCard";
 
 function Skills() {
   return (
     <section id="skills" className="container mx-auto px-5 lg:px-10">
-      <h1 className="text-center text-3xl font-extrabold">Skills</h1>
+      <h1
+        className="headline-font text-center text-7xl text-highlight"
+        id="about"
+      >
+        SKILLS
+      </h1>
 
       <div className="flex flex-wrap justify-center gap-1.5 md:m-auto md:w-5/6 md:gap-9">
         <SkillCard label="JavaScript" icon="devicon-javascript-plain colored" />

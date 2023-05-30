@@ -19,7 +19,9 @@ function Header() {
 
   return (
     <header
-      className="sticky top-0 grid grid-cols-1 bg-myTheme text-white  md:grid-cols-[auto_1fr]"
+      className="sticky top-0 grid grid-cols-1 bg-myTheme
+      
+       text-white  md:grid-cols-[auto_1fr]"
       id="header"
     >
       <div className="flex justify-center bg-myTheme p-4 py-1 text-lg text-white hover:text-highlight md:py-2 ">
@@ -34,7 +36,7 @@ function Header() {
       </div>
 
       <nav className="col-span-2 flex justify-center bg-myTheme  text-white md:col-start-2 md:col-end-3 md:row-start-1 md:justify-end ">
-        <ul className="md:gap-18 flex gap-10  p-4 py-1.5 pt-0 text-lg text-white md:py-2">
+        <ul className="md:gap-18 flex gap-7 py-1.5 pt-0 text-lg text-white sm:gap-10 sm:p-2 ">
           <li className="hover:text-highlight">
             {/* <a
               href="#about"
