@@ -70,7 +70,7 @@ function Hero() {
             </Link>
           </div>
         </div>
-        <div className="order-1 w-4/6 md:w-1/2 lg:order-2 lg:w-full lg:max-w-lg">
+        <div className="order-1 w-4/6 md:w-1/2 lg:order-2 lg:w-full lg:max-w-2xl">
           <img
             className="rounded object-cover object-center "
             alt="hero"
