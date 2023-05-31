@@ -7,7 +7,7 @@ function About() {
       <h1 className="headline-font text-center text-7xl text-highlight" id="about">
         ABOUT
       </h1>
-
+      
       <div className="grid grid-rows-3 gap-0 md:grid-cols-4">
         <div className="col-span-3 ">
           As a lifelong learner and outgoing individual with a diverse range of
