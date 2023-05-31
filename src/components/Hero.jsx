@@ -53,6 +53,7 @@ function Hero() {
             >
               See My Projects
             </Link>
+
             {/* <a
               href="#contact"
               onClick={(event) => {
