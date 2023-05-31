@@ -1,29 +1,65 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Carousel,
+  Typography,
+  Button,
+  IconButton,
+} from "@material-tailwind/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
-function ProjectCard({ title, image, description, page }) {
+function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
   return (
-    <div className="flex flex-col justify-center rounded-lg bg-white p-6 text-center shadow-xl lg:w-2/5">
-      <h1 className="text-6xl headline-font ">{title}</h1>
-      <p className="font-bold">{description}</p>
-      <img className="my-2" src={image} alt="screenshot of {title}" />
-      <div className="flex items-center justify-center gap-4">
-        <Link
-          className="ml-4 inline-flex rounded border-0 bg-gray-800 px-6 py-2 text-lg text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none md:text-center"
-          to={page}
-        >
-          More Info
+    <Card className="mt-6 w-96 ">
+      <CardHeader color="blue-gray" className="relative h-56" floated={false}>
+        <img src={image} alt={title} layout="fill" />
+      </CardHeader>
+      <CardBody>
+        <Typography variant="h5" color="blue-gray" className="mb-2">
+          {title}
+        </Typography>
+        <Typography>{description}</Typography>
+      </CardBody>
+      <CardFooter className="flex gap-x-5 pt-0">
+        <Link to={learnMorePage} className="inline-block text-red-500">
+          <Button
+            size="md"
+            variant="text"
+            className="flex items-center gap-2 text-highlight "
+          >
+            Learn More
+            <i className="fas fa-arrow-right-long fa-lg" />
+          </Button>
         </Link>
 
-        <Link
-          className="inline-flex rounded border-0 bg-green-500 px-6 py-2 text-lg text-white hover:bg-green-600 focus:outline-none md:text-center"
-          to="/project-details#test"
-        >
-          Video Demo
-          {/* do a modal with an embedded video? or stright to youtube */}
-        </Link>
-      </div>
-    </div>
+        {/* temporary conditional rendering, until video is available for 100 pushups */}
+        {title !== "100 PUSHUPS" && (
+          <a
+            href={youtubeURL}
+            className="inline-block "
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button
+              size="md"
+              variant="text"
+              className="flex items-center gap-2 bg-highlight text-white"
+            >
+              VIDEO DEMO
+              <i className="fa-brands fa-youtube fa-lg" />
+              {/* <FontAwesomeIcon icon={faCircle} fade size="2xs" style={{ color: "#ff0000" }} /> */}
+              
+
+            </Button>
+          </a>
+        )}
+      </CardFooter>
+    </Card>
   );
 }
 

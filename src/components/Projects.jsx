@@ -1,13 +1,12 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { fanfinder, newsbuzz, hundredPushups } from "../images";
+import { fanfinder, newsbuzz, hundredPushups, newsbuzzCard, fanfinderCard } from "../images";
 import {
   Carousel,
   Typography,
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import CarouselItem from "./CarouselItem";
 
 function Projects() {
   return (
@@ -18,53 +17,31 @@ function Projects() {
       >
         PROJECTS
       </h1>
-      <Carousel
-        className="rounded-xl"
-        prevArrow={({ handlePrev }) => (
-          <IconButton
-            ripple={false}
-            variant="text"
-            size="lg"
-            onClick={handlePrev}
-            className="!absolute left-4 top-2/4 -translate-y-2/4"
-          >
-            <i
-              className="fa-solid fa-circle-chevron-left fa-2xl"
-              style={{ color: "#fe003a" }}
-            />
-          </IconButton>
-        )}
-        nextArrow={({ handleNext }) => (
-          <IconButton
-            ripple={false}
-            variant="text"
-            size="lg"
-            onClick={handleNext}
-            className="!absolute !right-4 top-2/4 -translate-y-2/4"
-          >
-            <i
-              className="fa-solid fa-circle-chevron-right fa-2xl"
-              style={{ color: "#fe003a" }}
-            />
-          </IconButton>
-        )}
-      >
-        <CarouselItem
+      <div className="flex justify-center gap-4 ">
+        <ProjectCard
           title="NEWSBUZZ"
-          image={newsbuzz}
-          description="a reddit-style social news aggregation web app"
-        ></CarouselItem>
-        <CarouselItem
+          image={newsbuzzCard}
+          description="a reddit-style social news aggregation web app, built with React."
+          youtubeURL="https://youtu.be/CnuN6rD8j8w"
+          learnMorePage="/projects/newsbuzz"
+        />
+
+        <ProjectCard
           title="FAN FINDER"
-          image={fanfinder}
-          description="a location-based social networking iOS & Android app"
-        ></CarouselItem>
-        <CarouselItem
+          image={fanfinderCard}
+          description="a location-based social networking app for iOS & Android, built with React Native."
+          youtubeURL="https://www.youtube.com/watch?v=kQ7weiOZzHM"
+          learnMorePage="/projects/fanfinder"
+        />
+
+        <ProjectCard
           title="100 PUSHUPS"
           image={hundredPushups}
-          description="a fitness tracking and guidance app for web and mobile"
-        ></CarouselItem>
-      </Carousel>
+          description="a fitness guidance & tracking app for web & mobile, currently under development."
+          youtubeURL="https://www.youtube.com/watch?v=kQ7weiOZzHM"
+          learnMorePage="/projects/hundredpushups"
+        />
+      </div>
 
       {/* 
       <div className="flex w-full flex-col flex-wrap justify-center gap-5 md:m-auto md:w-5/6 md:flex-row md:gap-x-20">
