@@ -1,6 +1,17 @@
 import React from "react";
 import { profile } from "../images/";
 import { Link } from "react-router-dom";
+import InternalLink from "./InternalLink";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Carousel,
+  Typography,
+  Button,
+  IconButton,
+} from "@material-tailwind/react";
 
 const handleLinkClick = (event, target) => {
   event.preventDefault();
@@ -21,7 +32,7 @@ function Hero() {
     <section id="hero" className="text-black ">
       <div className="container mx-auto flex flex-col items-center px-5 py-5 md:px-10 md:py-20 lg:flex-row lg:gap-x-10 ">
         <div className="order-2 mb-16 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pr-0   lg:text-left">
-          <h1 className="headline-font mb-4 text-3xl font-medium text-highlight md:text-6xl text-center">
+          <h1 className="headline-font mb-4 text-center text-3xl font-medium text-highlight md:text-6xl">
             Hi, I'm Johnny.
           </h1>
           <p className="mb-8 text-center leading-relaxed md:text-lg lg:text-xl">
@@ -38,37 +49,22 @@ function Hero() {
             get in touch & let's make something amazing!
           </p>
           <div className="m-auto flex items-center justify-center gap-5">
-            {/* <a
-              href="#projects"
-              onClick={(event) => {
-                handleLinkClick(event, "#projects");
-              }}
-              className="inline-flex rounded border-0 bg-gray-800 px-6 py-2 text-lg text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none md:text-center"
-            >
-              See My Projects
-            </a> */}
-            <Link
-              className="inline-flex rounded border-0 bg-gray-800 px-6 py-2 text-lg text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none md:text-center"
-              to="/projects"
-            >
-              See My Projects
-            </Link>
+            <a href="/contact" className="inline-block align-middle">
+              <Button
+                size="lg"
+                variant="text"
+                className="flex items-center gap-2 bg-highlight align-middle text-white"
+              >
+                GET IN TOUCH
+                <i class="fa-solid fa-handshake fa-xl "></i>
+                {/* <i class="fa-solid fa-square"></i> */}
+                {/* <i className="fa-solid fa-comment fa-xl  align-bottom"></i> */}
+                {/* <i className="fa-brands fa-youtube fa-lg" /> */}
+                {/* <FontAwesomeIcon icon={faCircle} fade size="2xs" style={{ color: "#ff0000" }} /> */}
+              </Button>
+            </a>
 
-            {/* <a
-              href="#contact"
-              onClick={(event) => {
-                handleLinkClick(event, "#contact");
-              }}
-              className="inline-flex rounded border-0 bg-green-500 px-6 py-2 text-lg text-white hover:bg-green-600 focus:outline-none md:text-center"
-            >
-              Get In Touch
-            </a> */}
-            <Link
-              className="inline-flex rounded border-0 bg-green-500 px-6 py-2 text-lg text-white hover:bg-green-600 focus:outline-none md:text-center"
-              to="/contact"
-            >
-              Get In Touch
-            </Link>
+            <InternalLink text="SEE MY PROJECTS" internalRoute="/projects" />
           </div>
         </div>
         <div className="order-1 w-4/6 md:w-1/2 lg:order-2 lg:w-full lg:max-w-2xl">
