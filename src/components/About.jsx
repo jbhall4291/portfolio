@@ -13,7 +13,9 @@ import {
 
 function About() {
   return (
-    <div className="plex container mx-auto px-5  lg:px-10">
+    <div
+      className="plex container mx-auto pb-10 px-5 lg:px-10"
+    >
       <h1
         className="headline-font text-center text-7xl text-highlight"
         id="about"
@@ -21,11 +23,10 @@ function About() {
         ABOUT
       </h1>
 
-      <div className="grid grid-rows-3 gap-y-8 gap-x-4 md:grid-cols-4 items-center">
+      <div className="flex grid-rows-3 flex-col items-center gap-x-8 gap-y-8 md:grid md:grid-cols-4">
         <Typography
-          variant="h5"
           color="blue-gray"
-          className="col-span-3 flex items-center text-center"
+          className="text-md flex items-center text-justify md:col-span-3  lg:text-lg"
         >
           As a lifelong learner and outgoing individual with a diverse range of
           experiences, I spent several years working in the IT industry before
@@ -35,7 +36,7 @@ function About() {
           Australia, I decided it was probably time to start heading back!
         </Typography>
         <img
-          className="col-span-1 rounded"
+          className="-order-1 col-span-1 rounded md:order-none"
           src={sydney}
           alt="me by sydney opera house"
         />
@@ -45,23 +46,23 @@ function About() {
         <Typography
           variant="h5"
           color="blue-gray"
-          className="col-span-3 flex  items-center  text-center"
+          className="text-md col-span-3 flex items-center text-justify  lg:text-lg "
         >
           Upon returning to the UK, I wanted to challenge myself in new ways and
           so undertook the famous 'Knowledge of London' exam. Subsequently, I
           worked as a black cab driver, navigating the bustling streets of
           London while honing my communication and problem-solving skills.
-          However, my passion for technology & programming soon resurfaced as
-          I found myself delving into the Unity
-          engine, as well as Unreal and Blender. I then expanded my horizons by exploring
-          HTML and CSS, and was thrilled to discover the seemingly endless
-          possibilities of JavaScript, which quickly became my focus.
+          However, my passion for technology & programming soon resurfaced as I
+          found myself delving into the Unity engine, as well as Unreal and
+          Blender. I then expanded my horizons by exploring HTML and CSS, and
+          was thrilled to discover the seemingly endless possibilities of
+          JavaScript, which quickly became my focus.
         </Typography>
 
         <Typography
           variant="h5"
           color="blue-gray"
-          className="col-span-3 flex items-center text-center"
+          className="text-md order-1 col-span-3 flex items-center text-justify md:order-none  lg:text-lg"
         >
           Dabbling at the weekends with JavaScript wasn't cutting it anymore, so
           I enrolled in the Northcoders Coding Bootcamp to kickstart a new
@@ -74,7 +75,7 @@ function About() {
           the great outdoors.
         </Typography>
 
-        <img className="col-span-1 rounded" src={ivy} alt="my pug, ivy" />
+        <img className="col-span-1 rounded " src={ivy} alt="my pug, ivy" />
       </div>
     </div>
   );
