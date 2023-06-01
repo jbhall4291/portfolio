@@ -26,16 +26,7 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
         <Typography>{description}</Typography>
       </CardBody>
       <CardFooter className="flex gap-x-5 pt-0">
-        <Link to={learnMorePage} className="inline-block text-red-500">
-          <Button
-            size="md"
-            variant="text"
-            className="flex items-center gap-2 text-highlight "
-          >
-            Learn More
-            <i className="fas fa-arrow-right-long fa-lg" />
-          </Button>
-        </Link>
+       
 
         {/* temporary conditional rendering, until video is available for 100 pushups */}
         {title !== "100 PUSHUPS" && (
@@ -58,6 +49,18 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
             </Button>
           </a>
         )}
+
+        <Link to={learnMorePage} className="inline-block text-red-500">
+          <Button
+            size="md"
+            variant="text"
+            className="flex items-center gap-2 text-highlight "
+          >
+            Learn More
+            <i className="fas fa-arrow-right-long fa-lg" />
+          </Button>
+        </Link>
+
       </CardFooter>
     </Card>
   );
