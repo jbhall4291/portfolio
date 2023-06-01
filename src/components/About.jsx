@@ -1,42 +1,68 @@
-import React from 'react'
+import React from "react";
 import { cab, ivy, sydney } from "../images";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Carousel,
+  Typography,
+  Button,
+  IconButton,
+} from "@material-tailwind/react";
 
 function About() {
   return (
-    <div className="container mx-auto px-5 lg:px-10">
-      <h1 className="headline-font text-center text-7xl text-highlight" id="about">
+    <div className="plex container mx-auto px-5  lg:px-10">
+      <h1
+        className="headline-font text-center text-7xl text-highlight"
+        id="about"
+      >
         ABOUT
       </h1>
-      
-      <div className="grid grid-rows-3 gap-0 md:grid-cols-4">
-        <div className="col-span-3 ">
+
+      <div className="grid grid-rows-3 gap-y-8 gap-x-4 md:grid-cols-4 items-center">
+        <Typography
+          variant="h5"
+          color="blue-gray"
+          className="col-span-3 flex items-center text-center"
+        >
           As a lifelong learner and outgoing individual with a diverse range of
           experiences, I spent several years working in the IT industry before
           taking time off to travel and explore the world. During my travels, I
           had the opportunity to meet new people & experience different cultures
           which enabled me to develop as an individual. Having got as far as
           Australia, I decided it was probably time to start heading back!
-        </div>
-        <div className="col-span-1 ">
-          <img src={sydney} alt="me by sydney opera house" />
-        </div>
-        <div className="col-span-1 ">
-          <img src={cab} alt="me by my old taxi" />
-        </div>
-        <div className="col-span-3 ">
+        </Typography>
+        <img
+          className="col-span-1 rounded"
+          src={sydney}
+          alt="me by sydney opera house"
+        />
+
+        <img className="col-span-1 rounded" src={cab} alt="me by my old taxi" />
+
+        <Typography
+          variant="h5"
+          color="blue-gray"
+          className="col-span-3 flex  items-center  text-center"
+        >
           Upon returning to the UK, I wanted to challenge myself in new ways and
           so undertook the famous 'Knowledge of London' exam. Subsequently, I
           worked as a black cab driver, navigating the bustling streets of
-          London and honing my communication and problem-solving skills.
-          However, my passion for technology and programming soon resurfaced as
-          I found myself delving into various tools and platforms like Unity
-          Engine, Unreal and Blender. I then expanded my horizons by exploring
+          London while honing my communication and problem-solving skills.
+          However, my passion for technology & programming soon resurfaced as
+          I found myself delving into the Unity
+          engine, as well as Unreal and Blender. I then expanded my horizons by exploring
           HTML and CSS, and was thrilled to discover the seemingly endless
-          possibilities of JavaScript, which quickly became a focal point of my
-          learning and experimentation.
-        </div>
+          possibilities of JavaScript, which quickly became my focus.
+        </Typography>
 
-        <div className="col-span-3">
+        <Typography
+          variant="h5"
+          color="blue-gray"
+          className="col-span-3 flex items-center text-center"
+        >
           Dabbling at the weekends with JavaScript wasn't cutting it anymore, so
           I enrolled in the Northcoders Coding Bootcamp to kickstart a new
           career in software development. The amazing course covered so much
@@ -46,12 +72,9 @@ function About() {
           working on my latest programming project, you can find me enjoying a
           delicious slice of pizza or spending time with my beloved pug Ivy in
           the great outdoors.
-        </div>
-        <div className="col-span-1 ">
-          <div className="col-span-1 ">
-            <img src={ivy} alt="my pug, ivy" />
-          </div>
-        </div>
+        </Typography>
+
+        <img className="col-span-1 rounded" src={ivy} alt="my pug, ivy" />
       </div>
     </div>
   );
