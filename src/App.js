@@ -33,7 +33,7 @@ function App() {
     <div className="flex min-h-screen flex-col">
       <Router>
         <Header />
-        <div className="flex-grow">
+        <div className="flex-grow  flex justify-center items-center">
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
