@@ -12,28 +12,14 @@ import Fanfinder from "./components/Projects/Fanfinder";
 import Hundredpushups from "./components/Projects/Hundredpushups";
 import NotFound from "./components/NotFound";
 
-
-
 function App() {
   return (
-    // <div className="overflow-y-scroll">
-    //   <Router>
-    //     <Header />
-    //     <Routes>
-    //       <Route path="/" element={<Hero />} />
-    //       <Route path="/about" element={<About />} />
-    //       <Route path="/skills" element={<Skills />} />
-    //       <Route path="/projects" element={<Projects />} />
-    //       <Route path="/contact" element={<Contact />} />
-    //     </Routes>
-    //     <Footer />
-    //   </Router>
-    // </div>
+ 
 
     <div className="flex min-h-screen flex-col">
       <Router>
         <Header />
-        <div className="flex-grow  flex justify-center items-center">
+        <div className="flex flex-grow items-center justify-center">
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
