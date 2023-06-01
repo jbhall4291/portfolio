@@ -1,17 +1,24 @@
 import React from "react";
 import SkillCard from "./SkillsCard";
+import { Typography } from "@material-tailwind/react";
 
 function Skills() {
   return (
-    <section id="skills" className="container mx-auto px-5 lg:px-10">
-      <h1
-        className="headline-font text-center text-7xl text-highlight"
-        id="about"
-      >
-        SKILLS
-      </h1>
-
-      <div className="flex flex-wrap justify-center gap-1.5 md:m-auto md:w-5/6 md:gap-9">
+    <section
+      id="skills"
+      className="container mx-auto flex flex-col px-5 py-10 lg:px-10"
+    >
+      <Typography color="blue-gray" className=" text-center lg:text-lg">
+        These skills have been honed during my incredible journey on the{" "}
+        <a className="text-highlight" href="https://northcoders.com/">
+          Northcoders bootcamp
+        </a>
+        , where I immersed myself in solo and pair-programmed sprints over a
+        thirteen week period, mastering the fundamentals of full-stack
+        development and culminating in the fully-featured projects presented in
+        this portfolio.
+      </Typography>
+      <div className="flex flex-wrap justify-center gap-1.5 py-5 md:m-auto md:w-5/6 md:gap-9 md:py-10">
         <SkillCard label="JavaScript" icon="devicon-javascript-plain colored" />
         <SkillCard label="React" icon="devicon-react-original colored" />
         <SkillCard label="node.js" icon="devicon-nodejs-plain colored" />
@@ -25,6 +32,11 @@ function Skills() {
         <SkillCard label="HTML5" icon="devicon devicon-html5-plain colored" />
         <SkillCard label="CSS3" icon="devicon devicon-css3-plain colored" />
       </div>
+      <Typography color="blue-gray" className=" text-center lg:text-lg">
+        But my learning journey doesn't stop there! I've been expanding my tech
+        arsenal ever since, and I'm currently delving into the fundamentals of
+        Python and exploring the possibilities of the Three.js library.
+      </Typography>
     </section>
   );
 }

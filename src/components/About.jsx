@@ -13,14 +13,7 @@ import {
 
 function About() {
   return (
-    <div className="plex container mx-auto px-5 py-10 lg:px-10">
-      {/* <h1
-        className="headline-font text-center text-7xl text-highlight"
-        id="about"
-      >
-        ABOUT
-      </h1> */}
-
+    <div className="container mx-auto flex px-5 py-10 lg:px-10">
       <div className="flex grid-rows-3 flex-col items-center gap-x-8 gap-y-8 md:grid md:grid-cols-4">
         <Typography
           color="blue-gray"
