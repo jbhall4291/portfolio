@@ -1,5 +1,5 @@
 import React from "react";
-import ContactCard from "./ContactCard";
+
 import { Link } from "react-router-dom";
 
 import {
@@ -53,7 +53,7 @@ function Contact() {
             className="flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
           >
             VIEW MY GITHUB
-            <i class="fa-brands fa-github fa-xl"></i>
+            <i className="fa-brands fa-github fa-xl"></i>
           </Button>
         </a>
 
@@ -69,7 +69,7 @@ function Contact() {
             className="flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
           >
             CONNECT ON LINKEDIN
-            <i class="fa-brands fa-linkedin fa-xl"></i>
+            <i className="fa-brands fa-linkedin fa-xl"></i>
           </Button>
         </a>
       </div>

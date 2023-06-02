@@ -14,8 +14,6 @@ import NotFound from "./components/NotFound";
 
 function App() {
   return (
- 
-
     <div className="flex min-h-screen flex-col">
       <Router>
         <Header />
