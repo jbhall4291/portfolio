@@ -6,7 +6,8 @@ import fanfinder from "./fanfinder.png";
 import newsbuzz from "./newsbuzz.png";
 import newsbuzzCard from "./newsbuzz-card.png";
 import fanfinderCard from "./fanfinder-card.png";
-import oneHundredPushupsCard from "./oneHundredPushups-card.jpg";
+import oneHundredPressUpsCard from "./one-hundred-pressups-card.jpg";
+import oneHundredPressUps from "./one-hundred-pressups.png";
 
 export {
   cab,
@@ -15,7 +16,8 @@ export {
   sydney,
   fanfinder,
   newsbuzz,
-  oneHundredPushupsCard,
+  oneHundredPressUpsCard,
   newsbuzzCard,
   fanfinderCard,
+  oneHundredPressUps,
 };

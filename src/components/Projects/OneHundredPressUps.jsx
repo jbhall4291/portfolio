@@ -1,11 +1,11 @@
 import React from "react";
-import { fanfinder } from "../../images/";
-import SkillsCardSmall from "../../components/Projects/SkillsCardSmall";
+import { oneHundredPressUps } from "../../images";
+import SkillsCardSmall from "./SkillsCardSmall";
 import ExternalLink from "./ExternalLink";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 
-function Fanfinder() {
+function OneHundredPressUps() {
   return (
     <div className="container mx-auto px-5 py-5 md:px-10 md:py-16 ">
       <Link to="/projects" className="inline-block text-red-500">
@@ -22,10 +22,10 @@ function Fanfinder() {
       <div className="flex flex-col items-center lg:flex-row  ">
         <div className="order-2 mb-6 flex max-w-full flex-col items-center  text-center md:mb-8 lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pb-12   lg:pr-0 lg:text-left">
           <h1 className="headline-font text-5xl text-highlight md:text-7xl">
-            FAN FINDER
+            ONE HUNDRED PRESS-UPS
           </h1>
           <h2 className="text-lg font-bold">
-            a location-based social networking mobile app, built with:
+            a fitness tracking web & mobile app, under development using:
           </h2>
           <div className="flex max-w-lg flex-row flex-wrap justify-center gap-1.5 md:gap-2 ">
             <SkillsCardSmall
@@ -33,21 +33,15 @@ function Fanfinder() {
               icon="devicon-javascript-plain colored"
             />
             <SkillsCardSmall
-              label="React Native"
+              label="React"
               icon="devicon-react-original colored"
             />
+
             <SkillsCardSmall
-              label="node.js"
-              icon="devicon-nodejs-plain colored"
+              label="Firebase"
+              icon="devicon-firebase-plain colored"
             />
-            <SkillsCardSmall
-              label="MongoDB"
-              icon="devicon-mongodb-plain colored"
-            />
-            <SkillsCardSmall
-              label="express.js"
-              icon="devicon-express-original colored"
-            />
+
             <SkillsCardSmall label="Jest" icon="devicon-jest-plain colored" />
           </div>
         </div>
@@ -55,18 +49,18 @@ function Fanfinder() {
           <img
             className="rounded object-cover object-center "
             alt="hero"
-            src={fanfinder}
+            src={oneHundredPressUps}
           />
         </div>
       </div>
 
       <p className="mx-auto max-w-prose justify-center pb-6 text-center md:pb-12 md:text-lg">
-        Fan Finder is a mobile app built in React Native and allows music fans
-        to discover upcoming gigs in their area, and connect with other music
-        fans via gig-specific forums or a chat facility. This project was built
-        by a team of 4 using the MERN stack as part of the final Northcoders
-        Bootcamp where we had to pitch, plan, build and deploy a project, all in
-        just under two weeks!
+        One Hundred Press-ups is a web & mobile app designed to guide, track and
+        motivate fitness enthusiasts on their path to achieving... well, 100
+        press-ups! My first project after graduating the Northcoders Bootcamp, I
+        wanted to explore Google Firebase and hone my knowledge of React and
+        React Native... also, I need some help to beat my ultra-competitive
+        nephew at his own game!
       </p>
 
       <div className="mx-auto flex max-w-prose flex-row  justify-around  gap-2  text-center">
@@ -84,4 +78,4 @@ function Fanfinder() {
   );
 }
 
-export default Fanfinder;
+export default OneHundredPressUps;

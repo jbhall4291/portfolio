@@ -5,7 +5,6 @@ import ExternalLink from "./ExternalLink";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 
-
 function Newsbuzz() {
   return (
     <div className="container mx-auto px-5 py-5 md:px-10 md:py-16 ">
@@ -16,8 +15,6 @@ function Newsbuzz() {
           className="flex items-center gap-2 text-highlight "
         >
           <i className="fas fa-arrow-left-long fa-lg" />
-          
-          
           BACK TO PROJECTS
         </Button>
       </Link>
@@ -44,22 +41,14 @@ function Newsbuzz() {
               icon="devicon-nodejs-plain colored"
             />
             <SkillsCardSmall
-              label="express.js"
-              icon="devicon-express-original colored"
-            />
-            <SkillsCardSmall label="Jest" icon="devicon-jest-plain colored" />
-            <SkillsCardSmall
               label="PostgreSQL"
               icon="devicon-postgresql-plain colored"
             />
             <SkillsCardSmall
-              label="HTML5"
-              icon="devicon devicon-html5-plain colored"
+              label="express.js"
+              icon="devicon-express-original colored"
             />
-            <SkillsCardSmall
-              label="CSS3"
-              icon="devicon devicon-css3-plain colored"
-            />
+            <SkillsCardSmall label="Jest" icon="devicon-jest-plain colored" />
           </div>
         </div>
         <div className="order-2 w-full  md:w-full lg:order-2 lg:max-w-2xl">

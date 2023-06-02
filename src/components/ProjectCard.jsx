@@ -32,15 +32,15 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
           target="_blank"
           rel="noreferrer"
         >
-          {/* temporary conditional rendering, until video is available for 100 pushups */}
+          {/* temporary conditional rendering, until video is available for 100 PRESS-UPS */}
           <Button
             size="md"
             variant="text"
             className={`flex items-center gap-2 bg-highlight text-white ${
-              title === "100 PUSHUPS" ? "cursor-not-allowed opacity-50" : ""
+              title === "100 PRESS-UPS" ? "cursor-not-allowed opacity-50" : ""
             }`}
           >
-            {title === "100 PUSHUPS" ? "COMING SOON" : "VIDEO DEMO"}
+            {title === "100 PRESS-UPS" ? "COMING SOON" : "VIDEO DEMO"}
 
             <i className="fa-brands fa-youtube fa-lg" />
           </Button>

@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import {
   fanfinder,
   newsbuzz,
-  oneHundredPushupsCard,
+  oneHundredPressUpsCard,
   newsbuzzCard,
   fanfinderCard,
 } from "../images";
@@ -47,10 +47,10 @@ function Projects() {
         />
 
         <ProjectCard
-          title="100 PUSHUPS"
-          image={oneHundredPushupsCard}
+          title="100 PRESS-UPS"
+          image={oneHundredPressUpsCard}
           description="a fitness guidance & tracking app for web & mobile, currently under development."
-          learnMorePage="/projects/hundredpushups"
+          learnMorePage="/projects/onehundredpressups"
         />
       </div>
 

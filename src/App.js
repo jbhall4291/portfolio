@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Newsbuzz from "./components/Projects/Newsbuzz";
 import Fanfinder from "./components/Projects/Fanfinder";
-import Hundredpushups from "./components/Projects/Hundredpushups";
+import OneHundredPressUps from "./components/Projects/OneHundredPressUps";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -27,8 +27,8 @@ function App() {
             <Route path="/projects/newsbuzz" element={<Newsbuzz />} />
             <Route path="/projects/fanfinder" element={<Fanfinder />} />
             <Route
-              path="/projects/hundredpushups"
-              element={<Hundredpushups />}
+              path="/projects/onehundredpressups"
+              element={<OneHundredPressUps />}
             />
             <Route path="/*" element={<NotFound />} />
           </Routes>
