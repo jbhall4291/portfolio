@@ -4,10 +4,9 @@ import ivy from "./ivy.jpeg";
 import sydney from "./sydney.jpeg";
 import fanfinder from "./fanfinder.png";
 import newsbuzz from "./newsbuzz.png";
-import hundredPushups from "./hundredPushups.png";
 import newsbuzzCard from "./newsbuzz-card.png";
 import fanfinderCard from "./fanfinder-card.png";
-import underConstruction from "./under-construction.jpg";
+import oneHundredPushupsCard from "./oneHundredPushups-card.jpg";
 
 export {
   cab,
@@ -16,8 +15,7 @@ export {
   sydney,
   fanfinder,
   newsbuzz,
-  hundredPushups,
+  oneHundredPushupsCard,
   newsbuzzCard,
   fanfinderCard,
-  underConstruction,
 };

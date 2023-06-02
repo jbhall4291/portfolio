@@ -3,10 +3,9 @@ import ProjectCard from "./ProjectCard";
 import {
   fanfinder,
   newsbuzz,
-  hundredPushups,
+  oneHundredPushupsCard,
   newsbuzzCard,
   fanfinderCard,
-  underConstruction,
 } from "../images";
 import {
   Carousel,
@@ -49,7 +48,7 @@ function Projects() {
 
         <ProjectCard
           title="100 PUSHUPS"
-          image={underConstruction}
+          image={oneHundredPushupsCard}
           description="a fitness guidance & tracking app for web & mobile, currently under development."
           learnMorePage="/projects/hundredpushups"
         />
