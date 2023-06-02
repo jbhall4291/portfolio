@@ -54,7 +54,7 @@ function Fanfinder() {
         <div className="order-2 w-full  md:w-full lg:order-2 lg:max-w-2xl">
           <img
             className="rounded object-cover object-center "
-            alt="hero"
+            alt="fanfinder screenshot"
             src={fanfinder}
           />
         </div>
