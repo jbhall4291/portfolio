@@ -42,6 +42,22 @@ function Contact() {
         </a>
 
         <a
+          href="https://github.com/jbhall4291"
+          className="inline-block "
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button
+            size="lg"
+            variant="text"
+            className="flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
+          >
+            VIEW MY GITHUB
+            <i class="fa-brands fa-github fa-xl"></i>
+          </Button>
+        </a>
+
+        <a
           href="https://www.linkedin.com/in/johnny-hall-dev"
           className="inline-block "
           target="_blank"
@@ -50,10 +66,10 @@ function Contact() {
           <Button
             size="lg"
             variant="text"
-            className="flex items-center gap-2 text-highlight hover:shadow-xl "
+            className="flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
           >
-            LET'S CONNECT ON LINKEDIN
-            <i className="fas fa-arrow-right-long fa-lg" />
+            CONNECT ON LINKEDIN
+            <i class="fa-brands fa-linkedin fa-xl"></i>
           </Button>
         </a>
       </div>
@@ -99,7 +115,7 @@ function Contact() {
             size="lg"
             variant="text"
             value="Submit Message"
-            className="mx-auto flex items-center w-full justify-center gap-2 bg-highlight text-white hover:shadow-xl"
+            className="mx-auto flex w-full items-center justify-center gap-2 bg-highlight text-white hover:bg-highlight  hover:shadow-xl"
           >
             SUBMIT MESSAGE
           </Button>
