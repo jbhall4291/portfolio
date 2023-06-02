@@ -17,7 +17,7 @@ function Header() {
             currentPath === "/" ? "text-highlight" : ""
           }`}
         >
-          Johnny Hall | Software Developer
+          Johnny Hall : Software Developer
         </Link>
       </div>
 
