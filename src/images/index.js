@@ -6,7 +6,8 @@ import fanfinder from "./fanfinder.png";
 import newsbuzz from "./newsbuzz.png";
 import hundredPushups from "./hundredPushups.png";
 import newsbuzzCard from "./newsbuzz-card.png";
-import fanfinderCard from "./fanfinder-card.png"
+import fanfinderCard from "./fanfinder-card.png";
+import underConstruction from "./under-construction.jpg";
 
 export {
   cab,
@@ -17,5 +18,6 @@ export {
   newsbuzz,
   hundredPushups,
   newsbuzzCard,
-  fanfinderCard
+  fanfinderCard,
+  underConstruction,
 };

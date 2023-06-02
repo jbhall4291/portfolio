@@ -1,6 +1,13 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { fanfinder, newsbuzz, hundredPushups, newsbuzzCard, fanfinderCard } from "../images";
+import {
+  fanfinder,
+  newsbuzz,
+  hundredPushups,
+  newsbuzzCard,
+  fanfinderCard,
+  underConstruction,
+} from "../images";
 import {
   Carousel,
   Typography,
@@ -10,15 +17,19 @@ import {
 
 function Projects() {
   return (
-    <section id="projects" className="container mx-auto px-5 lg:px-10">
-      <h1
-        className="headline-font text-center text-6xl text-highlight sm:text-7xl"
-        id="about"
+    <section id="projects" className="container mx-auto px-5">
+      <Typography
+        color="blue-gray"
+        className="w-4/6 justify-center text-center lg:text-lg "
       >
-        PROJECTS
-      </h1>
+        These projects are the culmination of my journey on the amazing{" "}
+        <a className="text-highlight" href="https://northcoders.com/">
+          Northcoders bootcamp
+        </a>
+        , and continue to be developed, polished and refactored as I continue to
+        learn.
+      </Typography>
 
-   
       <div className="flex justify-center gap-4 ">
         <ProjectCard
           title="NEWSBUZZ"
@@ -38,35 +49,21 @@ function Projects() {
 
         <ProjectCard
           title="100 PUSHUPS"
-          image={hundredPushups}
+          image={underConstruction}
           description="a fitness guidance & tracking app for web & mobile, currently under development."
-          youtubeURL="https://www.youtube.com/watch?v=kQ7weiOZzHM"
           learnMorePage="/projects/hundredpushups"
         />
       </div>
 
-      {/* 
-      <div className="flex w-full flex-col flex-wrap justify-center gap-5 md:m-auto md:w-5/6 md:flex-row md:gap-x-20">
-        <ProjectCard
-          title="NEWSBUZZ"
-          description="a reddit-style social news aggregation web app"
-          image={newsbuzz}
-          page="/projects/newsbuzz"
-        />
-        <ProjectCard
-          title="FAN FINDER"
-          description="a location-based social networking mobile app"
-          image={fanfinder}
-          page="/projects/fanfinder"
-        />
-        <ProjectCard
-          title="100 PUSHUPS"
-          description="a fitness guidance & tracking app for web & mobile"
-          // "a fitness tracking and guidance app for web and mobile"
-          image={hundredPushups}
-          page="/projects/hundredpushups"
-        />
-      </div> */}
+      {/* <Typography
+        color="blue-gray"
+        className=" mt-5 text-center lg:mt-10 lg:text-lg"
+      >
+        These projects are the culmination of my incredible journey on the{" "}
+        <a className="text-highlight" href="https://northcoders.com/">
+          Northcoders bootcamp.
+        </a>
+      </Typography> */}
     </section>
   );
 }

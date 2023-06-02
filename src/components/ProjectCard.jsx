@@ -26,25 +26,26 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
         <Typography>{description}</Typography>
       </CardBody>
       <CardFooter className="flex gap-x-5 pt-0">
-        {/* temporary conditional rendering, until video is available for 100 pushups */}
-        {title !== "100 PUSHUPS" && (
-          <a
-            href={youtubeURL}
-            className="inline-block "
-            target="_blank"
-            rel="noreferrer"
+        <a
+          href={youtubeURL}
+          className="inline-block "
+          target="_blank"
+          rel="noreferrer"
+        >
+          {/* temporary conditional rendering, until video is available for 100 pushups */}
+          <Button
+            size="md"
+            variant="text"
+            className={`flex items-center gap-2 bg-highlight text-white ${
+              title === "100 PUSHUPS" ? "cursor-not-allowed opacity-50" : ""
+            }`}
           >
-            <Button
-              size="md"
-              variant="text"
-              className="flex items-center gap-2 bg-highlight text-white"
-            >
-              VIDEO DEMO
-              <i className="fa-brands fa-youtube fa-lg" />
-              {/* <FontAwesomeIcon icon={faCircle} fade size="2xs" style={{ color: "#ff0000" }} /> */}
-            </Button>
-          </a>
-        )}
+            {title === "100 PUSHUPS" ? "COMING SOON" : "VIDEO DEMO"}
+
+            <i className="fa-brands fa-youtube fa-lg" />
+          </Button>
+        </a>
+        {/* )} */}
 
         <Link to={learnMorePage} className="inline-block text-red-500">
           <Button
