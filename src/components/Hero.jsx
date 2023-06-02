@@ -72,7 +72,7 @@ function Hero() {
 
         <img
           className="rounded object-cover object-center sm:h-[34rem] lg:order-1"
-          alt="hero"
+          alt="me, johnny hall"
           src={profile}
         />
       </div>
