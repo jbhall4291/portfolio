@@ -17,6 +17,13 @@ function Projects() {
       >
         PROJECTS
       </h1>
+
+      {/* <ContactCard
+          label="GitHub"
+          icon="devicon-github-original colored"
+          href="https://www.github.com/jbhall4291"
+        /> */}
+
       <div className="flex justify-center gap-4 ">
         <ProjectCard
           title="NEWSBUZZ"

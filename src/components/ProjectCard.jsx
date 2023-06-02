@@ -26,8 +26,6 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
         <Typography>{description}</Typography>
       </CardBody>
       <CardFooter className="flex gap-x-5 pt-0">
-       
-
         {/* temporary conditional rendering, until video is available for 100 pushups */}
         {title !== "100 PUSHUPS" && (
           <a
@@ -44,8 +42,6 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
               VIDEO DEMO
               <i className="fa-brands fa-youtube fa-lg" />
               {/* <FontAwesomeIcon icon={faCircle} fade size="2xs" style={{ color: "#ff0000" }} /> */}
-              
-
             </Button>
           </a>
         )}
@@ -60,7 +56,6 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
             <i className="fas fa-arrow-right-long fa-lg" />
           </Button>
         </Link>
-
       </CardFooter>
     </Card>
   );
