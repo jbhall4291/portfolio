@@ -34,27 +34,27 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
         >
           {/* temporary conditional rendering, until video is available for 100 PRESS-UPS */}
           <Button
-            size="md"
+            size="lg"
             variant="text"
-            className={`flex items-center gap-2 bg-highlight text-white ${
+            className={`flex items-center gap-2 bg-highlight text-white  hover:bg-highlight hover:shadow-xl ${
               title === "100 PRESS-UPS" ? "cursor-not-allowed opacity-50" : ""
             }`}
           >
             {title === "100 PRESS-UPS" ? "COMING SOON" : "VIDEO DEMO"}
 
-            <i className="fa-brands fa-youtube fa-lg" />
+            <i className="fa-brands fa-youtube fa-2xl" />
           </Button>
         </a>
         {/* )} */}
 
         <Link to={learnMorePage} className="inline-block text-red-500">
           <Button
-            size="md"
+            size="lg"
             variant="text"
             className="flex items-center gap-2 text-highlight "
           >
             Learn More
-            <i className="fas fa-arrow-right-long fa-lg" />
+            <i className="fas fa-arrow-right-long fa-2xl" />
           </Button>
         </Link>
       </CardFooter>
