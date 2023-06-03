@@ -1,18 +1,42 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Carousel,
+  Typography,
+  Button,
+  IconButton,
+} from "@material-tailwind/react";
 
-function ExternalLink({ href, label }) {
+function ExternalLink({ href, label, type }) {
   return (
-    <a
-      target="_blank"
-      rel="noreferrer noopener"
-      href={href}
-      className="inline-flex rounded border-0 bg-gray-800 px-6 py-2 text-base text-gray-400 hover:cursor-pointer hover:bg-gray-700 hover:text-white focus:outline-none sm:text-lg md:text-center"
-    >
-      {label}
+    <a href={href} className="inline-block " target="_blank" rel="noreferrer">
+      <Button
+        size="lg"
+        variant="text"
+        className={
+          "flex items-center gap-2 bg-highlight text-xs text-white hover:bg-highlight  hover:shadow-xl md:text-sm "
+        }
+      >
+        {label}
+        <i class="fa-solid fa-screen-presentation"></i>
+        
+        {type === "video" && <i className="fa-brands fa-youtube fa-2xl" />}
+        {type === "liveApp" && (
+          <i className="fa-solid fa-circle fa-beat-fade fa-lg" />
+        )}
+        {type === "repo" && <i className="fa-brands fa-github fa-2xl" />}
+        {type === "showcase" && (
+          <i className="fa-solid fa-people-group fa-2xl" />
+          
+          
 
-      <FontAwesomeIcon icon={faCircle} fade size="2xs" style={{ color: "#ff0000" }} />
+        )}
+      </Button>
     </a>
   );
 }

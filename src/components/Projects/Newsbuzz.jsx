@@ -7,8 +7,8 @@ import { Button } from "@material-tailwind/react";
 
 function Newsbuzz() {
   return (
-    <div className="container mx-auto px-5 py-5 md:px-10 md:py-16 ">
-      <Link to="/projects" className="inline-block text-red-500">
+    <div className="container mx-auto px-5 pb-5 pt-2 ">
+      {/* <Link to="/projects" className="inline-block text-red-500">
         <Button
           size="md"
           variant="text"
@@ -17,8 +17,7 @@ function Newsbuzz() {
           <i className="fas fa-arrow-left-long fa-lg" />
           BACK TO PROJECTS
         </Button>
-      </Link>
-
+      </Link> */}
       <div className="flex flex-col items-center lg:flex-row  ">
         <div className="order-2 mb-6 flex max-w-full flex-col items-center  text-center md:mb-8 lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pb-12   lg:pr-0 lg:text-left">
           <h1 className="headline-font text-5xl text-highlight md:text-7xl">
@@ -59,7 +58,6 @@ function Newsbuzz() {
           />
         </div>
       </div>
-
       <p className="mx-auto max-w-prose justify-center pb-6 text-center md:pb-12 md:text-lg">
         NewsBuzz is a React web app in the style of Reddit, allowing users to
         view, vote and comment on articles hosted on my own backend and psql
@@ -67,16 +65,21 @@ function Newsbuzz() {
         Software Developer Bootcamp, with the aim of bringing together my front
         and back end skills under one project!
       </p>
-
-      <div className="mx-auto flex max-w-prose flex-row  justify-around  gap-2  text-center">
-        <ExternalLink label="VIDEO DEMO" href="https://youtu.be/CnuN6rD8j8w" />
+      <div className="mx-auto flex flex-col items-center justify-center gap-5 text-center  sm:flex-row  sm:gap-10">
+        <ExternalLink
+          label="VIDEO DEMO"
+          href="https://youtu.be/CnuN6rD8j8w"
+          type="video"
+        />
         <ExternalLink
           label="LIVE APP"
           href="https://newsbuzz-jbhall4291.netlify.app"
+          type="liveApp"
         />
         <ExternalLink
           label="GITHUB REPO"
           href="https://github.com/jbhall4291/newsbuzz"
+          type="repo"
         />
       </div>
     </div>
