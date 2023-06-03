@@ -19,7 +19,7 @@ function Projects() {
     <section id="projects" className="container mx-auto px-5">
       <Typography
         color="blue-gray"
-        className="w-4/6 justify-center text-center lg:text-lg "
+        className="w-4/6 justify-center text-center lg:text-lg m-auto"
       >
         These projects are the culmination of my journey on the amazing{" "}
         <a className="text-highlight" href="https://northcoders.com/">
