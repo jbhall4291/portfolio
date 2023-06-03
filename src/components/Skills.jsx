@@ -9,7 +9,7 @@ function Skills() {
       className="container mx-auto flex flex-col px-5 py-10 lg:px-10"
     >
       <Typography color="blue-gray" className=" text-center lg:text-lg">
-        These skills have been honed during my journey on the amazing{" "}
+        The following skills have been honed during my journey on the amazing{" "}
         <a className="text-highlight" href="https://northcoders.com/">
           Northcoders bootcamp
         </a>
