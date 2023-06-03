@@ -25,7 +25,7 @@ function Contact() {
       </Typography>
 
       <div className="mx-auto flex w-11/12 flex-col items-center justify-center gap-5 py-5 sm:w-3/4 md:flex-row">
-        <div className="flex flex-wrap items-center justify-center gap-1.5  pb-5 md:order-2 md:m-auto md:flex-col md:gap-9 ">
+        <div className="flex flex-wrap items-center justify-center gap-1.5  pb-0 md:order-2 md:m-auto md:flex-col md:gap-9 ">
           <a
             href="mailto:jbhall4291@gmail.com"
             target="_blank"
