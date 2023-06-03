@@ -32,7 +32,7 @@ function Projects() {
         learn.
       </Typography>
 
-      <div className="mx-auto flex flex-col flex-wrap items-center justify-center  sm:flex-row sm:gap-4  sm:px-5">
+      <div className="mx-auto flex flex-col flex-wrap items-center justify-center  sm:flex-row sm:gap-4  sm:px-6">
         <ProjectCard
           title="NEWSBUZZ"
           image={newsbuzzCard}
