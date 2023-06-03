@@ -3,7 +3,12 @@ import { newsbuzz } from "../../images/";
 import SkillsCardSmall from "../../components/Projects/SkillsCardSmall";
 import ExternalLink from "./ExternalLink";
 import { Link } from "react-router-dom";
-import { Button } from "@material-tailwind/react";
+import {
+  Carousel,
+  Typography,
+  Button,
+  IconButton,
+} from "@material-tailwind/react";
 
 function Newsbuzz() {
   return (
@@ -58,13 +63,17 @@ function Newsbuzz() {
           />
         </div>
       </div>
-      <p className="mx-auto max-w-prose justify-center pb-6 text-center md:pb-12 md:text-lg">
+      <Typography
+        color="blue-gray"
+        className="w-max-w mx-auto justify-center px-5 text-center sm:w-4/6 lg:text-lg pb-6"
+      >
         NewsBuzz is a React web app in the style of Reddit, allowing users to
         view, vote and comment on articles hosted on my own backend and psql
         database. This was built as part of the amazing Northcoders Full-Stack
         Software Developer Bootcamp, with the aim of bringing together my front
         and back end skills under one project!
-      </p>
+      </Typography>
+      
       <div className="mx-auto flex flex-col items-center justify-center gap-5 text-center  sm:flex-row  sm:gap-10">
         <ExternalLink
           label="VIDEO DEMO"

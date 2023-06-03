@@ -25,7 +25,7 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
         </Typography>
         <Typography>{description}</Typography>
       </CardBody>
-      <CardFooter className="flex flex-col gap-2 pt-0 smallIphone:flex-row sm:gap-5 ">
+      <CardFooter className="flex flex-col gap-2 pt-0 sm:gap-5 smallIphone:flex-row ">
         <a
           href={youtubeURL}
           className="inline-block "
@@ -37,10 +37,12 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
             size="lg"
             variant="text"
             className={`flex items-center gap-2 bg-highlight text-white  hover:bg-highlight hover:shadow-xl ${
-              title === "100 PRESS-UPS" ? "cursor-not-allowed opacity-50" : ""
+              title === "HUNDRED PRESS-UPS"
+                ? "cursor-not-allowed opacity-50"
+                : ""
             }`}
           >
-            {title === "100 PRESS-UPS" ? "COMING SOON" : "VIDEO DEMO"}
+            {title === "HUNDRED PRESS-UPS" ? "COMING SOON" : "VIDEO DEMO"}
 
             <i className="fa-brands fa-youtube fa-2xl" />
           </Button>

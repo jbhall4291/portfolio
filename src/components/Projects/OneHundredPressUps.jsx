@@ -22,7 +22,7 @@ function OneHundredPressUps() {
       <div className="flex flex-col items-center lg:flex-row  ">
         <div className="order-2 mb-6 flex max-w-full flex-col items-center  text-center md:mb-8 lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pb-12   lg:pr-0 lg:text-left">
           <h1 className="headline-font text-center text-5xl text-highlight md:text-7xl">
-            ONE HUNDRED PRESS-UPS
+            HUNDRED PRESS-UPS
           </h1>
           <h2 className="text-lg font-bold">
             a fitness tracking web & mobile app, under development using:
@@ -55,8 +55,8 @@ function OneHundredPressUps() {
       </div>
 
       <p className="mx-auto max-w-prose justify-center pb-6 text-center md:pb-12 md:text-lg">
-        One Hundred Press-ups is a web & mobile app designed to guide, track and
-        motivate fitness enthusiasts on their path to achieving... well, 100
+        Hundred Press-ups is a web & mobile app designed to guide, track and
+        motivate fitness enthusiasts on their path to achieving, well... one hundred
         press-ups! My first project after graduating the Northcoders Bootcamp, I
         wanted to explore Google Firebase and hone my knowledge of React and
         React Native... also, I need some help to beat my ultra-competitive

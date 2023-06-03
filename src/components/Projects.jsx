@@ -50,7 +50,7 @@ function Projects() {
         />
 
         <ProjectCard
-          title="100 PRESS-UPS"
+          title="HUNDRED PRESS-UPS"
           image={oneHundredPressUpsCard}
           description="a fitness guidance & tracking app for web & mobile, currently under development."
           learnMorePage="/projects/onehundredpressups"

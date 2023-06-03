@@ -23,7 +23,7 @@ function ExternalLink({ href, label, type }) {
         }
       >
         {label}
-        <i class="fa-solid fa-screen-presentation"></i>
+        <i className="fa-solid fa-screen-presentation"></i>
         
         {type === "video" && <i className="fa-brands fa-youtube fa-2xl" />}
         {type === "liveApp" && (

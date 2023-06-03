@@ -3,7 +3,12 @@ import { fanfinder } from "../../images/";
 import SkillsCardSmall from "../../components/Projects/SkillsCardSmall";
 import ExternalLink from "./ExternalLink";
 import { Link } from "react-router-dom";
-import { Button } from "@material-tailwind/react";
+import {
+  Carousel,
+  Typography,
+  Button,
+  IconButton,
+} from "@material-tailwind/react";
 
 function Fanfinder() {
   return (
@@ -60,14 +65,17 @@ function Fanfinder() {
         </div>
       </div>
 
-      <p className="mx-auto max-w-prose justify-center pb-6 text-center md:pb-12 md:text-lg">
+      <Typography
+        color="blue-gray"
+        className="w-max-w mx-auto justify-center px-5 pb-6 text-center sm:w-4/6 lg:text-lg"
+      >
         Fan Finder is a mobile app built in React Native and allows music fans
         to discover upcoming gigs in their area, and connect with other music
         fans via gig-specific forums or a chat facility. This project was built
         by a team of 4 using the MERN stack as part of the final Northcoders
         Bootcamp where we had to pitch, plan, build and deploy a project, all in
         just under two weeks!
-      </p>
+      </Typography>
 
       <div className="mx-auto flex flex-col items-center justify-center gap-5 text-center  sm:flex-row  sm:gap-10">
         <ExternalLink
