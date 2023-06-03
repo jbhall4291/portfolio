@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header
-      className="sticky top-0 grid grid-cols-1 bg-myTheme text-white md:grid-cols-[auto_1fr] md:px-6 "
+      className="sticky top-0 grid grid-cols-1 bg-myTheme text-white md:grid-cols-[auto_1fr] md:px-6 z-10 "
       id="header"
     >
       <div className="flex justify-center bg-myTheme p-4 py-1 text-lg text-white hover:text-highlight md:py-2 ">

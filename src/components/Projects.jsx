@@ -16,20 +16,23 @@ import {
 
 function Projects() {
   return (
-    <section id="projects" className="container mx-auto px-5">
+    <section
+      id="projects"
+      className="mx-auto flex flex-col px-3 py-5 sm:px-5 sm:py-10 "
+    >
       <Typography
         color="blue-gray"
-        className="w-4/6 justify-center text-center lg:text-lg m-auto"
+        className="w-max-w mx-auto justify-center px-5 text-center sm:w-4/6 lg:text-lg "
       >
         These projects are the culmination of my journey on the amazing{" "}
         <a className="text-highlight" href="https://northcoders.com/">
           Northcoders bootcamp
         </a>
-        , and continue to be developed, polished and refactored as I continue to
+        , and continue to be developed, polished & refactored as I continue to
         learn.
       </Typography>
 
-      <div className="flex justify-center gap-4 ">
+      <div className="mx-auto flex flex-col flex-wrap items-center justify-center  sm:flex-row sm:gap-4  sm:px-5">
         <ProjectCard
           title="NEWSBUZZ"
           image={newsbuzzCard}
@@ -53,16 +56,6 @@ function Projects() {
           learnMorePage="/projects/onehundredpressups"
         />
       </div>
-
-      {/* <Typography
-        color="blue-gray"
-        className=" mt-5 text-center lg:mt-10 lg:text-lg"
-      >
-        These projects are the culmination of my incredible journey on the{" "}
-        <a className="text-highlight" href="https://northcoders.com/">
-          Northcoders bootcamp.
-        </a>
-      </Typography> */}
     </section>
   );
 }

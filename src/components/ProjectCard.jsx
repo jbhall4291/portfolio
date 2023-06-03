@@ -15,7 +15,7 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
   return (
-    <Card className="mt-6 w-96 ">
+    <Card className="mt-6 sm:w-96 ">
       <CardHeader color="blue-gray" className="relative h-56" floated={false}>
         <img src={image} alt={title} layout="fill" />
       </CardHeader>
