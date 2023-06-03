@@ -13,17 +13,6 @@ import {
 function Fanfinder() {
   return (
     <div className="container mx-auto px-5 pb-5 pt-2 ">
-      {/* <Link to="/projects" className="inline-block text-red-500 pb-10">
-        <Button
-          size="lg"
-          variant="text"
-          className="flex items-center gap-2 text-highlight "
-        >
-          <i className="fas fa-arrow-left-long fa-xl" />
-          ALL PROJECTS
-        </Button>
-      </Link> */}
-
       <div className="flex flex-col items-center lg:flex-row  ">
         <div className="order-2 mb-6 flex max-w-full flex-col items-center  text-center md:mb-8 lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pb-12   lg:pr-0 lg:text-left">
           <h1 className="headline-font text-center text-5xl text-highlight md:text-7xl">
