@@ -1,27 +1,48 @@
+import React from "react";
 import ProjectCard from "./ProjectCard";
-import { Fanfinder, newsbuzz } from "../images";
-import { hundredPushups } from "../images";
+import { oneHundredPressUpsCard, newsbuzzCard, fanfinderCard } from "../images";
+import { Typography } from "@material-tailwind/react";
 
 function Projects() {
   return (
-    <section id="projects" className="container mx-auto px-5 lg:px-10">
-      <h1 className="text-center text-3xl font-extrabold">Projects</h1>
+    <section
+      id="projects"
+      className="mx-auto flex flex-col px-3 py-5 sm:px-5 sm:py-10 "
+    >
+      <Typography
+        color="blue-gray"
+        className="w-max-w mx-auto justify-center px-5 text-center sm:w-4/6 lg:text-lg "
+      >
+        These projects are the culmination of my journey on the amazing{" "}
+        <a className="text-highlight" href="https://northcoders.com/">
+          Northcoders bootcamp
+        </a>
+        , and continue to be developed, polished & refactored as I continue to
+        learn.
+      </Typography>
 
-      <div className="flex w-full flex-col flex-wrap justify-center gap-5 md:m-auto md:w-5/6 md:flex-row md:gap-x-20">
+      <div className="mx-auto flex flex-col flex-wrap items-center justify-center gap-x-10 sm:flex-row sm:gap-y-4  ">
         <ProjectCard
-          title="NewsBuzz"
-          description="a reddit-style social news aggregation web app"
-          image={newsbuzz}
+          title="NEWSBUZZ"
+          image={newsbuzzCard}
+          description="a reddit-style social news aggregation web app, built with React."
+          youtubeURL="https://youtu.be/CnuN6rD8j8w"
+          learnMorePage="/projects/newsbuzz"
         />
+
         <ProjectCard
-          title="Fan Finder"
-          description="a location-based social networking mobile app"
-          image={Fanfinder}
+          title="FAN FINDER"
+          image={fanfinderCard}
+          description="a location-based social networking app for iOS & Android, built with React Native."
+          youtubeURL="https://www.youtube.com/watch?v=kQ7weiOZzHM"
+          learnMorePage="/projects/fanfinder"
         />
+
         <ProjectCard
-          title="100 pushups"
-          description="a fitness tracking web & mobile app"
-          image={hundredPushups}
+          title="HUNDRED PRESS-UPS"
+          image={oneHundredPressUpsCard}
+          description="a fitness guidance & tracking app for web & mobile, currently under development."
+          learnMorePage="/projects/onehundredpressups"
         />
       </div>
     </section>

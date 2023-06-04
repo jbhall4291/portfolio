@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -5,18 +7,38 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Newsbuzz from "./components/Projects/Newsbuzz";
+import Fanfinder from "./components/Projects/Fanfinder";
+import OneHundredPressUps from "./components/Projects/OneHundredPressUps";
+import NotFound from "./components/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </>
+    <div className="flex min-h-screen flex-col">
+      <Router>
+        <ScrollToTop />
+
+        <Header />
+        <div className="flex flex-grow items-center justify-center">
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects/newsbuzz" element={<Newsbuzz />} />
+            <Route path="/projects/fanfinder" element={<Fanfinder />} />
+            <Route
+              path="/projects/onehundredpressups"
+              element={<OneHundredPressUps />}
+            />
+            <Route path="/*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
