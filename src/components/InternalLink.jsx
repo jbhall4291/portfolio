@@ -1,15 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Carousel,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 
 function InternalLink({ text, icon, internalRoute }) {
   return (

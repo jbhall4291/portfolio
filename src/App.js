@@ -13,12 +13,11 @@ import OneHundredPressUps from "./components/Projects/OneHundredPressUps";
 import NotFound from "./components/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
-
 function App() {
   return (
     <div className="flex min-h-screen flex-col">
       <Router>
-      <ScrollToTop />
+        <ScrollToTop />
 
         <Header />
         <div className="flex flex-grow items-center justify-center">

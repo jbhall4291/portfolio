@@ -1,7 +1,6 @@
 import React from "react";
 import { oneHundredPressUps } from "../../images";
 import SkillsCardSmall from "./SkillsCardSmall";
-import ExternalLink from "./ExternalLink";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 

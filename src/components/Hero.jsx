@@ -2,30 +2,7 @@ import React from "react";
 import { profile } from "../images/";
 import { Link } from "react-router-dom";
 import InternalLink from "./InternalLink";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Carousel,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
-
-// const handleLinkClick = (event, target) => {
-//   event.preventDefault();
-//   const navbarHeight = document.querySelector("#header").offsetHeight;
-//   const element = document.querySelector(target);
-//   const elementPosition =
-//     element.getBoundingClientRect().top + window.pageYOffset;
-//   const offsetPosition = elementPosition - navbarHeight;
-
-//   window.scrollTo({
-//     top: offsetPosition,
-//     behavior: "smooth",
-//   });
-// };
+import { Typography, Button } from "@material-tailwind/react";
 
 function Hero() {
   return (
@@ -71,7 +48,7 @@ function Hero() {
         </div>
 
         <img
-          className="rounded object-cover object-center sm:h-[34rem] lg:order-1 shadow-xl"
+          className="rounded object-cover object-center shadow-xl sm:h-[34rem] lg:order-1"
           alt="me, johnny hall"
           src={profile}
         />

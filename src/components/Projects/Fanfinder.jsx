@@ -3,12 +3,7 @@ import { fanfinder } from "../../images/";
 import SkillsCardSmall from "../../components/Projects/SkillsCardSmall";
 import ExternalLink from "./ExternalLink";
 import { Link } from "react-router-dom";
-import {
-  Carousel,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import { Typography, Button } from "@material-tailwind/react";
 
 function Fanfinder() {
   return (

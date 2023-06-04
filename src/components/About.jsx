@@ -1,15 +1,6 @@
 import React from "react";
 import { cab, ivy, sydney } from "../images";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Carousel,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
 function About() {
   return (

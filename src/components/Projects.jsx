@@ -1,18 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import {
-  fanfinder,
-  newsbuzz,
-  oneHundredPressUpsCard,
-  newsbuzzCard,
-  fanfinderCard,
-} from "../images";
-import {
-  Carousel,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
+import { oneHundredPressUpsCard, newsbuzzCard, fanfinderCard } from "../images";
+import { Typography } from "@material-tailwind/react";
 
 function Projects() {
   return (
