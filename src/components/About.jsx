@@ -17,7 +17,7 @@ function About() {
       <div className="flex grid-rows-3 flex-col items-center gap-x-8 gap-y-8 md:grid md:grid-cols-4">
         <Typography
           color="blue-gray"
-          className="text-md flex items-center text-justify md:col-span-3  lg:text-lg"
+          className="flex items-center text-justify text-lg md:col-span-3 "
         >
           As a lifelong learner and outgoing individual with a diverse range of
           experiences, I spent several years working in the IT industry before
@@ -27,12 +27,16 @@ function About() {
           Australia, I decided it was probably time to start heading back!
         </Typography>
         <img
-          className="-order-1 col-span-1 rounded md:order-none"
+          className="-order-1 col-span-1 rounded shadow-xl md:order-none"
           src={sydney}
           alt="me by sydney opera house"
         />
 
-        <img className="col-span-1 rounded" src={cab} alt="me by my old taxi" />
+        <img
+          className="col-span-1 rounded shadow-xl"
+          src={cab}
+          alt="me with my old taxi"
+        />
 
         <Typography
           variant="h5"
@@ -66,7 +70,11 @@ function About() {
           the great outdoors.
         </Typography>
 
-        <img className="col-span-1 rounded " src={ivy} alt="my pug, ivy" />
+        <img
+          className="col-span-1 rounded shadow-xl"
+          src={ivy}
+          alt="my pug, ivy"
+        />
       </div>
     </div>
   );

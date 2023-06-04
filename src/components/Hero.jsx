@@ -71,7 +71,7 @@ function Hero() {
         </div>
 
         <img
-          className="rounded object-cover object-center sm:h-[34rem] lg:order-1"
+          className="rounded object-cover object-center sm:h-[34rem] lg:order-1 shadow-xl"
           alt="me, johnny hall"
           src={profile}
         />

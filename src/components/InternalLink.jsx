@@ -13,7 +13,7 @@ import {
 
 function InternalLink({ text, icon, internalRoute }) {
   return (
-    <Link to={internalRoute} className="inline-block text-red-500">
+    <Link to={internalRoute} className="inline-block text-highlight">
       <Button
         size="lg"
         variant="text"

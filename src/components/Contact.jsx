@@ -75,7 +75,7 @@ function Contact() {
         <form
           name="contact"
           method="post"
-          className="mx-auto flex w-full p-5   flex-col rounded  text-left text-blueGrey shadow-xl sm:w-96  md:p-10"
+          className="mx-auto flex w-full flex-col   rounded p-5  text-left text-blueGrey shadow-xl sm:w-96  md:p-10"
         >
           <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="name">Name</label>
