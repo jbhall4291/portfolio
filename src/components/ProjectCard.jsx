@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Card,
@@ -9,7 +9,15 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
+function ProjectCard({
+  title,
+  image,
+  description,
+  youtubeURL,
+  learnMorePage,
+  setShowModal,
+  setVideoToPlay,
+}) {
   return (
     <Card className="mt-6 md:w-96 ">
       <CardHeader color="blue-gray" className="relative h-56" floated={false}>
@@ -22,28 +30,21 @@ function ProjectCard({ title, image, description, youtubeURL, learnMorePage }) {
         <Typography>{description}</Typography>
       </CardBody>
       <CardFooter className="flex flex-col gap-2 pt-0 sm:gap-5 smallIphone:flex-row ">
-        <a
-          href={youtubeURL}
-          className="inline-block "
-          target="_blank"
-          rel="noreferrer"
+        <Button
+          size="lg"
+          disabled={title === "HUNDRED PRESS-UPS"}
+          variant="text"
+          className="flex items-center gap-2  bg-highlight text-white hover:bg-highlight
+          hover:shadow-xl"
+          onClick={() => {
+            setVideoToPlay({ title });
+            setShowModal(true);
+          }}
         >
           {/* temporary conditional rendering, until video is available for 100 PRESS-UPS */}
-          <Button
-            size="lg"
-            variant="text"
-            className={`flex items-center gap-2 bg-highlight text-white  hover:bg-highlight hover:shadow-xl ${
-              title === "HUNDRED PRESS-UPS"
-                ? "cursor-not-allowed opacity-50"
-                : ""
-            }`}
-          >
-            {title === "HUNDRED PRESS-UPS" ? "COMING SOON" : "VIDEO DEMO"}
-
-            <i className="fa-brands fa-youtube fa-2xl" />
-          </Button>
-        </a>
-        {/* )} */}
+          {title === "HUNDRED PRESS-UPS" ? "COMING SOON" : "VIDEO DEMO"}
+          <i className="fa-brands fa-youtube fa-2xl" />
+        </Button>
 
         <Link to={learnMorePage} className="inline-block text-highlight">
           <Button
