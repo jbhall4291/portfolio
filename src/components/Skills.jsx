@@ -6,7 +6,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="container mx-auto flex flex-col px-5 py-10 lg:px-10"
+      className="container mx-auto flex flex-col px-5 lg:px-10"
     >
       <Typography color="blue-gray" className=" text-center lg:text-lg">
         The following skills have been honed during my journey on the amazing{" "}

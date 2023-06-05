@@ -9,10 +9,7 @@ function Projects() {
   const [videoToPlay, setVideoToPlay] = useState("");
 
   return (
-    <section
-      id="projects"
-      className="mx-auto flex flex-col px-3 py-5 sm:px-5 sm:py-10 "
-    >
+    <section id="projects" className="mx-auto flex flex-col px-3 sm:px-5  md:mt-10 ">
       <VideoModal
         showModal={showModal}
         setShowModal={setShowModal}

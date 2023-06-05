@@ -7,7 +7,7 @@ import { Typography, Button } from "@material-tailwind/react";
 function Hero() {
   return (
     <section id="hero">
-      <div className="container mx-auto flex flex-col items-center px-5 py-5  lg:flex-row ">
+      <div className="container mx-auto flex flex-col items-center px-5 pb-5 md:pt-10 lg:pt-0 lg:flex-row ">
         <div className="order-2 mb-16 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:px-10    ">
           <h1 className=" headline-font mb-2 mt-4 text-center text-3xl font-medium text-highlight md:text-6xl">
             Hi, I'm Johnny.

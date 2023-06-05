@@ -6,7 +6,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className=" container mx-auto flex flex-col  px-5 py-10 text-center lg:px-10"
+      className=" container mx-auto flex flex-col  px-5  text-center lg:px-10"
     >
       <Typography color="blue-gray" className=" text-center lg:text-lg">
         If you would like a copy of my CV or are interested in collaborating on
