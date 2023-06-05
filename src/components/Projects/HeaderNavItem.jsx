@@ -1,14 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function HeaderNavItem({ text, currentPath, goToPath }) {
   return (
-    <li
-      className={`hover:text-highlight ${
-        currentPath === goToPath ? "text-highlight" : ""
-      }`}
-    >
-      <Link to={goToPath}>{text}</Link>
+    <li>
+      <NavLink
+        to={goToPath}
+        className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "text-highlight" : ""
+        }
+      >
+        {text}
+      </NavLink>
     </li>
   );
 }

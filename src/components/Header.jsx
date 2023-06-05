@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import HeaderNavItem from "./Projects/HeaderNavItem";
 
 function Header() {
@@ -7,18 +7,18 @@ function Header() {
 
   return (
     <header
-      className="sticky top-0 grid grid-cols-1 bg-myTheme text-white md:grid-cols-[auto_1fr] md:px-6 z-10 "
+      className="sticky top-0 z-10 grid grid-cols-1 bg-myTheme text-white md:grid-cols-[auto_1fr] md:px-6 "
       id="header"
     >
       <div className="flex justify-center bg-myTheme p-4 py-1 text-lg text-white hover:text-highlight md:py-2 ">
-        <Link
+        <NavLink
           to="/"
-          className={`hover:text-highlight ${
-            currentPath === "/" ? "text-highlight" : ""
-          }`}
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-highlight" : ""
+          }
         >
-          Johnny Hall : Software Developer
-        </Link>
+          Johnny Hall | Software Developer
+        </NavLink>
       </div>
 
       <nav className="col-span-2 flex justify-center bg-myTheme  text-white md:col-start-2 md:col-end-3 md:row-start-1 md:justify-end ">
