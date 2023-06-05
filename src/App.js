@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Newsbuzz from "./components/Projects/Newsbuzz";
 import Fanfinder from "./components/Projects/Fanfinder";
 import OneHundredPressUps from "./components/Projects/OneHundredPressUps";
-import NotFound from "./components/NotFound";
+import NotFound404 from "./components/NotFound404";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
               path="/projects/onehundredpressups"
               element={<OneHundredPressUps />}
             />
-            <Route path="/*" element={<NotFound />} />
+            <Route path="/*" element={<NotFound404 />} />
           </Routes>
         </div>
         <Footer />
