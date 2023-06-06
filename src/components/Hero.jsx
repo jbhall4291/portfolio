@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { profile } from "../images/";
 import { Link } from "react-router-dom";
 import InternalLink from "./InternalLink";
 import { Typography, Button } from "@material-tailwind/react";
+import { RoughNotation } from "react-rough-notation";
 
 function Hero() {
+  const [show] = useState(true);
+
   return (
     <section id="hero">
-      <div className="container mx-auto flex flex-col items-center px-5 pb-5 md:pt-10 lg:pt-0 lg:flex-row ">
+      <div className="container mx-auto flex flex-col items-center px-5 pb-5 md:pt-10 lg:flex-row lg:pt-0 ">
         <div className="order-2 mb-16 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:px-10    ">
           <h1 className=" headline-font mb-2 mt-4 text-center text-3xl font-medium text-highlight md:text-6xl">
             Hi, I'm Johnny.
@@ -15,17 +18,59 @@ function Hero() {
           <Typography
             variant="h4"
             color="blue-gray"
-            className="my-2 pb-4 text-center text-base md:my-5 lg:text-lg"
+            className="my-2 pb-4 text-center text-base md:my-5 lg:text-lg  "
           >
-            Full-stack software developer by day, and devoted pizza enthusiast
-            by night. I love building cool stuff and learning new technologies.
-            Whether it's front-end or back-end, I'm always up for a challenge
-            🚀.
+            Full-stack software developer by day and devoted pizza enthusiast{" "}
+            <RoughNotation
+              color="#fe003a"
+              strokeWidth="5"
+              type="crossed-off"
+              show={show}
+              animationDelay="10500"
+              multiline="true"
+            >
+              by night
+            </RoughNotation>
+            .<br />
+            <RoughNotation
+              color="#fe003a"
+              strokeWidth="5"
+              type="underline"
+              show={show}
+              animationDelay="1000"
+              multiline="true"
+              padding={[0, 0, 0, 0]}
+            >
+              I love building cool stuff
+            </RoughNotation>{" "}
+            and learning new technologies .<br /> Whether it's front-end or
+            back-end, I'm always{" "}
+            <RoughNotation
+              type="box"
+              multiline="true"
+              strokeWidth="5"
+              show={show}
+              animationDelay="3000"
+              color="#fe003a"
+              animationDuration="1600"
+            >
+              up for a challenge 🚀
+            </RoughNotation>
+            .
             <br />
             <br />
-            I'm currently looking for an opportunity to contribute to a
-            company's success, so if you're looking for a junior developer then
-            get in touch & let's make something amazing!
+            <RoughNotation
+              color="#fe003a"
+              strokeWidth="5"
+              type="bracket"
+              show={show}
+              animationDelay="5500"
+              brackets={["left", "right"]}
+            >
+              I'm currently looking for an opportunity to contribute to a
+              company's success, so if you're looking for a junior developer
+              then get in touch and let's make something amazing!
+            </RoughNotation>
           </Typography>
 
           <div className="m-auto flex items-center justify-center gap-5">
