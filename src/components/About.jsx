@@ -17,13 +17,13 @@ function About() {
         Australia, I decided it was probably time to start heading back!
       </Typography>
       <img
-        className=" col-span-1 rounded shadow-xl md:order-none order-2 "
+        className=" col-span-1 rounded shadow-2xl md:order-none order-2 "
         src={sydney}
         alt="me by sydney opera house"
       />
 
       <img
-        className="col-span-1 rounded shadow-xl md:order-none order-4"
+        className="col-span-1 rounded shadow-2xl md:order-none order-4"
         src={cab}
         alt="me with my old taxi"
       />
@@ -61,7 +61,7 @@ function About() {
       </Typography>
 
       <img
-        className="col-span-1 rounded shadow-xl md:order-none order-6"
+        className="col-span-1 rounded shadow-2xl md:order-none order-6"
         src={ivy}
         alt="my pug, ivy"
       />

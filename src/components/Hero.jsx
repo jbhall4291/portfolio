@@ -10,23 +10,23 @@ function Hero() {
 
   return (
     <section id="hero">
-      <div className="container mx-auto flex flex-col items-center px-5 pb-5 md:pt-10 lg:flex-row lg:pt-0 ">
-        <div className="order-2 mb-16 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:px-10    ">
-          <h1 className=" headline-font mb-2 mt-4 text-center text-3xl font-medium text-highlight md:text-6xl">
+      <div className="container mx-auto flex flex-col items-center px-10 md:px-0 pb-5 md:pt-10 lg:flex-row lg:pt-0  lg:gap-10">
+        <div className="order-2 mb-16 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2  lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center    ">
+          <h1 className=" headline-font mb-2 mt-4 text-center text-4xl font-medium text-highlight md:text-6xl ">
             Hi, I'm Johnny.
           </h1>
           <Typography
             variant="h4"
             color="blue-gray"
-            className="my-2 pb-4 text-center text-base md:my-5 lg:text-lg  "
+            className="my-2 pb-4 text-center text-base md:my-5 lg:text-lg "
           >
-            Full-stack software developer by day and devoted pizza enthusiast{" "}
+            Full-stack software developer by day, and a devoted pizza enthusiast{" "}
             <RoughNotation
               color="#fe003a"
               strokeWidth="5"
               type="crossed-off"
               show={show}
-              animationDelay="10500"
+              animationDelay="1500"
               multiline="true"
             >
               by night
@@ -37,7 +37,7 @@ function Hero() {
               strokeWidth="5"
               type="underline"
               show={show}
-              animationDelay="1000"
+              animationDelay="2500"
               multiline="true"
               padding={[0, 0, 0, 0]}
             >
@@ -50,9 +50,9 @@ function Hero() {
               multiline="true"
               strokeWidth="5"
               show={show}
-              animationDelay="3000"
+              animationDelay="3500"
               color="#fe003a"
-              animationDuration="1600"
+              // animationDuration="1600"
             >
               up for a challenge 🚀
             </RoughNotation>
@@ -64,7 +64,7 @@ function Hero() {
               strokeWidth="5"
               type="bracket"
               show={show}
-              animationDelay="5500"
+              animationDelay="4500"
               brackets={["left", "right"]}
             >
               I'm currently looking for an opportunity to contribute to a
@@ -93,7 +93,7 @@ function Hero() {
         </div>
 
         <img
-          className="rounded object-cover object-center shadow-xl sm:h-[34rem] lg:order-1"
+          className="rounded object-cover object-center shadow-xl sm:h-[28rem]  lg:order-1"
           alt="me, johnny hall"
           src={profile}
         />
