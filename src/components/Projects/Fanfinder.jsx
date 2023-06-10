@@ -2,12 +2,13 @@ import React from "react";
 import { fanfinder } from "../../images/";
 import SkillsCardSmall from "../../components/Projects/SkillsCardSmall";
 import ExternalLink from "./ExternalLink";
+import { motion } from "framer-motion";
 
 import { Typography } from "@material-tailwind/react";
 
 function Fanfinder() {
   return (
-    <div className="container mx-auto px-2 pb-5 pt-2 ">
+    <motion.div  initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}} className="container mx-auto px-2 pb-5 pt-2 ">
      
       <div className="flex flex-col items-center lg:flex-row  ">
         <div className="order-2 mb-6 flex max-w-full flex-col items-center  text-center md:mb-8 lg:order-1 lg:mb-0 lg:w-1/2 lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center lg:pb-12   lg:pr-0 lg:text-left">
@@ -85,7 +86,7 @@ function Fanfinder() {
           type="repo"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

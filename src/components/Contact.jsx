@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import { Typography, Button } from "@material-tailwind/react";
 
 function Contact() {
   return (
-    <section
+    <motion.section initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}}
       id="contact"
       className=" container mx-auto flex flex-col  px-5  text-center lg:px-10"
     >
@@ -109,7 +110,7 @@ function Contact() {
           </div>
         </form>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

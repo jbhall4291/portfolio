@@ -3,13 +3,14 @@ import ProjectCard from "./ProjectCard";
 import { oneHundredPressUpsCard, newsbuzzCard, fanfinderCard } from "../images";
 import { Typography } from "@material-tailwind/react";
 import VideoModal from "./VideoModal";
+import { motion } from "framer-motion";
 
 function Projects() {
   const [showModal, setShowModal] = useState(false);
   const [videoToPlay, setVideoToPlay] = useState("");
 
   return (
-    <section id="projects" className="mx-auto flex flex-col px-3 sm:px-5  md:mt-10 ">
+    <motion.section initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}} id="projects" className="mx-auto flex flex-col px-3 sm:px-5  md:mt-10 ">
       <VideoModal
         showModal={showModal}
         setShowModal={setShowModal}
@@ -57,7 +58,7 @@ function Projects() {
           learnMorePage="/projects/onehundredpressups"
         />
       </div>
-    </section>
+    </motion.section>
   );
 }
 
