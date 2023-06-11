@@ -37,7 +37,7 @@ function ProjectCard({
           className="flex items-center gap-2  bg-highlight text-white hover:bg-highlight
           hover:shadow-xl"
           onClick={() => {
-            setVideoToPlay({ title });
+            setVideoToPlay(title);
             setShowModal(true);
           }}
         >

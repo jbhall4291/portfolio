@@ -3,9 +3,9 @@ import { Button } from "@material-tailwind/react";
 
 function VideoModal({ showModal, setShowModal, videoToPlay }) {
   let youtubeURL = "";
-  if (videoToPlay.title === "NEWSBUZZ")
+  if (videoToPlay === "NEWSBUZZ")
     youtubeURL = "https://www.youtube.com/embed/CnuN6rD8j8w";
-  if (videoToPlay.title === "FAN FINDER")
+  if (videoToPlay === "FAN FINDER")
     youtubeURL = "https://www.youtube.com/embed/kQ7weiOZzHM";
 
   return (
