@@ -74,7 +74,6 @@ function Newsbuzz() {
         
       <Button
           size="lg"
-          
           variant="text"
           className="flex items-center gap-2  bg-highlight text-white hover:bg-highlight
           hover:shadow-xl"
@@ -86,12 +85,6 @@ function Newsbuzz() {
           <i className="fa-brands fa-youtube fa-2xl" />
         </Button>
         
-        
-        {/* <ExternalLink
-          label="VIDEO DEMO"
-          href="https://youtu.be/CnuN6rD8j8w"
-          type="video"
-        /> */}
         <ExternalLink
           label="LIVE APP"
           href="https://newsbuzz-jbhall4291.netlify.app"
