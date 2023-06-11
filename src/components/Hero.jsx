@@ -11,8 +11,8 @@ function Hero() {
 
   return (
     <motion.section initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}} id="hero">
-      <div className="container mx-auto flex flex-col items-center px-10 md:px-0 pb-5 md:pt-10 lg:flex-row lg:pt-0  lg:gap-10">
-        <div className="order-2 mb-16 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2  lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center    ">
+      <div className="container flex flex-col items-center px-4 md:px-0  md:pt-10 lg:flex-row lg:pt-0  lg:gap-10 ">
+        <div className="order-2 mb-4 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2   lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center    ">
           <h1 className=" headline-font mb-2 mt-4 text-center text-4xl font-medium text-highlight md:text-6xl ">
             Hi, I'm Johnny.
           </h1>
@@ -44,7 +44,7 @@ function Hero() {
             >
               I love building cool stuff
             </RoughNotation>{" "}
-            and learning new technologies .<br /> Whether it's front-end or
+            and learning new technologies.<br /> Whether it's front-end or
             back-end, I'm always{" "}
             <RoughNotation
               type="box"
@@ -94,7 +94,7 @@ function Hero() {
         </div>
 
         <img
-          className="rounded object-cover object-center shadow-xl sm:h-[28rem] sm:w-[28rem] lg:order-1"
+          className="rounded object-cover object-center shadow-xl w-[340px] h-[340px] sm:h-[28rem] sm:w-[28rem] lg:order-1"
           alt="me, johnny hall"
           src={profile}
         />

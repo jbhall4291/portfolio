@@ -20,7 +20,7 @@ function App() {
         <ScrollToTop />
 
         <Header />
-        <div className="flex flex-grow items-center justify-center mt-28 md:mt-10">
+        <div className="flex flex-grow items-center justify-center mt-24 md:mt-10">
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
