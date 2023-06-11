@@ -41,9 +41,9 @@ function Newsbuzz() {
             <SkillsCardSmall label="Jest" icon="devicon-jest-plain colored" />
           </div>
         </div>
-        <div className="order-2 w-full  md:w-full lg:order-2 lg:max-w-2xl">
+        <div className="order-2 flex justify-center w-full lg:order-2 lg:max-w-2xl">
           <img
-            className="rounded object-cover object-center "
+            className="rounded object-cover object-center sm:w-[33rem] sm:h-[23.5rem]"
             alt="newsbuzz screenshot"
             src={newsbuzz}
           />
