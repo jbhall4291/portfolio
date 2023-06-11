@@ -13,7 +13,7 @@ function OneHundredPressUps() {
      <div className="flex flex-col items-center lg:flex-row justify-evenly gap-y-8 ">
         <div className="  order-2 flex  flex-col items-center gap-y-1 text-center lg:order-1 lg:justify-center">
           <h1 className="headline-font text-5xl text-highlight md:text-7xl">
-          HUNDRED PRESS-UPS
+          HUNDRED PRESSUPS
           </h1>
           <h2 className="text-lg font-bold">
           a fitness tracking web app, under development using:
