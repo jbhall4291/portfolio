@@ -8,7 +8,7 @@ function ExternalLink({ href, label, type }) {
         size="lg"
         variant="text"
         className={
-          "flex items-center gap-2 bg-highlight text-xs text-white hover:bg-highlight  hover:shadow-xl md:text-sm "
+          "flex items-center gap-2 bg-highlight text-md text-white hover:bg-highlight  hover:shadow-xl  "
         }
       >
         {label}

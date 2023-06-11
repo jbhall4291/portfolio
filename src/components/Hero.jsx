@@ -82,7 +82,7 @@ function Hero() {
               <Button
                 size="lg"
                 variant="text"
-                className="flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
+                className="flex text-md items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
               >
                 GET IN TOUCH
                 <i className="fa-solid fa-handshake fa-xl "></i>

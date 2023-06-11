@@ -76,7 +76,7 @@ function Newsbuzz() {
           size="lg"
           variant="text"
           className="flex items-center gap-2  bg-highlight text-white hover:bg-highlight
-          hover:shadow-xl"
+          hover:shadow-xl text-md "
           onClick={() => {
             setShowModal(true);
           }}

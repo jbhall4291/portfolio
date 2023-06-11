@@ -77,7 +77,7 @@ function Fanfinder() {
       <Button
           size="lg"
           variant="text"
-          className="flex items-center gap-2  bg-highlight text-white hover:bg-highlight
+          className=" text-md  flex items-center gap-2  bg-highlight text-white hover:bg-highlight
           hover:shadow-xl"
           onClick={() => {
             setShowModal(true);

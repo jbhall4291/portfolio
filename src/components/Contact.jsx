@@ -24,7 +24,7 @@ function Contact() {
             <Button
               size="lg"
               variant="text"
-              className="flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
+              className="flex items-center text-md gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
             >
               EMAIL ME
               <i className="fa-solid fa-envelope fa-xl"></i>
@@ -39,7 +39,7 @@ function Contact() {
             <Button
               size="lg"
               variant="text"
-              className="flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
+              className="flex items-center gap-2 text-md bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
             >
               CONNECT ON LINKEDIN
               <i className="fa-brands fa-linkedin fa-xl"></i>
@@ -54,7 +54,7 @@ function Contact() {
             <Button
               size="lg"
               variant="text"
-              className="flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
+              className="flex items-center text-md gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
             >
               VIEW MY GITHUB
               <i className="fa-brands fa-github fa-xl"></i>
@@ -103,7 +103,7 @@ function Contact() {
               size="lg"
               variant="text"
               value="Submit Message"
-              className="mx-auto flex w-full items-center justify-center gap-2 bg-highlight text-white hover:bg-highlight  hover:shadow-xl"
+              className="mx-auto flex w-full text-md items-center justify-center gap-2 bg-highlight text-white hover:bg-highlight  hover:shadow-xl"
             >
               SUBMIT MESSAGE
             </Button>
