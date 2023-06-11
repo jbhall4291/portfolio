@@ -19,7 +19,7 @@ function Fanfinder() {
         videoToPlay="FAN FINDER"
       />
 
-<div className="flex flex-col items-center lg:flex-row justify-evenly gap-y-8 ">
+<div className="flex flex-col items-center lg:flex-row justify-evenly gap-y-4 ">
         <div className="  order-2 flex  flex-col items-center gap-y-1 text-center lg:order-1 lg:justify-center">
           <h1 className="headline-font text-5xl text-highlight md:text-7xl">
             FAN FINDER
@@ -53,7 +53,7 @@ function Fanfinder() {
         </div>
 
         <img
-            className="order-2 lg:order-2  sm:w-[33rem] sm:h-[23.5rem]"
+            className="order-2 w-[350px] h-[248px]  sm:w-[528px] sm:h-[376px]"
             alt="fan finder screenshot"
             src={fanfinder}
           />
@@ -62,7 +62,7 @@ function Fanfinder() {
 
       <Typography
         color="blue-gray"
-        className="w-max-w mx-auto justify-center px-5 pb-6 text-center sm:w-4/6 lg:text-lg"
+       className="w-max-w mx-auto justify-center px-4 py-4 text-center sm:w-4/6 lg:text-lg"
       >
         Fan Finder is a mobile app built in React Native and allows music fans
         to discover upcoming gigs in their area, and connect with other music

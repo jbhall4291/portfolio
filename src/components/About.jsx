@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}} className="container mx-auto flex grid-rows-3 flex-col items-center gap-x-8 gap-y-8 px-5 md:grid md:grid-cols-4 lg:px-10">
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}}
+    className="container mx-auto flex grid-rows-3 flex-col items-center gap-x-8 gap-y-8 px-5 md:grid md:grid-cols-4 lg:px-10">
       <Typography
         color="blue-gray"
         className="text-md col-span-3 flex items-center text-justify  lg:text-lg order-1 md:order-none"
