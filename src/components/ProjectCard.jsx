@@ -17,6 +17,7 @@ function ProjectCard({
   learnMorePage,
   setShowModal,
   setVideoToPlay,
+  displayName,
 }) {
   return (
     <Card className="mt-6 md:w-96 ">
@@ -25,24 +26,22 @@ function ProjectCard({
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          {title}
+          {displayName}
         </Typography>
         <Typography>{description}</Typography>
       </CardBody>
       <CardFooter className="flex flex-col gap-2 pt-0 sm:gap-5 smallIphone:flex-row ">
         <Button
           size="lg"
-          disabled={title === "HUNDRED PRESS-UPS"}
           variant="text"
           className="flex items-center gap-2  bg-highlight text-white hover:bg-highlight
           hover:shadow-xl"
           onClick={() => {
-            setVideoToPlay(title);
+            setVideoToPlay(youtubeURL);
             setShowModal(true);
           }}
         >
-          {/* temporary conditional rendering, until video is available for 100 PRESS-UPS */}
-          {title === "HUNDRED PRESS-UPS" ? "COMING SOON" : "VIDEO DEMO"}
+          VIDEO DEMO
           <i className="fa-brands fa-youtube fa-2xl" />
         </Button>
 

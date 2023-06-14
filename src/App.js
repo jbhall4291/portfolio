@@ -1,17 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import Newsbuzz from "./components/Projects/Newsbuzz";
-import Fanfinder from "./components/Projects/Fanfinder";
-import OneHundredPressUps from "./components/Projects/OneHundredPressUps";
-import NotFound404 from "./components/NotFound404";
+import NotFound404 from "./pages/NotFound404";
 import ScrollToTop from "./components/ScrollToTop";
+import ProjectPage from "./components/ProjectPage";
+
 
 function App() {
   return (
@@ -20,19 +19,15 @@ function App() {
         <ScrollToTop />
 
         <Header />
-        <div className="flex flex-grow items-center justify-center mt-24 md:mt-10">
+
+        <div className="mt-20 flex flex-grow items-center justify-center md:mt-24">
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/projects/newsbuzz" element={<Newsbuzz />} />
-            <Route path="/projects/fanfinder" element={<Fanfinder />} />
-            <Route
-              path="/projects/onehundredpressups"
-              element={<OneHundredPressUps />}
-            />
+            <Route path="/projects/:project_id" element={<ProjectPage />} />
             <Route path="/*" element={<NotFound404 />} />
           </Routes>
         </div>

@@ -3,15 +3,15 @@ import { NavLink } from "react-router-dom";
 
 function HeaderNavItem({ text, currentPath, goToPath }) {
   return (
-    <li>
-      <NavLink
+    <li className=" text-myTheme hover:text-highlight text-xl">
+      <b><NavLink
         to={goToPath}
         className={({ isActive, isPending }) =>
           isPending ? "pending" : isActive ? "text-highlight" : ""
         }
       >
         {text}
-      </NavLink>
+      </NavLink></b>
     </li>
   );
 }
