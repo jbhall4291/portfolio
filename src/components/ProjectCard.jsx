@@ -17,7 +17,7 @@ function ProjectCard({
   learnMorePage,
   setShowModal,
   setVideoToPlay,
-  projectList,
+  displayName,
 }) {
   return (
     <Card className="mt-6 md:w-96 ">
@@ -26,28 +26,24 @@ function ProjectCard({
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray" className="mb-2">
-          {title}
+          {displayName}
         </Typography>
         <Typography>{description}</Typography>
       </CardBody>
       <CardFooter className="flex flex-col gap-2 pt-0 sm:gap-5 smallIphone:flex-row ">
-        {title === "portfolio" ? (
-          <></>
-        ) : (
-          <Button
-            size="lg"
-            variant="text"
-            className="flex items-center gap-2  bg-highlight text-white hover:bg-highlight
+        <Button
+          size="lg"
+          variant="text"
+          className="flex items-center gap-2  bg-highlight text-white hover:bg-highlight
           hover:shadow-xl"
-            onClick={() => {
-              setVideoToPlay(youtubeURL);
-              setShowModal(true);
-            }}
-          >
-            VIDEO DEMO
-            <i className="fa-brands fa-youtube fa-2xl" />
-          </Button>
-        )}
+          onClick={() => {
+            setVideoToPlay(youtubeURL);
+            setShowModal(true);
+          }}
+        >
+          VIDEO DEMO
+          <i className="fa-brands fa-youtube fa-2xl" />
+        </Button>
 
         <Link to={learnMorePage} className="inline-block text-highlight">
           <Button

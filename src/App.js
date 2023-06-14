@@ -7,12 +7,10 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import Newsbuzz from "./components/Projects/Newsbuzz";
-import Fanfinder from "./components/Projects/Fanfinder";
-import OneHundredPressUps from "./components/Projects/OneHundredPressUps";
 import NotFound404 from "./pages/NotFound404";
 import ScrollToTop from "./components/ScrollToTop";
 import ProjectPage from "./components/ProjectPage";
+
 
 function App() {
   return (
@@ -21,6 +19,7 @@ function App() {
         <ScrollToTop />
 
         <Header />
+
         <div className="mt-24 flex flex-grow items-center justify-center md:mt-10">
           <Routes>
             <Route path="/" element={<Hero />} />
@@ -28,17 +27,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-
             <Route path="/projects/:project_id" element={<ProjectPage />} />
-            
-            {/* <Route path="/projects/newsbuzz" element={<Newsbuzz />} />
-            <Route path="/projects/fanfinder" element={<Fanfinder />} />
-            <Route
-              path="/projects/onehundredpressups"
-              element={<OneHundredPressUps />}
-            /> */}
-
-
             <Route path="/*" element={<NotFound404 />} />
           </Routes>
         </div>

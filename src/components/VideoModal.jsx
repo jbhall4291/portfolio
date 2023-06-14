@@ -2,12 +2,7 @@ import React from "react";
 import { Button } from "@material-tailwind/react";
 
 function VideoModal({ showModal, setShowModal, videoToPlay }) {
-  // let youtubeURL = "";
-  // if (videoToPlay === "NEWSBUZZ")
-  //   youtubeURL = "https://www.youtube.com/embed/CnuN6rD8j8w";
-  // if (videoToPlay === "FAN FINDER")
-  //   youtubeURL = "https://www.youtube.com/embed/kQ7weiOZzHM";
-
+  console.log({ videoToPlay });
   return (
     <>
       {showModal && (
@@ -15,13 +10,21 @@ function VideoModal({ showModal, setShowModal, videoToPlay }) {
           <div className="flex h-screen w-screen flex-col items-center justify-center ">
             <div className="relative w-full sm:w-3/5">
               <div className="relative" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  className="absolute inset-0 h-full w-full"
-                  src={videoToPlay}
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                {videoToPlay === "coming-soon" ? (
+                  <div className=" bg-white text-center align-middle ">
+                    <p className="headline-font text-center  text-5xl text-highlight md:text-7xl">
+                      video coming soon!
+                    </p>
+                  </div>
+                ) : (
+                  <iframe
+                    className="absolute inset-0 h-full w-full"
+                    src={videoToPlay}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                )}
               </div>
               <div className="flex justify-center pt-4">
                 <Button

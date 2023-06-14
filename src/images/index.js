@@ -8,6 +8,8 @@ import newsbuzzCard from "./newsbuzz-card.jpg";
 import fanfinderCard from "./fanfinder-card.jpg";
 import oneHundredPressUpsCard from "./one-hundred-pressups-card.jpg";
 import oneHundredPressUps from "./one-hundred-pressups.jpg";
+import portfolioCard from "./portfolio-card.jpg";
+import portfolio from "./portfolio.jpg";
 
 export {
   cab,
@@ -20,4 +22,6 @@ export {
   newsbuzzCard,
   fanfinderCard,
   oneHundredPressUps,
+  portfolioCard,
+  portfolio,
 };

@@ -5,7 +5,6 @@ import { db } from "../config/firebase";
 
 import { collection, query, where, getDocs } from "firebase/firestore";
 
-import { newsbuzz } from "../images/";
 import SkillsCardSmall from "./Projects/SkillsCardSmall";
 
 import ExternalLink from "./Projects/ExternalLink";
@@ -13,8 +12,10 @@ import { motion } from "framer-motion";
 import VideoModal from "./VideoModal";
 
 import { Typography, Button } from "@material-tailwind/react";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 function ProjectPage() {
+  const [projectLoading, setProjectLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
 
   const [projectData, setProjectData] = useState([]);
@@ -40,6 +41,7 @@ function ProjectPage() {
         const documentId = querySnapshot.docs[0].id;
 
         setProjectData({ ...documentData, id: documentId });
+        setProjectLoading(false);
       } catch (err) {
         console.error(err);
       }
@@ -54,6 +56,10 @@ function ProjectPage() {
   ];
 
   // console.log(projectData.techUsed)
+
+  if (projectLoading) {
+    return <LoadingSpinner />;
+  }
 
   return (
     <motion.div
@@ -88,36 +94,16 @@ function ProjectPage() {
                 />
               );
             })}
-
-            <SkillsCardSmall
-              //  label={projectData.techUsed[0].name}
-
-              icon="devicon-javascript-plain colored"
-            />
-            {/*
-            <SkillsCardSmall
-              label="React"
-              icon="devicon-react-original colored"
-            />
-            <SkillsCardSmall
-              label="node.js"
-              icon="devicon-nodejs-plain colored"
-            />
-            <SkillsCardSmall
-              label="PostgreSQL"
-              icon="devicon-postgresql-plain colored"
-            />
-            <SkillsCardSmall
-              label="express.js"
-              icon="devicon-express-original colored"
-            />
-            <SkillsCardSmall label="Jest" icon="devicon-jest-plain colored" /> */}
           </div>
         </div>
 
         <img
           className="order-2 h-[248px] w-[350px]  sm:h-[376px] sm:w-[528px]"
-          alt="newsbuzz screenshot"
+          alt={`${
+            projectData.displayName
+              ? projectData.displayName + " screenshot"
+              : "screenshot"
+          }`}
           src={projectData.fullScreenshotURL}
         />
       </div>
