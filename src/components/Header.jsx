@@ -7,22 +7,22 @@ function Header() {
 
   return (
     <header
-      className="fixed top-0 z-10 grid w-screen grid-cols-1 bg-myTheme text-white md:grid-cols-[auto_1fr] md:px-6"
+      className="fixed top-0 z-10 grid w-screen grid-cols-1  bg-white md:grid-cols-[auto_1fr] md:px-6"
       id="header"
     >
-      <div className="flex justify-center bg-myTheme p-4 py-1 text-lg text-white hover:text-highlight md:py-2 ">
+      <div className="flex justify-center  p-4 py-1 text-lg text-myTheme hover:text-highlight md:py-2 text-xl">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-highlight" : ""
           }
         >
-          Johnny Hall | Software Developer
+          Johnny Hall : Software Developer
         </NavLink>
       </div>
 
-      <nav className="col-span-2 flex justify-center bg-myTheme  text-white md:col-start-2 md:col-end-3 md:row-start-1 md:justify-end ">
-        <ul className="md:gap-18 flex gap-7 py-1.5 pt-0 text-lg text-white sm:gap-10 sm:p-2 ">
+      <nav className="col-span-2 flex justify-center bg-white  text-myTheme hover:text-highlight md:col-start-2 md:col-end-3 md:row-start-1 md:justify-end ">
+        <ul className="md:gap-18 flex gap-7 py-1.5 pt-0 text-lg  text-myTheme  sm:gap-10 sm:p-2 ">
           <HeaderNavItem
             currentPath={currentPath}
             text="Skills"
