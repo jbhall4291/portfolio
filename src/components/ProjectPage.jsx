@@ -47,7 +47,7 @@ function ProjectPage() {
     return <LoadingSpinner />;
   }
 
-  console.log(projectData.liveAppURL);
+  
 
   return (
     <motion.div
