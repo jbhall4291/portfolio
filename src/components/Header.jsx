@@ -10,7 +10,7 @@ function Header() {
       className="fixed top-0 z-10 grid w-screen grid-cols-1  bg-white md:grid-cols-[auto_1fr] md:px-6"
       id="header"
     >
-      <div className="flex justify-center  p-4 py-1 text-lg text-myTheme hover:text-highlight md:py-2 text-xl">
+      <div className="flex justify-center  p-4 py-1 text-xl text-myTheme hover:text-highlight md:py-2">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
@@ -22,7 +22,7 @@ function Header() {
       </div>
 
       <nav className="col-span-2 flex justify-center bg-white  text-myTheme hover:text-highlight md:col-start-2 md:col-end-3 md:row-start-1 md:justify-end ">
-        <ul className="md:gap-18 flex gap-7 py-1.5 pt-0 text-lg  text-myTheme  sm:gap-10 sm:p-2 ">
+        <ul className="md:gap-20 flex gap-7 py-1.5 pt-0 text-lg  text-myTheme  sm:gap-10 sm:p-2 ">
           <HeaderNavItem
             currentPath={currentPath}
             text="Skills"
