@@ -1,29 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-
 import { db } from "../config/firebase";
-
 import { collection, query, where, getDocs } from "firebase/firestore";
-
 import SkillsCardSmall from "./Projects/SkillsCardSmall";
-
 import ExternalLink from "./Projects/ExternalLink";
 import { motion } from "framer-motion";
 import VideoModal from "./VideoModal";
-
 import { Typography, Button } from "@material-tailwind/react";
 import LoadingSpinner from "../components/LoadingSpinner";
+import LiveAppModal from "./LiveAppModal";
 
 function ProjectPage() {
   const [projectLoading, setProjectLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
-
   const [projectData, setProjectData] = useState([]);
-  const projectsCollectionRef = collection(db, "projects");
+  const [showLiveAppModal, setShowLiveAppModal] = useState(false);
 
   const { project_id } = useParams();
-
-  
 
   useEffect(() => {
     const getProjectData = async () => {
@@ -50,16 +43,11 @@ function ProjectPage() {
     getProjectData();
   }, []);
 
-  const exampleFormat = [
-    { name: "thing 1", icon: "devthing" },
-    { name: "thing 2", icon: "devthing2" },
-  ];
-
-  
-
   if (projectLoading) {
     return <LoadingSpinner />;
   }
+
+  console.log(projectData.liveAppURL);
 
   return (
     <motion.div
@@ -71,18 +59,22 @@ function ProjectPage() {
       <VideoModal
         showModal={showModal}
         setShowModal={setShowModal}
-        videoToPlay="NEWSBUZZ"
+        videoToPlay={projectData.youtubeURL}
+      />
+
+      <LiveAppModal
+        showLiveAppModal={showLiveAppModal}
+        setShowLiveAppModal={setShowLiveAppModal}
+        liveAppToShow="FAN FINDER"
       />
 
       <div className="flex flex-col items-center justify-evenly gap-y-4 lg:flex-row ">
         <div className="  order-2 flex  flex-col items-center gap-y-1 text-center lg:order-1 lg:justify-center">
-          <h1 className="headline-font text-5xl text-highlight md:text-7xl">
-            {projectData.title?.toUpperCase()}
+          <h1 className="headline-font text-4xl text-highlight md:text-5xl">
+            {projectData.displayName.toUpperCase()}
           </h1>
-          <h2 className="text-lg font-bold">{projectData.tagline}</h2>
+          <h2 className="text-lg ">{projectData.fullTagline}</h2>
           <div className="flex  flex-row flex-wrap justify-center gap-1.5 md:gap-2 ">
-            
-
             {projectData.techUsed?.map((tech) => {
               return (
                 <SkillsCardSmall
@@ -126,14 +118,48 @@ function ProjectPage() {
           <i className="fa-brands fa-youtube fa-2xl" />
         </Button>
 
-        <ExternalLink
-          label="LIVE APP"
-          href="https://newsbuzz-jbhall4291.netlify.app"
-          type="liveApp"
-        />
+        {projectData.liveAppURL && (
+          <ExternalLink
+            label="LIVE APP"
+            href={projectData.liveAppURL}
+            type="liveApp"
+          />
+        )}
+
+        {/* {projectData.teamShowcaseURL && (
+          <ExternalLink
+            label="TEAM SHOWCASE!!"
+            href={projectData.teamShowcaseURL}
+            type="showcase"
+          />
+         */}
+
+        {projectData.liveAppExpoURL && (
+          <Button
+            size="lg"
+            variant="text"
+            className="text-md flex items-center  gap-2 bg-highlight text-white
+          hover:bg-highlight hover:shadow-xl "
+            onClick={() => {
+              setShowLiveAppModal(true);
+            }}
+          >
+            LIVE APP
+            <i className="fa-solid fa-circle fa-beat-fade fa-lg" />
+          </Button>
+        )}
+
+        {projectData.teamShowcaseURL && (
+          <ExternalLink
+            label="TEAM SHOWCASE"
+            href={projectData.teamShowcaseURL}
+            type="showcase"
+          />
+        )}
+
         <ExternalLink
           label="GITHUB REPO"
-          href="https://github.com/jbhall4291/newsbuzz"
+          href={projectData.githubRepo}
           type="repo"
         />
       </div>

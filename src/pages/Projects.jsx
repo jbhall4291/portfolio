@@ -50,6 +50,8 @@ function Projects() {
         setShowModal={setShowModal}
         videoToPlay={videoToPlay}
       />
+
+
       <Typography
         color="blue-gray"
         className="w-max-w mx-auto justify-center px-5 text-center sm:w-4/6 lg:text-lg "
@@ -74,6 +76,7 @@ function Projects() {
             description={project.cardTagline}
             learnMorePage={`/projects/${project.title}`}
             displayName={project.displayName}
+            githubRepo={project.githubRepo}
           />
         ))}
       </div>
