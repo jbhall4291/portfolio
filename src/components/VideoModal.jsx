@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@material-tailwind/react";
 
 function VideoModal({ showModal, setShowModal, videoToPlay }) {
-  console.log({ videoToPlay });
+  
   return (
     <>
       {showModal && (

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
-import { oneHundredPressUpsCard, newsbuzzCard, fanfinderCard } from "../images";
 import { Typography } from "@material-tailwind/react";
 import VideoModal from "../components/VideoModal";
 import { motion } from "framer-motion";
@@ -33,8 +32,6 @@ function Projects() {
 
     getProjectList();
   }, []);
-
-  console.log(projectList);
 
   if (projectsLoading) {
     return <LoadingSpinner />;

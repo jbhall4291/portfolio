@@ -23,7 +23,7 @@ function ProjectPage() {
 
   const { project_id } = useParams();
 
-  console.log(project_id);
+  
 
   useEffect(() => {
     const getProjectData = async () => {
@@ -55,7 +55,7 @@ function ProjectPage() {
     { name: "thing 2", icon: "devthing2" },
   ];
 
-  // console.log(projectData.techUsed)
+  
 
   if (projectLoading) {
     return <LoadingSpinner />;
@@ -81,9 +81,7 @@ function ProjectPage() {
           </h1>
           <h2 className="text-lg font-bold">{projectData.tagline}</h2>
           <div className="flex  flex-row flex-wrap justify-center gap-1.5 md:gap-2 ">
-            {console.log(
-              projectData.techUsed?.map((item) => console.log(item.icon))
-            )}
+            
 
             {projectData.techUsed?.map((tech) => {
               return (
