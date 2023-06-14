@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 import { oneHundredPressUpsCard, newsbuzzCard, fanfinderCard } from "../images";
 import { Typography } from "@material-tailwind/react";
-import VideoModal from "./VideoModal";
+import VideoModal from "../components/VideoModal";
 import { motion } from "framer-motion";
 import { db } from "../config/firebase";
 import { getDocs, collection } from "firebase/firestore";
@@ -63,14 +63,15 @@ function Projects() {
       <div className="mx-auto flex flex-col flex-wrap items-center justify-center gap-x-10 sm:flex-row sm:gap-y-4  ">
         {projectList.map((project) => (
           <ProjectCard
+            projectList={projectList}
             setVideoToPlay={setVideoToPlay}
             setShowModal={setShowModal}
             key={project.title}
             youtubeURL={project.youtubeURL}
             title={project.title}
-            image={project.screenshotURL}
+            image={project.cardScreenshotURL}
             description={project.cardTagline}
-            learnMorePage="/projects/:"
+            learnMorePage={`/projects/${project.title}`}
           />
         ))}
       </div>

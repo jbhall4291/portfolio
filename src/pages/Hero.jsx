@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { profile } from "../images/";
+import { profile } from "../images";
 import { Link } from "react-router-dom";
-import InternalLink from "./InternalLink";
+import InternalLink from "../components/InternalLink";
 import { Typography, Button } from "@material-tailwind/react";
 import { RoughNotation } from "react-rough-notation";
 import { motion } from "framer-motion";
@@ -10,8 +10,13 @@ function Hero() {
   const [show] = useState(true);
 
   return (
-    <motion.section initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}} id="hero">
-      <div className="container flex flex-col items-center px-4 md:px-0  md:pt-10 lg:flex-row lg:pt-0  lg:gap-10 ">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+      id="hero"
+    >
+      <div className="container flex flex-col items-center px-4 md:px-0  md:pt-10 lg:flex-row lg:gap-10  lg:pt-0 ">
         <div className="order-2 mb-4 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2   lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center    ">
           <h1 className=" headline-font mb-2 mt-4 text-center text-4xl font-medium text-highlight md:text-6xl ">
             Hi, I'm Johnny.
@@ -44,8 +49,8 @@ function Hero() {
             >
               I love building cool stuff
             </RoughNotation>{" "}
-            and learning new technologies.<br /> Whether it's front-end or
-            back-end, I'm always{" "}
+            and learning new technologies.
+            <br /> Whether it's front-end or back-end, I'm always{" "}
             <RoughNotation
               type="box"
               multiline="true"
@@ -82,7 +87,7 @@ function Hero() {
               <Button
                 size="lg"
                 variant="text"
-                className="flex text-md items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
+                className="text-md flex items-center gap-2 bg-highlight align-middle text-white hover:bg-highlight  hover:shadow-xl"
               >
                 GET IN TOUCH
                 <i className="fa-solid fa-handshake fa-xl "></i>
@@ -94,7 +99,7 @@ function Hero() {
         </div>
 
         <img
-          className="rounded object-cover object-center shadow-xl w-[340px] h-[340px] sm:h-[28rem] sm:w-[28rem] lg:order-1"
+          className="h-[340px] w-[340px] rounded object-cover object-center shadow-xl sm:h-[28rem] sm:w-[28rem] lg:order-1"
           alt="me, johnny hall"
           src={profile}
         />

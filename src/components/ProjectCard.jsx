@@ -17,6 +17,7 @@ function ProjectCard({
   learnMorePage,
   setShowModal,
   setVideoToPlay,
+  projectList,
 }) {
   return (
     <Card className="mt-6 md:w-96 ">

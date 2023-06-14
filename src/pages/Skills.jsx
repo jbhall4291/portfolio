@@ -1,11 +1,14 @@
 import React from "react";
-import SkillCard from "./SkillsCard";
+import SkillCard from "../components/SkillsCard";
 import { Typography } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 
 function Skills() {
   return (
-    <motion.section initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}}
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
       id="skills"
       className="container mx-auto flex flex-col px-5 lg:px-10"
     >
