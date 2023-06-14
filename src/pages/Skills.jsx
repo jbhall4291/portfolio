@@ -26,6 +26,7 @@ function Skills() {
         <SkillCard label="JavaScript" icon="devicon-javascript-plain colored" />
         <SkillCard label="React" icon="devicon-react-original colored" />
         <SkillCard label="node.js" icon="devicon-nodejs-plain colored" />
+        <SkillCard label="Firebase" icon="devicon-firebase-plain colored" />
         <SkillCard label="express.js" icon="devicon-express-original colored" />
         <SkillCard label="PostgreSQL" icon="devicon-postgresql-plain colored" />
         <SkillCard label="MongoDB" icon="devicon-mongodb-plain colored" />
@@ -35,8 +36,14 @@ function Skills() {
         <SkillCard label="Tailwind" icon="devicon-tailwindcss-plain colored" />
         <SkillCard label="HTML5" icon="devicon devicon-html5-plain colored" />
         <SkillCard label="CSS3" icon="devicon devicon-css3-plain colored" />
+
+        
+        <SkillCard
+          label="Firebase"
+          icon="devicon-figma-plain colored text-2xl md:text-5xl "
+        />
       </div>
-      <Typography color="blue-gray" className=" text-center lg:text-lg pt-10">
+      <Typography color="blue-gray" className=" pt-10 text-center lg:text-lg">
         But my learning journey doesn't stop there! I've been expanding my tech
         arsenal ever since, and I'm currently delving into the fundamentals of
         Python and exploring the possibilities of the Three.js library.
