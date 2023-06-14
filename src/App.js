@@ -20,7 +20,7 @@ function App() {
 
         <Header />
 
-        <div className="mt-24 flex flex-grow items-center justify-center md:mt-10">
+        <div className="mt-20 flex flex-grow items-center justify-center md:mt-24">
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
