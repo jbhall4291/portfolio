@@ -17,7 +17,7 @@ function VideoModal({ showModal, setShowModal, videoToPlay }) {
               <div className="relative" style={{ paddingBottom: "56.25%" }}>
                 <iframe
                   className="absolute inset-0 h-full w-full"
-                  src={youtubeURL}
+                  src={videoToPlay}
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen

@@ -1,16 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import { oneHundredPressUpsCard, newsbuzzCard, fanfinderCard } from "../images";
 import { Typography } from "@material-tailwind/react";
 import VideoModal from "./VideoModal";
 import { motion } from "framer-motion";
+import { db } from "../config/firebase";
+import { getDocs, collection } from "firebase/firestore";
 
 function Projects() {
   const [showModal, setShowModal] = useState(false);
   const [videoToPlay, setVideoToPlay] = useState("");
 
+  const [projectList, setProjectList] = useState([]);
+
+  const projectsCollectionRef = collection(db, "projects");
+
+  useEffect(() => {
+    const getProjectList = async () => {
+      try {
+        const data = await getDocs(projectsCollectionRef);
+        const filteredData = data.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }));
+
+        setProjectList(filteredData);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    getProjectList();
+  }, []);
+
+  console.log(projectList);
+
   return (
-    <motion.section initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.75, ease: "easeOut"}} id="projects" className="mx-auto flex flex-col px-3 sm:px-5  md:mt-10 ">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+      id="projects"
+      className="mx-auto flex flex-col px-3 sm:px-5  md:mt-10 "
+    >
       <VideoModal
         showModal={showModal}
         setShowModal={setShowModal}
@@ -29,34 +61,18 @@ function Projects() {
       </Typography>
 
       <div className="mx-auto flex flex-col flex-wrap items-center justify-center gap-x-10 sm:flex-row sm:gap-y-4  ">
-        <ProjectCard
-          setShowModal={setShowModal}
-          setVideoToPlay={setVideoToPlay}
-          title="NEWSBUZZ"
-          image={newsbuzzCard}
-          description="a reddit-style social news aggregation web app, built with React."
-          youtubeURL="https://youtu.be/CnuN6rD8j8w"
-          learnMorePage="/projects/newsbuzz"
-        />
-
-        <ProjectCard
-          setShowModal={setShowModal}
-          setVideoToPlay={setVideoToPlay}
-          title="FAN FINDER"
-          image={fanfinderCard}
-          description="a location-based social networking app for iOS & Android, built with React Native."
-          youtubeURL="https://www.youtube.com/watch?v=kQ7weiOZzHM"
-          learnMorePage="/projects/fanfinder"
-        />
-
-        <ProjectCard
-          setShowModal={setShowModal}
-          setVideoToPlay={setVideoToPlay}
-          title="HUNDRED PRESS-UPS"
-          image={oneHundredPressUpsCard}
-          description="a fitness guidance & tracking app for web & mobile, currently under development."
-          learnMorePage="/projects/onehundredpressups"
-        />
+        {projectList.map((project) => (
+          <ProjectCard
+            setVideoToPlay={setVideoToPlay}
+            setShowModal={setShowModal}
+            key={project.title}
+            youtubeURL={project.youtubeURL}
+            title={project.title}
+            image={project.screenshotURL}
+            description={project.cardTagline}
+            learnMorePage="/projects/:"
+          />
+        ))}
       </div>
     </motion.section>
   );
