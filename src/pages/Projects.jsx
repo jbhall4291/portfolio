@@ -25,7 +25,7 @@ function Projects() {
         }));
 
         setProjectList(filteredData);
-        setProjectsLoading(false)
+        setProjectsLoading(false);
       } catch (err) {
         console.error(err);
       }
@@ -36,10 +36,11 @@ function Projects() {
 
   console.log(projectList);
 
-  if (projectsLoading) {return <LoadingSpinner />}
-  
-  return (
+  if (projectsLoading) {
+    return <LoadingSpinner />;
+  }
 
+  return (
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -63,8 +64,6 @@ function Projects() {
         , and continue to be developed, polished & refactored as I continue to
         learn.
       </Typography>
-
-      
 
       <div className="mx-auto flex flex-col flex-wrap items-center justify-center gap-x-10 sm:flex-row sm:gap-y-4  ">
         {projectList.map((project) => (
