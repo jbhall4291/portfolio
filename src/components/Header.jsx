@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header
-      className="fixed top-0 z-10 grid w-screen grid-cols-1  bg-white md:grid-cols-[auto_1fr] md:px-6"
+      className="fixed top-0 z-10 grid w-screen grid-cols-1  bg-white lg:grid-cols-[auto_1fr] lg:px-6"
       id="header"
     >
       <div className="flex justify-center  p-4 py-1 text-xl text-myTheme hover:text-highlight md:py-2">
@@ -17,12 +17,12 @@ function Header() {
             isPending ? "pending" : isActive ? "text-highlight" : ""
           }
         >
-          Johnny Hall : Software Developer
+          <b>Johnny Hall : Software Developer</b>
         </NavLink>
       </div>
 
-      <nav className="col-span-2 flex justify-center bg-white  text-myTheme hover:text-highlight md:col-start-2 md:col-end-3 md:row-start-1 md:justify-end ">
-        <ul className="md:gap-20 flex gap-7 py-1.5 pt-0 text-lg  text-myTheme  sm:gap-10 sm:p-2 ">
+      <nav className="col-span-2 flex justify-center   text-myTheme hover:text-highlight lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:justify-end ">
+        <ul className="flex gap-7 py-1.5 pt-0 text-lg text-myTheme  sm:gap-10  sm:p-2 md:gap-20 ">
           <HeaderNavItem
             currentPath={currentPath}
             text="Skills"
