@@ -36,7 +36,7 @@ function Skills() {
         <SkillCard label="HTML5" icon="devicon devicon-html5-plain colored" />
         <SkillCard label="CSS3" icon="devicon devicon-css3-plain colored" />
       </div>
-      <Typography color="blue-gray" className=" text-center lg:text-lg">
+      <Typography color="blue-gray" className=" text-center lg:text-lg pt-10">
         But my learning journey doesn't stop there! I've been expanding my tech
         arsenal ever since, and I'm currently delving into the fundamentals of
         Python and exploring the possibilities of the Three.js library.
