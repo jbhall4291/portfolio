@@ -36,10 +36,8 @@ function Skills() {
         <SkillCard label="Tailwind" icon="devicon-tailwindcss-plain colored" />
         <SkillCard label="HTML5" icon="devicon devicon-html5-plain colored" />
         <SkillCard label="CSS3" icon="devicon devicon-css3-plain colored" />
-
-        
         <SkillCard
-          label="Firebase"
+          label="Figma"
           icon="devicon-figma-plain colored text-2xl md:text-5xl "
         />
       </div>
