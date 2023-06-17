@@ -17,7 +17,7 @@ function Header() {
             isPending ? "pending" : isActive ? "text-highlight" : ""
           }
         >
-          <b>Johnny Hall : Software Developer</b>
+          <h1 className="font-bold text-sm smallIphone:text-xl">Johnny Hall : Software Developer</h1>
         </NavLink>
       </div>
 

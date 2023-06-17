@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { profile } from "../images";
+import { profile, profileLG, profileSM } from "../images";
 import { Link } from "react-router-dom";
 import InternalLink from "../components/InternalLink";
 import { Typography, Button } from "@material-tailwind/react";
@@ -16,7 +16,7 @@ function Hero() {
       transition={{ duration: 0.75, ease: "easeOut" }}
       id="hero"
     >
-      <div className="container flex flex-col items-center px-4 md:px-0  md:pt-10 lg:flex-row lg:gap-10  lg:pt-0 ">
+      <div className="container flex flex-col items-center smallIphone:px-4 md:px-0  md:pt-10 lg:flex-row lg:gap-10  lg:pt-0 ">
         <div className="order-2 mb-4 flex flex-col items-center text-center lg:order-1 lg:mb-0 lg:w-1/2   lg:max-w-screen-md lg:flex-grow lg:items-center lg:justify-center    ">
           <h1 className=" headline-font mb-2 mt-4 text-center text-4xl font-medium text-highlight md:text-6xl ">
             Hi, I'm Johnny.
@@ -79,7 +79,7 @@ function Hero() {
             </RoughNotation>
           </Typography>
 
-          <div className="m-auto flex items-center justify-center gap-5">
+          <div className="m-auto flex items-center justify-center gap-1 smallIphone:gap-5">
             <Link
               to="/contact"
               className="btn inline-block align-middle text-red-500"
@@ -98,11 +98,14 @@ function Hero() {
           </div>
         </div>
 
-        <img
-          className="h-[340px] w-[340px] rounded object-cover object-center shadow-xl sm:h-[28rem] sm:w-[28rem] lg:order-1"
-          alt="me, johnny hall"
-          src={profile}
-        />
+        <picture className="lg:order-1">
+          <source media="(min-width:540px)" srcset={profileLG} />
+          <img
+            className="h-[300px] w-[300px] rounded object-cover object-center shadow-xl sm:h-[28rem] sm:w-[28rem]"
+            alt="me, johnny hall"
+            src={profileSM}
+          />
+        </picture>
       </div>
     </motion.section>
   );

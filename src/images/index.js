@@ -1,4 +1,6 @@
 import profile from "./profile.jpg";
+import profileLG from "./profileLG.jpg";
+import profileSM from "./profileSM.jpg";
 import cab from "./cab.jpeg";
 import ivy from "./ivy.jpeg";
 import sydney from "./sydney.jpeg";
@@ -14,6 +16,8 @@ import portfolio from "./portfolio.jpg";
 export {
   cab,
   profile,
+  profileLG,
+  profileSM,
   ivy,
   sydney,
   fanfinder,

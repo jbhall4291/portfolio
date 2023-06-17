@@ -27,9 +27,9 @@ function Skills() {
         <SkillCard label="React" icon="devicon-react-original colored" />
         <SkillCard label="node.js" icon="devicon-nodejs-plain colored" />
         <SkillCard label="Firebase" icon="devicon-firebase-plain colored" />
-        <SkillCard label="express.js" icon="devicon-express-original colored" />
         <SkillCard label="PostgreSQL" icon="devicon-postgresql-plain colored" />
         <SkillCard label="MongoDB" icon="devicon-mongodb-plain colored" />
+        <SkillCard label="express.js" icon="devicon-express-original colored" />
         <SkillCard label="Jest" icon="devicon-jest-plain colored" />
         <SkillCard label="RESTful APIs" icon="fas fa-cogs" />
         <SkillCard label="GitHub" icon="devicon-github-original colored " />
