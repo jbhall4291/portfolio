@@ -31,8 +31,8 @@ function Skills() {
         <SkillCard label="MongoDB" icon="devicon-mongodb-plain colored" />
         <SkillCard label="express.js" icon="devicon-express-original colored" />
         <SkillCard label="Jest" icon="devicon-jest-plain colored" />
+        <SkillCard label="Git" icon="devicon-git-plain colored" />
         <SkillCard label="RESTful APIs" icon="fas fa-cogs" />
-        <SkillCard label="GitHub" icon="devicon-github-original colored " />
         <SkillCard label="Tailwind" icon="devicon-tailwindcss-plain colored" />
         <SkillCard label="HTML5" icon="devicon devicon-html5-plain colored" />
         <SkillCard label="CSS3" icon="devicon devicon-css3-plain colored" />
