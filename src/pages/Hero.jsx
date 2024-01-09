@@ -50,7 +50,8 @@ function Hero() {
               I love building cool stuff
             </RoughNotation>{" "}
             and learning new technologies.
-            <br /> Whether it's front-end or back-end, I'm always{" "}
+            <br /> 
+            <br />Whether it's front-end or back-end, I'm always{" "}
             <RoughNotation
               type="box"
               multiline="true"
@@ -63,9 +64,9 @@ function Hero() {
               up for a challenge 🚀
             </RoughNotation>
             .
-            <br />
-            <br />
-            <RoughNotation
+            {/* <br />
+            <br /> */}
+            {/* <RoughNotation
               color="#fe003a"
               strokeWidth="5"
               type="bracket"
@@ -76,7 +77,7 @@ function Hero() {
               I'm currently looking for an opportunity to contribute to a
               company's success, so if you're looking for a junior developer
               then get in touch and let's make something amazing!
-            </RoughNotation>
+            </RoughNotation> */}
           </Typography>
 
           <div className="m-auto flex items-center justify-center gap-1 smallIphone:gap-5">
